@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="icon-vector" horiz-adv-x="1000" >
+<font-face font-family="icon-vector" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="vector-2" unicode="&#xe841;" d="M1583 777l-694-677-694 677c-13 12-29 19-47 19-17 0-34-7-46-19-6-6-11-13-14-21-3-7-5-16-5-24 0-9 2-17 5-25 3-7 8-14 14-20l738-720c13-13 31-20 49-20 18 0 35 7 48 20l739 720c6 5 11 13 14 20 3 8 5 16 5 25 0 8-2 17-5 24-3 8-8 15-14 21-13 12-29 19-47 19-17 0-33-7-46-19v0z" horiz-adv-x="1778" />
+</font>
+</defs>
+</svg>

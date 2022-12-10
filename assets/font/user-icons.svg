@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="user-icons" horiz-adv-x="1000" >
+<font-face font-family="user-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="7148755_user_avatar_profile_person_people_icon" unicode="&#xe844;" d="M500 382a231 231 0 1 0 231 230 231 231 0 0 0-231-230z m0 389a159 159 0 1 1 159-159 159 159 0 0 1-159 159z m399-914a36 36 0 0 0-35 30 362 362 0 0 1-364 310 362 362 0 0 1-364-310 36 36 0 0 0-71 12 431 431 0 0 0 435 370 431 431 0 0 0 435-370 36 36 0 0 0-29-41 34 34 0 0 0-7-1z" horiz-adv-x="1000" />
+
+<glyph glyph-name="4473009_personal-icon_user_user-icon_user-outline-icon_users-icon_icon" unicode="&#xe84d;" d="M504 303c197-1 383-131 447-336 2-7 5-14 3-20-5-16-26-12-33 10-44 143-157 265-306 302-132 32-279 6-380-82-67-57-116-136-140-220 0 0-11-21-25-10-15 12 1 39 11 64 67 164 222 289 412 292 4 0 7 0 11 0z m-1 453c93-1 180-72 198-164 17-91-35-190-120-226-95-40-216 5-262 98-47 96-3 227 97 273 27 13 57 19 87 19z m-3-31c-77-1-150-60-167-136-16-77 29-163 102-194 95-40 221 25 237 133 14 95-63 194-166 197-2 0-4 0-6 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

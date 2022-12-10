@@ -1,0 +1,209 @@
+@import "button";
+@import "card";
+@import "icon";
+@import "variables";
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Silkscreen:wght@400;700&display=swap');
+
+/*===== carousel background =====*/
+
+.carousel__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(39, 39, 39, 0.4);
+  z-index: 2;
+}
+
+/*===== kateqoriya=====*/
+.category {
+  margin-top: 70px;
+  margin-bottom: 60px;
+ .category-box { 
+  width: 335px;
+  margin-right: 70px;
+  .category-box__text {
+    color:$color-blue;
+    line-height: $line-24;
+    margin-bottom: 12px;
+    font: {
+      weight:$font-500;
+      size:$font-16;
+      style:$font-normal;
+    }
+  }
+  .category-box__title {
+    color: $color-black1;
+    line-height: $line-53;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+    font: {
+      weight:$font-600;
+      size:$font-36;
+      style:$font-normal;
+    }
+  }
+  .category-box__about {
+    width: 335px;
+    line-height: $line-32;
+    color: $color-gray1;
+    font: {
+      weight:$font-400;
+      size:$font-18;
+    }
+  }
+ }
+}
+
+ /*===== satılıq, kirayə evlər =====*/
+ @mixin size {
+  max-width: 251px;
+  max-height: 287px;
+  padding: 60px 40px;
+ }
+  .rent-boxs {
+    .sale {
+    @include size;
+    }
+    .rent-month {
+    @include size;
+    }
+    .rent-day {
+    @include size;
+    background: #FFFFFF;
+    box-shadow: 40px 0px 70px rgba(121, 121, 121, 0.05), -40px 100px 70px rgba(121, 121, 121, 0.05);
+    }
+    h3 {
+      margin-top: 15px;
+      margin-bottom: 19px;
+      line-height: $line-25;
+      color: $color-black2;
+      font: {
+        weight:$font-500;
+        size:$font-20;
+      }
+    }
+    p {
+      width: 179px;
+      line-height: $line-27;
+      color: $color-gray1;
+      font: {
+        weight:$font-400;
+        size:$font-16;
+      }
+    }
+    .sale__icon::before {
+      content: '\e847';
+      font-family: "category";
+      font-size: $font-35;
+      color: $color-purple;
+    }
+    .rent-month__icon::before {
+      content: '\e84b';
+      font-family: "category";
+      font-size: $font-35;
+      color: $color-green;
+    }
+    .rent-day__icon::before {
+      content: '\e84a';
+      font-family: "category";
+      font-size: $font-35;
+      color: $color-pink;
+    }
+  } 
+
+/*============ Önə çıxan təkliflər bölməsi and content start ===============*/
+    .suggestion {
+      &__title {
+      line-height: $line-35;
+      color:$color-black1;
+      margin-bottom: 15px;
+      font: {
+          weight: $font-600;
+          size: $font-32;
+        }
+      }
+      &__text {
+      margin-bottom: 40px;  
+      line-height: $line-30;
+      color: $color-gray3;
+      font: {
+        weight:$font-400;
+        size:$font-18;
+        }
+      }
+      &__link {
+        color: $color-blue;
+        line-height: $line-24;
+        font: {
+          weight: $font-600;
+          size: $font-16;
+        }
+        img {
+          margin-left: 13px;
+        }
+      }
+      &__like-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+      &:before {
+        content: '\e862'; 
+        font-family: "like-icon";
+        color: red;
+        }
+      }
+      &__col-middle {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      &__img-title {
+        margin-top: 13px;
+        margin-bottom: 12px;
+        color: $color-black3;
+        line-height: $line-21;
+        font: {
+          size:$font-20;
+          weight:$font-600;
+        }
+      }
+      &__img-adress {
+        margin-bottom: 14px;
+        display: inline-block;
+        color: $color-gray4;
+        font: {
+          size: $font-14;
+          weight: $font-500;
+        }
+      }
+      &__properties {
+        margin-right: 24px;
+        display: flex;
+        align-items: center;
+        line-height: $line-15;
+        color: $color-gray5;
+        letter-spacing: 0.01em;
+        font: {
+           size:$font-14;
+           weight: $font-400;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+     
+  }
+  /* Bağ evləri bölməsi */
+  .title-margin {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }

@@ -1,0 +1,162 @@
+@import "variables";
+/*===== slide card start =====*/
+.card-body {
+    padding:20px 5px;
+}
+/*===== slide top card start =====*/
+.navbar {
+    top: 38px;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+    &__left-box {
+        color:$color-white1;
+    }   
+    .slide-favori {
+        color:$color-white1;
+        line-height: $line-h40;
+        margin-right: $margin-33;
+        transition: 200ms all;
+        &::before {
+            transition: 200ms all;
+            margin-right: $margin-10;
+            content: '\e840';
+            font-size: 25px;
+            font-family: "card-top-icon";
+        }
+        &:hover {
+            color: yellow;
+            &::before {
+                color: red;
+            }
+        }
+    }
+    .slide-dropdown {
+        margin-right: $margin-33;
+        line-height: $line-h40;
+        transition: 200ms all;
+        color: white !important;
+        &::after {
+            margin-left: $margin-10;
+            content: '\e841'; 
+            font-family: "icon-vector";
+            font-size: 8px;
+        }
+       
+        &:hover {
+            color: yellow !important;
+       }
+       }
+       .user {
+        transition: 200ms all !important;
+       }
+       .dropdown-box:hover .user {
+            background-color: #17cd01;
+            border-radius: 50px;
+        }
+        .dropdown-item {
+            font-size: 13px;
+           } 
+       .Logo {   
+            padding: 3px 7px;
+            border-radius: 20px;
+            transition: 200ms all;
+        }
+       .Logo:hover {
+            box-shadow:3px 3px 40px 3px rgb(225, 222, 222) ;
+          }
+       .elan {
+            transition: 200ms all !important;
+       }   
+       .elan:hover {
+            box-shadow:3px 3px 40px 3px rgb(225, 222, 222) ;
+       }   
+}   
+       
+
+/*===== slide bottom card start =====*/
+// mixin
+@mixin select {
+    height: $height-23;
+    color: $color-gray2;
+    font: {
+        size: $font-15;
+        weight: $font-400;
+       }
+    }
+.container-card {
+    bottom: 36%;
+}   
+.slide-card2 {
+    border-radius: $border-6;
+    z-index: 3;
+    .select {
+        border-right: 1px solid $color-gray;
+        padding: 0 20px;
+        &__metro {
+            width: 254px;   
+        }
+        &__room {
+            width: 96px;
+        }
+        &__home {
+            width: 158px
+        } 
+        .form-select {
+            @include select;
+            padding:  0 10px 0 2px !important;
+            transition: 180ms all !important;
+            cursor: pointer;           
+            &:hover {
+                 color:#272727 !important;
+              }
+        }
+        .form-label {
+            padding-left: 2px;
+            color: $color-black;
+            line-height: $line-23;
+            font-weight: $font-500;
+            font: {
+                size: $font-15;
+                style:$font-normal;
+            }
+        }
+     }
+     .search {
+        padding:0 $padding-25;
+        &__text {
+        width: 310px;
+        border: 1px solid #E6E6E6 !important;
+        border-radius: $border-6;
+        height:  $height-50;
+        margin-right: 10px;
+        color: #9F9F9F;
+        letter-spacing: 0.2px;
+        font: {
+            weight:$font-400;
+            size:$font-14;
+            line-height: $line-28;
+            style:$font-normal;
+        }
+        }
+        &__submit {
+            width: 126px;
+            height: $height-50;
+            background-color: #3E86F5;
+            border-radius: $border-6;
+            color: $color-white;
+            transition: 200ms all;
+            font: {
+                weight:$font-500;
+                size:$font-15;
+            }
+            &:hover {
+                background-color: #20d300;
+            }
+        }
+     }
+     option {
+        background-color:#d9d8d8;
+      }
+}

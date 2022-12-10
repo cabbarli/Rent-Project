@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="card-top-icon" horiz-adv-x="1000" >
+<font-face font-family="card-top-icon" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="user" unicode="&#xe83e;" d="M500 350c115 0 208 93 208 208 0 115-93 209-208 209-115 0-208-94-208-209 0-115 93-208 208-208z m358-417c0 162-160 292-358 292-197 0-358-130-358-292" horiz-adv-x="1000" />
+
+<glyph glyph-name="vector-(1)" unicode="&#xe840;" d="M520 671l-47 48c-109 113-310 74-382-67-34-67-42-163 20-285 60-118 185-260 409-414 224 154 349 296 409 414 62 122 54 218 20 285-72 141-273 180-382 67l-47-48z m0-796c-997 659-307 1173-11 901 4-4 7-8 11-11 4 3 8 7 11 11 296 272 986-242-11-901z" horiz-adv-x="1040" />
+</font>
+</defs>
+</svg>
