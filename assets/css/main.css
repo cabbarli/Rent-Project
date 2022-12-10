@@ -427,7 +427,6 @@
   font-family: "like";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -478,7 +477,6 @@
   font-family: "like-icon";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -633,7 +631,7 @@ body {
   color: #FB3F6C;
 }
 
-/*============ Önə çıxan təkliflər bölməsi and content start ===============*/
+/*============ Önə çıxan təkliflər hissəsi and content start ===============*/
 .suggestion__title {
   line-height: 35px;
   color: #282C4B;
@@ -716,8 +714,63 @@ body {
   margin-right: 10px;
 }
 
-/* Bağ evləri bölməsi */
+/* Bağ evləri hissəsi */
 .title-margin {
   margin-top: 80px;
   margin-bottom: 40px;
+}
+
+/* advertise-reklam vermə hissəsi*/
+.advertise {
+  margin-top: 87px;
+}
+
+.advertise .advertise__title {
+  top: 117px;
+  left: 57px;
+}
+
+.advertise .advertise__title h3 {
+  margin-bottom: 30px;
+  line-height: 42px;
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.advertise .advertise__link {
+  bottom: 117px;
+  left: 57px;
+}
+
+.advertise .advertise__link a {
+  padding: 13px 30px;
+  display: inline-block;
+  background-color: #3E86F5;
+  line-height: 26px;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/*============= Footer start ====================*/
+footer {
+  color: #FDFDFD !important;
+  background-color: #272727;
+}
+
+.foot__logo {
+  line-height: 36px;
+  color: #FDFDFD;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.foot-email p {
+  width: 292px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
 }

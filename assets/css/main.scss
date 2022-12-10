@@ -115,7 +115,7 @@
     }
   } 
 
-/*============ Önə çıxan təkliflər bölməsi and content start ===============*/
+/*============ Önə çıxan təkliflər hissəsi and content start ===============*/
     .suggestion {
       &__title {
       line-height: $line-35;
@@ -202,8 +202,67 @@
       }
      
   }
-  /* Bağ evləri bölməsi */
+  /* Bağ evləri hissəsi */
   .title-margin {
     margin-top: 80px;
     margin-bottom: 40px;
   }
+  /* advertise-reklam vermə hissəsi*/
+  .advertise {
+    margin-top: 87px;
+   .advertise__title {
+    top: 117px;
+    left: 57px;
+    h3 {
+         margin-bottom: 30px;
+         line-height: $line-42;
+         color: $color-white;
+         font: {
+           size:$font-28;
+           weight:$font-700;
+              }
+       }
+   }
+   .advertise__link {
+    bottom: 117px;
+    left: 57px;
+    a{
+       padding: 13px 30px;
+       display: inline-block;
+       background-color: $color-blue;
+       line-height: $line-26;
+       color: $color-white;
+       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px    0px 1px rgba(0, 0, 0, 0.04);
+       border-radius: 6px;
+       font: {
+         size: $font-17;
+         weight: $font-400;
+       }
+    }  
+  }
+}
+
+/*============= Footer start ====================*/
+footer {
+  color: $color-white1 !important;
+  background-color: $color-black;
+}
+.foot__logo {
+   line-height: $line-36;
+   color: $color-white1;
+   font: {
+    size: $font-24;
+    weight: $font-700;
+   }
+}
+.foot-email {
+  p {
+    width: 292px;
+    line-height: $line-20;
+    font: {
+      size: $font-14;
+      weight: $font-400;
+    }
+  }
+  
+}
