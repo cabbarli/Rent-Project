@@ -57,12 +57,8 @@
   color: yellow !important;
 }
 
-.navbar .slide-dropdown:hover .slide-dropdown::after {
-  color: #17cd01;
-}
-
-.navbar .slide-dropdown:hover.slide-dropdown::after {
-  color: #ffffff;
+.navbar .slide-dropdown::after {
+  color: #ffffff !important;
 }
 
 .navbar .user {
