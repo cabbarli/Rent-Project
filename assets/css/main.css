@@ -878,6 +878,7 @@ body {
 
 /*============= Footer start ====================*/
 footer {
+  margin-top: 95px;
   padding-top: 71px;
   color: #FDFDFD !important;
   background-color: #272727;
@@ -950,7 +951,12 @@ footer {
 }
 
 /* footer bottom box */
-.foot-copyright {
+.foot-bottom-box {
+  padding: 26px 0 43px 0;
+  border-top: 0.3px solid rgba(209, 163, 163, 0.32);
+}
+
+.foot-bottom-box .foot-copyright {
   letter-spacing: -0.204545px;
   color: #FDFDFD;
   line-height: 22px;
@@ -958,23 +964,23 @@ footer {
   font-size: 14px;
 }
 
-.foot-sosial a {
+.foot-bottom-box .foot-sosial a {
   margin-left: 44px;
 }
 
-.foot-facebook:before {
+.foot-bottom-box .foot-facebook:before {
   content: '\e868';
   font-family: "sosial-icon";
   color: #FDFDFD;
 }
 
-.foot-instagram:before {
+.foot-bottom-box .foot-instagram:before {
   content: '\e867';
   font-family: "sosial-icon";
   color: #FDFDFD;
 }
 
-.foot-twetter:before {
+.foot-bottom-box .foot-twetter:before {
   content: '\e866';
   font-family: "sosial-icon";
   color: #FDFDFD;

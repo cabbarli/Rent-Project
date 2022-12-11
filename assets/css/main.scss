@@ -245,6 +245,7 @@
 /*============= Footer start ====================*/
 
 footer {
+  margin-top: 95px;
   padding-top: 71px;
   color: $color-white1 !important;
   background-color: $color-black;
@@ -320,6 +321,9 @@ footer {
   }
 }
 /* footer bottom box */
+.foot-bottom-box {
+ padding: 26px 0 43px 0;
+ border-top: 0.3px solid rgba(209, 163, 163, 0.32);
 .foot-copyright {
   letter-spacing: -0.204545px;
   color: $color-white1;
@@ -348,4 +352,5 @@ footer {
   content: '\e866'; 
   font-family: "sosial-icon";
   color: $color-white1;
+ }
 }
