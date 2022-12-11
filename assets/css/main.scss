@@ -249,7 +249,7 @@ footer {
   color: $color-white1 !important;
   background-color: $color-black;
 }
-.foot__logo {
+.foot-logo {
   line-height: $line-36;
   margin-bottom: 10px;
   color:  $color-white1;
@@ -258,7 +258,7 @@ footer {
     size: $font-24;
   }
 } 
-.foot__text {
+.foot-text {
   width: 236px;
   line-height: $line-24;
   opacity: 0.88;
@@ -287,15 +287,6 @@ footer {
     }
    }
  }
-}
-
-.foot__logo {
-   line-height: $line-36;
-   color: $color-white1;
-   font: {
-    size: $font-24;
-    weight: $font-700;
-   }
 }
 .foot-email {
   right: 0;
@@ -327,4 +318,34 @@ footer {
     border-radius: 4px;
     background-color: $color-white1;
   }
+}
+/* footer bottom box */
+.foot-copyright {
+  letter-spacing: -0.204545px;
+  color: $color-white1;
+  line-height: $line-22;
+  font: {
+    weight: $font-400;
+    size: $font-14;
+  }
+}
+.foot-sosial {
+  a {
+    margin-left: 44px;
+  }
+}
+.foot-facebook:before {
+  content: '\e868'; 
+  font-family: "sosial-icon";
+  color: $color-white1;
+}
+.foot-instagram:before {
+  content: '\e867';
+  font-family: "sosial-icon";
+  color: $color-white1;
+}
+.foot-twetter:before {
+  content: '\e866'; 
+  font-family: "sosial-icon";
+  color: $color-white1;
 }
