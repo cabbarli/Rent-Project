@@ -512,44 +512,53 @@
 </div>
 </div> <!-- col end (content section end) -->
 
-<!-- Footer start -->
+<!---------------------- Footer start ------------------------>
 <footer>
   <!-- footer-top start -->
  <div class="container p-0">
   <div class="row">
-   <div class="col d-flex p-0">
-    <div class="col-sm-6 d-flex">
+   <div class="col d-flex p-0 foot-top-box">
+    <div class="col-sm-6 d-flex justify-content-between">
       <div class="foot__logo-box">
-          <a href="#" class="foot__logo">Logo</a>
+          <a href="#" class="foot__logo d-inline-block">Logo</a>
           <p class="foot__text">Subscribe to keep up with the
             latest news</p>
       </div>
-      <div class="foot-nav">
+      <div class="foot-nav text-start">
         <h3>Hqqımızda</h3>
-        <ul>
+        <ul class="p-0">
           <li><a href="#">Our Product</a></li>
           <li><a href="#">Tutorials</a></li>
           <li><a href="#">Our Service</a></li>
         </ul>
       </div>
-      <div class="foot-nav">
+      <div class="foot-nav text-start">
         <h3>Əlaqə</h3>
-        <ul>
+        <ul class="p-0">
           <li><a href="#">About us</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Contact us</a></li>
         </ul>
       </div>
     </div>
-    <div class="col-sm-6">
-      <div class="foot-email ms-auto position-absolute">
-        <p class="">Contrary to popular belief, Lorem Ipsum is
-          not simply random text. It has roots.</p>
-        <div class="f-flex">
-             <input type="email" class="form-control" placeholder="email adress"      aria-label="meyl adressi yazmaq üçün qutu"> 
-             <button type="submit" class="btn-light btn"></button> 
-        </div>     
-      </div>
+    <div class="col-sm-6 position-relative">
+
+      <div class="foot-email position-absolute">
+
+          <form action="#" method="post">
+            <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
+              not simply random text. It has roots.</label>
+            <div class="col">
+              <div class="col d-inline-flex">
+                   <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
+              </div>
+              <div class="col d-inline-flex">
+                   <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
+              </div> 
+          </div> <!--form -> col end -->
+          </form>  
+       
+      </div> <!-- foot-email end -->
     </div>
    </div> <!-- col end -->
   </div> <!-- row end -->

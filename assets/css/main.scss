@@ -243,10 +243,52 @@
 }
 
 /*============= Footer start ====================*/
+
 footer {
+  padding-top: 71px;
   color: $color-white1 !important;
   background-color: $color-black;
 }
+.foot__logo {
+  line-height: $line-36;
+  margin-bottom: 10px;
+  color:  $color-white1;
+  font: {
+    weight: $font-700;
+    size: $font-24;
+  }
+} 
+.foot__text {
+  width: 236px;
+  line-height: $line-24;
+  opacity: 0.88;
+  font: {
+    size: $font-16;
+    weight: $font-400;
+  }
+}  
+.foot-nav {
+  h3 {
+  line-height: $line-24;
+  margin-bottom: 25px;
+  font: {
+    size: $font-18;
+    weight: $font-500;
+  }
+ }
+ li {
+  margin-bottom: 14px;
+  a {
+    line-height: $line-16;
+    color: $color-white1;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+   }
+ }
+}
+
 .foot__logo {
    line-height: $line-36;
    color: $color-white1;
@@ -256,13 +298,33 @@ footer {
    }
 }
 .foot-email {
-  p {
+  right: 0;
+  .right-arrow-icon:before {
+       content: '\e863'; 
+       font-family: 'right-arrow';
+  }
+  .foot-email {
+    margin-right: 10px;
+    border-radius: 0;
+    background-color: $color-white1;
+    line-height: $line-24;
+    color: $color-black;
+    font: {
+        weight:$font-400;
+        size: $font-15;
+    }
+  }
+  .foot-label {
     width: 292px;
+    margin-bottom: 27px;
     line-height: $line-20;
     font: {
       size: $font-14;
       weight: $font-400;
     }
   }
-  
+  .foot-submit {
+    border-radius: 4px;
+    background-color: $color-white1;
+  }
 }
