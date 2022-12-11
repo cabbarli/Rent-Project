@@ -635,61 +635,6 @@
 }
 
 /* '' */
-@font-face {
-  font-family: 'heart-icon';
-  src: url("../font/heart-icon.eot?29180532");
-  src: url("../font/heart-icon.eot?29180532#iefix") format("embedded-opentype"), url("../font/heart-icon.woff2?29180532") format("woff2"), url("../font/heart-icon.woff?29180532") format("woff"), url("../font/heart-icon.ttf?29180532") format("truetype"), url("../font/heart-icon.svg?29180532#heart-icon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'heart-icon';
-      src: url('../font/heart-icon.svg?29180532#heart-icon') format('svg');
-    }
-  }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "heart-icon";
-  font-style: normal;
-  font-weight: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-heart-empty:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-heart-1:before {
-  content: '\e803';
-}
-
-/* '' */
 * {
   box-sizing: border-box !important;
   margin: 0;
@@ -722,7 +667,7 @@ body {
 
 .category .category-box {
   width: 335px;
-  margin-right: 70px;
+  margin-right: 95px;
 }
 
 .category .category-box .category-box__text {
@@ -812,6 +757,29 @@ body {
 }
 
 /*============ Önə çıxan təkliflər hissəsi and content start ===============*/
+figure {
+  background: #FFFFFF;
+  box-shadow: 0px 68px 84px -48px rgba(226, 238, 249, 0.6);
+  border-radius: 12px;
+  padding-bottom: 25px;
+}
+
+.margin-size .col:nth-last-child(1) {
+  margin-left: 20px;
+}
+
+.margin-size .col:nth-child(2) {
+  margin-right: 20px;
+}
+
+.margin-size .col:nth-child(1) {
+  margin-right: 20px;
+}
+
+.suggestion__title-box {
+  padding: 0;
+}
+
 .suggestion__title {
   line-height: 35px;
   color: #282C4B;
@@ -931,8 +899,14 @@ body {
   color: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
   border-radius: 6px;
+  transition: 250ms all;
   font-size: 17px;
   font-weight: 400;
+}
+
+.advertise .advertise__link a:hover {
+  background-color: #0046b0;
+  color: #2cfc0c;
 }
 
 /*============= Footer start ====================*/
@@ -947,8 +921,13 @@ footer {
   line-height: 36px;
   margin-bottom: 10px;
   color: #FDFDFD;
+  transition: 200ms all;
   font-weight: 700;
   font-size: 24px;
+}
+
+.foot-logo:hover {
+  color: #0cf967;
 }
 
 .foot-text {
@@ -973,8 +952,13 @@ footer {
 .foot-nav li a {
   line-height: 16px;
   color: #FDFDFD;
+  transition: 200ms all;
   font-weight: 400;
   font-size: 14px;
+}
+
+.foot-nav li a:hover {
+  color: #cfcfcf;
 }
 
 .foot-email {
@@ -1009,6 +993,11 @@ footer {
   background-color: #FDFDFD;
 }
 
+.foot-email .foot-submit:hover {
+  color: green;
+  background-color: rgba(236, 236, 234, 0.856);
+}
+
 /* footer bottom box */
 .foot-bottom-box {
   padding: 26px 0 43px 0;
@@ -1031,16 +1020,31 @@ footer {
   content: '\e868';
   font-family: "sosial-icon";
   color: #FDFDFD;
+  transition: 220ms all;
+}
+
+.foot-bottom-box .foot-facebook:hover:before {
+  color: #cfcfcf;
 }
 
 .foot-bottom-box .foot-instagram:before {
   content: '\e867';
   font-family: "sosial-icon";
   color: #FDFDFD;
+  transition: 220ms all;
+}
+
+.foot-bottom-box .foot-instagram:hover:before {
+  color: #cfcfcf;
 }
 
 .foot-bottom-box .foot-twetter:before {
   content: '\e866';
   font-family: "sosial-icon";
   color: #FDFDFD;
+  transition: 220ms all;
+}
+
+.foot-bottom-box .foot-twetter:hover:before {
+  color: #cfcfcf;
 }

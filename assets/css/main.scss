@@ -24,7 +24,7 @@
   margin-bottom: 60px;
  .category-box { 
   width: 335px;
-  margin-right: 70px;
+  margin-right: 95px;
   .category-box__text {
     color:$color-blue;
     line-height: $line-24;
@@ -116,7 +116,25 @@
   } 
 
 /*============ Önə çıxan təkliflər hissəsi and content start ===============*/
+    figure {
+         background: #FFFFFF;
+         box-shadow: 0px 68px 84px -48px rgba(226, 238, 249, 0.6);
+         border-radius: 12px;
+         padding-bottom: 25px;
+     }
+     .margin-size .col:nth-last-child(1){
+      margin-left: 20px;
+    }
+    .margin-size .col:nth-child(2){
+      margin-right: 20px;
+    }
+    .margin-size .col:nth-child(1){
+      margin-right: 20px;
+    }
     .suggestion {
+      &__title-box {
+        padding: 0;
+      }
       &__title {
       line-height: $line-35;
       color:$color-black1;
@@ -234,11 +252,17 @@
        color: $color-white;
        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px    0px 1px rgba(0, 0, 0, 0.04);
        border-radius: 6px;
+       transition: 250ms all;
        font: {
          size: $font-17;
          weight: $font-400;
        }
+       &:hover {
+        background-color: #0046b0;
+        color: #2cfc0c;
+       }
     }  
+
   }
 }
 
@@ -254,9 +278,13 @@ footer {
   line-height: $line-36;
   margin-bottom: 10px;
   color:  $color-white1;
+  transition: 200ms all;
   font: {
     weight: $font-700;
     size: $font-24;
+  }
+  &:hover {
+    color: #0cf967;
   }
 } 
 .foot-text {
@@ -282,9 +310,13 @@ footer {
   a {
     line-height: $line-16;
     color: $color-white1;
+    transition: 200ms all;
     font: {
       weight: $font-400;
       size: $font-14;
+    }
+    &:hover {
+      color: #cfcfcf;
     }
    }
  }
@@ -318,6 +350,10 @@ footer {
   .foot-submit {
     border-radius: 4px;
     background-color: $color-white1;
+    &:hover {
+      color: green;
+      background-color: rgba(236, 236, 234, 0.856);
+    }
   }
 }
 /* footer bottom box */
@@ -342,16 +378,28 @@ footer {
   content: '\e868'; 
   font-family: "sosial-icon";
   color: $color-white1;
+  transition: 220ms all;
+}
+.foot-facebook:hover:before {
+  color: #cfcfcf;
 }
 .foot-instagram:before {
   content: '\e867';
   font-family: "sosial-icon";
   color: $color-white1;
+  transition: 220ms all;
+}
+.foot-instagram:hover:before {
+  color: #cfcfcf;
 }
 .foot-twetter:before {
   content: '\e866'; 
   font-family: "sosial-icon";
   color: $color-white1;
+  transition: 220ms all;
  }
+ .foot-twetter:hover:before {
+  color: #cfcfcf;
+}
 }
 
