@@ -66,6 +66,14 @@
   color: yellow !important;
 }
 
+.navbar .slide-dropdown:hover .slide-dropdown::after {
+  color: #17cd01;
+}
+
+.navbar .slide-dropdown:hover.slide-dropdown::after {
+  color: #ffffff;
+}
+
 .navbar .user {
   transition: 200ms all !important;
 }

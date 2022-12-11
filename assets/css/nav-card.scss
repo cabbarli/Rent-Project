@@ -46,6 +46,12 @@
        
         &:hover {
             color: yellow !important;
+            .slide-dropdown::after {
+                color: #17cd01;
+            }
+       }
+         &:hover.slide-dropdown::after{             
+                color: #ffffff;         
        }
        }
        .user {
