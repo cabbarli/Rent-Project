@@ -136,6 +136,13 @@
       &__title-box {
         padding: 0;
       }
+      &__img {
+        height: 100%;
+        border-radius: 8px;
+      }
+      &__img-height {
+        height: 240px;
+      }
       &__title {
       line-height: $line-35;
       color:$color-black1;
@@ -431,3 +438,4 @@ footer {
   color: red;
   }
 }
+

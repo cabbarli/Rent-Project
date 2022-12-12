@@ -207,3 +207,23 @@
 .slide-dropdown:hover::after {
   color: #cbcbcb !important;
 }
+
+.elan-box {
+  border: 1px solid #e2e2fe !important;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+}
+
+.logo-size {
+  border-radius: 4px !important;
+}
+
+.elan-size {
+  padding: 0 21px;
+  width: 100%;
+  display: block;
+  color: #3E86F5;
+  line-height: 39px;
+  font-weight: 500;
+  font-size: 14px;
+}

@@ -217,6 +217,26 @@
   color: #cbcbcb !important;
 }
 
+.elan-box {
+  border: 1px solid #e2e2fe !important;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+}
+
+.logo-size {
+  border-radius: 4px !important;
+}
+
+.elan-size {
+  padding: 0 21px;
+  width: 100%;
+  display: block;
+  color: #3E86F5;
+  line-height: 39px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 @font-face {
   font-family: 'card-top-icon';
   src: url("../font/card-top-icon.eot?35658113");
@@ -488,61 +508,6 @@
 }
 
 /* '' */
-@font-face {
-  font-family: 'like-icon';
-  src: url("../font/like-icon.eot?65534431");
-  src: url("../font/like-icon.eot?65534431#iefix") format("embedded-opentype"), url("../font/like-icon.woff2?65534431") format("woff2"), url("../font/like-icon.woff?65534431") format("woff"), url("../font/like-icon.ttf?65534431") format("truetype"), url("../font/like-icon.svg?65534431#like-icon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'like-icon';
-      src: url('../font/like-icon.svg?65534431#like-icon') format('svg');
-    }
-  }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "like-icon";
-  font-style: normal;
-  font-weight: normal;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-heart-empty:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-vector:before {
-  content: '\e862';
-}
-
-/* '' */
 /* fotter right-arrow */
 @font-face {
   font-family: 'right-arrow';
@@ -665,67 +630,6 @@
 
 /* '' */
 @font-face {
-  font-family: 'heart-icon';
-  src: url("../font/heart-icon.eot?83263708");
-  src: url("../font/heart-icon.eot?83263708#iefix") format("embedded-opentype"), url("../font/heart-icon.woff2?83263708") format("woff2"), url("../font/heart-icon.woff?83263708") format("woff"), url("../font/heart-icon.ttf?83263708") format("truetype"), url("../font/heart-icon.svg?83263708#heart-icon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'heart-icon';
-      src: url('../font/heart-icon.svg?83263708#heart-icon') format('svg');
-    }
-  }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "heart-icon";
-  font-style: normal;
-  font-weight: normal;
-  speak: never;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-.icon-heart-empty:before {
-  content: '\e800';
-}
-
-/* '' */
-.icon-heart-1:before {
-  content: '\e803';
-}
-
-/* '' */
-.icon-vector:before {
-  content: '\e86a';
-}
-
-/* '' */
-@font-face {
   font-family: 'heart-like';
   src: url("../font/heart-like.eot?19484137");
   src: url("../font/heart-like.eot?19484137#iefix") format("embedded-opentype"), url("../font/heart-like.woff2?19484137") format("woff2"), url("../font/heart-like.woff?19484137") format("woff"), url("../font/heart-like.ttf?19484137") format("truetype"), url("../font/heart-like.svg?19484137#heart-like") format("svg");
@@ -747,7 +651,6 @@
   font-family: "heart-like";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -802,6 +705,7 @@
 
 body {
   font-family: 'Poppins', sans-serif !important;
+  background-color: #F5F5F5;
 }
 
 /*===== carousel background =====*/
@@ -935,6 +839,15 @@ figure {
 
 .suggestion__title-box {
   padding: 0;
+}
+
+.suggestion__img {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.suggestion__img-height {
+  height: 240px;
 }
 
 .suggestion__title {
