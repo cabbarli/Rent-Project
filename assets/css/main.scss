@@ -415,3 +415,19 @@ footer {
   margin-bottom: 40px;
   margin-top: 70px;
  }
+ .suggestion__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+&:before {
+  content: '\e86a';
+  font-family: "heart-like";
+  color: red;
+  }
+}
