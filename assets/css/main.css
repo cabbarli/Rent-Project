@@ -833,14 +833,6 @@ figure {
   content: '\e800';
   font-family: "heart-like";
   color: red;
-  background: #fefeff;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  display: justify-content-center;
-  align-items: center;
-  border-radius: 10px;
 }
 
 .suggestion__col-middle {
