@@ -36,7 +36,7 @@
         margin-right: $margin-33;
         line-height: $line-h40;
         transition: 200ms all;
-        color: white !important;
+        color: white;
         &::after {
             margin-left: $margin-10;
             content: '\e841'; 
@@ -45,16 +45,19 @@
         }
        
         &:hover {
-            color: yellow !important;
-       }
-         &::after{             
-                color: #ffffff !important;         
-       }
-       }
-       .user {
-        transition: 200ms all !important;
-       }
-       .dropdown-box:hover .user {
+            color: yellow;
+         }
+        &::after{             
+                color: #ffffff;         
+         }
+        &:hover::after {
+        color: rgb(203, 203, 203) !important;
+         }
+        }
+        .user {
+         transition: 200ms all !important;
+        }
+        .dropdown-box:hover .user {
             background-color: #17cd01;
             border-radius: 50px;
         }
@@ -163,3 +166,24 @@
         background-color:#d9d8d8;
       }
 }
+
+/*================== Favori Page Nav ======================*/
+.dropdown-color {
+    color: $color-black !important;
+  }
+.slide-favori-color {
+    color: $color-black !important;
+  }
+.slide-favori-color:hover {
+    color: #ffcc00 !important;
+}  
+.dropdown-color::after {
+    color: $color-black !important;
+}
+.dropdown-color:hover {
+   color: #ffcc00 !important;
+}
+.slide-dropdown:hover::after {
+    color: rgb(203, 203, 203) !important;
+}
+  
