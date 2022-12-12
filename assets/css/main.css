@@ -840,11 +840,19 @@ figure {
 }
 
 .suggestion__img-adress {
+  max-width: 270px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin-bottom: 14px;
   display: inline-block;
   color: #A3A6AB;
   font-size: 14px;
   font-weight: 500;
+}
+
+.suggestion .img-adress-size {
+  max-width: 360px;
 }
 
 .suggestion__properties {

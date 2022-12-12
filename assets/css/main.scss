@@ -195,6 +195,10 @@
         }
       }
       &__img-adress {
+        max-width: 270px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         margin-bottom: 14px;
         display: inline-block;
         color: $color-gray4;
@@ -202,6 +206,9 @@
           size: $font-14;
           weight: $font-500;
         }
+      }
+      .img-adress-size {
+        max-width: 360px;
       }
       &__properties {
         margin-right: 24px;
