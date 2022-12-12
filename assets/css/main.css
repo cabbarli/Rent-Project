@@ -855,6 +855,22 @@ figure {
   max-width: 360px;
 }
 
+.suggestion__img-box {
+  height: 245px;
+  width: 100%;
+}
+
+.suggestion__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.suggestion__img-height {
+  height: 240px;
+  width: 100%;
+}
+
 .suggestion__properties {
   margin-right: 24px;
   display: flex;
