@@ -271,9 +271,9 @@
 
 /* '' */
 @font-face {
-  font-family: 'like-icon';
-  src: url("../font/like-icon.eot?65534431");
-  src: url("../font/like-icon.eot?65534431#iefix") format("embedded-opentype"), url("../font/like-icon.woff2?65534431") format("woff2"), url("../font/like-icon.woff?65534431") format("woff"), url("../font/like-icon.ttf?65534431") format("truetype"), url("../font/like-icon.svg?65534431#like-icon") format("svg");
+  font-family: 'heart-like';
+  src: url("../font/heart-like.eot?19484137");
+  src: url("../font/heart-like.eot?19484137#iefix") format("embedded-opentype"), url("../font/heart-like.woff2?19484137") format("woff2"), url("../font/heart-like.woff?19484137") format("woff"), url("../font/heart-like.ttf?19484137") format("truetype"), url("../font/heart-like.svg?19484137#heart-like") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -283,13 +283,13 @@
 /*
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
-      font-family: 'like-icon';
-      src: url('../font/like-icon.svg?65534431#like-icon') format('svg');
+      font-family: 'heart-like';
+      src: url('../font/heart-like.svg?19484137#heart-like') format('svg');
     }
   }
   */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "like-icon";
+  font-family: "heart-like";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
@@ -320,11 +320,21 @@
 }
 
 /* '' */
-.icon-vector:before {
-  content: '\e862';
+.icon-heart-1:before {
+  content: '\e803';
 }
 
-/* '' */
+/* '' */
+.icon-vector:before {
+  content: '\e86a';
+}
+
+/* '' */
+.icon-bi_heart:before {
+  content: '\e86b';
+}
+
+/* '' */
 /* fotter right-arrow */
 @font-face {
   font-family: 'right-arrow';
