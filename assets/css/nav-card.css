@@ -43,7 +43,7 @@
   margin-right: 37px;
   line-height: 40px;
   transition: 200ms all;
-  color: white !important;
+  color: white;
 }
 
 .navbar .slide-dropdown::after {
@@ -54,11 +54,15 @@
 }
 
 .navbar .slide-dropdown:hover {
-  color: yellow !important;
+  color: yellow;
 }
 
 .navbar .slide-dropdown::after {
-  color: #ffffff !important;
+  color: #ffffff;
+}
+
+.navbar .slide-dropdown:hover::after {
+  color: #cbcbcb !important;
 }
 
 .navbar .user {
@@ -177,4 +181,49 @@
 
 .slide-card2 option {
   background-color: #d9d8d8;
+}
+
+/*================== Favori Page Nav ======================*/
+.dropdown-color {
+  color: #272727 !important;
+}
+
+.slide-favori-color {
+  color: #272727 !important;
+}
+
+.slide-favori-color:hover {
+  color: #ffcc00 !important;
+}
+
+.dropdown-color::after {
+  color: #272727 !important;
+}
+
+.dropdown-color:hover {
+  color: #ffcc00 !important;
+}
+
+.slide-dropdown:hover::after {
+  color: #cbcbcb !important;
+}
+
+.elan-box {
+  border: 1px solid #e2e2fe !important;
+  border-radius: 4px;
+  background-color: #F5F5F5;
+}
+
+.logo-size {
+  border-radius: 4px !important;
+}
+
+.elan-size {
+  padding: 0 21px;
+  width: 100%;
+  display: block;
+  color: #3E86F5;
+  line-height: 39px;
+  font-weight: 500;
+  font-size: 14px;
 }
