@@ -1083,3 +1083,8 @@ footer {
 .foot-bottom-box .foot-twetter:hover:before {
   color: #cfcfcf;
 }
+
+.color {
+  background-color: #0cf967;
+  color: black;
+}
