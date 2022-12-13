@@ -222,9 +222,11 @@
 /* '' */
 /* fotter right-arrow */
 @font-face {
+
   font-family: 'right-arrow';
   src: url("../font/right-arrow.eot?32225618");
   src: url("../font/right-arrow.eot?32225618#iefix") format("embedded-opentype"), url("../font/right-arrow.woff2?32225618") format("woff2"), url("../font/right-arrow.woff?32225618") format("woff"), url("../font/right-arrow.ttf?32225618") format("truetype"), url("../font/right-arrow.svg?32225618#right-arrow") format("svg");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -234,13 +236,16 @@
 /*
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
+
       font-family: 'right-arrow';
       src: url('../font/right-arrow.svg?32225618#right-arrow') format('svg');
-    }
+
   }
   */
 [class^="icon-"]:before, [class*=" icon-"]:before {
+
   font-family: "right-arrow";
+
   font-style: normal;
   font-weight: normal;
   display: inline-block;
@@ -265,6 +270,7 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
 
 .icon-arrow-right-solid:before {
   content: '\e863';
@@ -330,7 +336,13 @@
   content: '\e868';
 }
 
-/* '' */
+
+
+
+
+
+
+
 @font-face {
   font-family: 'heart-like';
   src: url("../font/heart-like.eot?19484137");
@@ -376,6 +388,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+
 .icon-heart-empty:before {
   content: '\e800';
 }
@@ -388,11 +401,7 @@
 /* '' */
 .icon-vector:before {
   content: '\e86a';
-}
 
-/* '' */
-.icon-bi_heart:before {
-  content: '\e86b';
-}
 
-/* '' */
+
+

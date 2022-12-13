@@ -239,6 +239,7 @@
   .icon-7148755_user_avatar_profile_person_people_icon:before { content: '\e844'; } /* '' */
   .icon-4473009_personal-icon_user_user-icon_user-outline-icon_users-icon_icon:before { content: '\e84d'; } /* '' */
  
+
  
 
   
@@ -252,6 +253,7 @@
          url('../font/right-arrow.woff?32225618') format('woff'),
          url('../font/right-arrow.ttf?32225618') format('truetype'),
          url('../font/right-arrow.svg?32225618#right-arrow') format('svg');
+
     font-weight: normal;
     font-style: normal;
   }
@@ -260,13 +262,17 @@
   /*
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
+
       font-family: 'right-arrow';
       src: url('../font/right-arrow.svg?32225618#right-arrow') format('svg');
+
     }
   }
   */
   [class^="icon-"]:before, [class*=" icon-"]:before {
+
     font-family: "right-arrow";
+
     font-style: normal;
     font-weight: normal;
   
@@ -300,6 +306,7 @@
   }
   .icon-arrow-right-solid:before { content: '\e863'; } /* '' */
   
+
 
   @font-face {
     font-family: 'sosial-icon';
@@ -360,7 +367,6 @@
   .icon-004-instagram:before { content: '\e867'; } /* '' */
   .icon-path:before { content: '\e868'; } /* '' */
   
-
 
 
   @font-face {

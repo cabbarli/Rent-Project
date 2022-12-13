@@ -119,13 +119,13 @@
     figure {
          background: #FFFFFF;
          box-shadow: 0px 68px 84px -48px rgba(226, 238, 249, 0.6);
-         border-radius: 12px;
+         border-radius: 10px;
          padding-bottom: 25px;
          margin-bottom: 20px;
      }
     figcaption {
       padding-left: 10px;
-    } 
+
     .margin-size .col:nth-last-child(1){
       margin-left: 20px;
     }
@@ -186,7 +186,9 @@
         border-radius: 10px;
         background-color: #FFFFFF;
       &:before {
-        content: '\e800'; 
+
+        content: '\e800';
+
         font-family: "heart-like";
         color: red;
         }
@@ -220,6 +222,16 @@
       }
       .img-adress-size {
         max-width: 360px;
+      }
+      &__img-box {
+        height: 245px;
+      }
+      &__img {
+        height: 100%;
+        border-radius: 8px;
+      }
+      &__img-height {
+        height: 240px;
       }
       &__properties {
         margin-right: 24px;

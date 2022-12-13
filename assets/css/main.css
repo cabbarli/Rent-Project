@@ -510,9 +510,11 @@
 /* '' */
 /* fotter right-arrow */
 @font-face {
+
   font-family: 'right-arrow';
   src: url("../font/right-arrow.eot?32225618");
   src: url("../font/right-arrow.eot?32225618#iefix") format("embedded-opentype"), url("../font/right-arrow.woff2?32225618") format("woff2"), url("../font/right-arrow.woff?32225618") format("woff"), url("../font/right-arrow.ttf?32225618") format("truetype"), url("../font/right-arrow.svg?32225618#right-arrow") format("svg");
+
   font-weight: normal;
   font-style: normal;
 }
@@ -522,13 +524,17 @@
 /*
   @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
+
       font-family: 'right-arrow';
       src: url('../font/right-arrow.svg?32225618#right-arrow') format('svg');
+
     }
   }
   */
 [class^="icon-"]:before, [class*=" icon-"]:before {
+
   font-family: "right-arrow";
+
   font-style: normal;
   font-weight: normal;
   display: inline-block;
@@ -554,21 +560,13 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-heart-empty:before {
-  content: '\e800';
-}
 
-/* '' */
-.icon-vector:before {
-  content: '\e862';
-}
-
-/* '' */
 .icon-arrow-right-solid:before {
   content: '\e863';
 }
 
-/* '' */
+
+
 @font-face {
   font-family: 'sosial-icon';
   src: url("../font/sosial-icon.eot?65914616");
@@ -819,9 +817,13 @@ body {
 figure {
   background: #FFFFFF;
   box-shadow: 0px 68px 84px -48px rgba(226, 238, 249, 0.6);
-  border-radius: 12px;
+  border-radius: 10px;
   padding-bottom: 25px;
   margin-bottom: 20px;
+}
+
+figcaption {
+  padding-left: 10px;
 }
 
 figcaption {
@@ -926,6 +928,19 @@ figcaption {
 
 .suggestion .img-adress-size {
   max-width: 360px;
+}
+
+.suggestion__img-box {
+  height: 245px;
+}
+
+.suggestion__img {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.suggestion__img-height {
+  height: 240px;
 }
 
 .suggestion__properties {
