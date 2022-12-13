@@ -123,6 +123,9 @@
          padding-bottom: 25px;
          margin-bottom: 20px;
      }
+    figcaption {
+      padding-left: 10px;
+    } 
      .margin-size .col:nth-last-child(1){
       margin-left: 20px;
     }
@@ -183,8 +186,8 @@
         border-radius: 10px;
         background-color: #FFFFFF;
       &:before {
-        content: '\e862'; 
-        font-family: "like-icon";
+        content: '\e800'; 
+        font-family: "heart-like";
         color: red;
         }
       }
