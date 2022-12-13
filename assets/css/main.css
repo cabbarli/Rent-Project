@@ -987,6 +987,34 @@ figure {
   color: #2cfc0c;
 }
 
+/*================ favori-pages =================*/
+.suggestion-title-size {
+  margin-bottom: 40px;
+  margin-top: 96px;
+}
+
+.suggestion__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.suggestion__like:before {
+  content: '\e86a';
+  font-family: "heart-like";
+  color: red;
+}
+
+.navbar-size {
+  width: 1197px;
+}
+
 /*============= Footer start ====================*/
 footer {
   margin-top: 95px;
@@ -1125,28 +1153,4 @@ footer {
 
 .foot-bottom-box .foot-twetter:hover:before {
   color: #cfcfcf;
-}
-
-/*================ favori-pages =================*/
-.suggestion-title-size {
-  margin-bottom: 40px;
-  margin-top: 70px;
-}
-
-.suggestion__like {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #FFFFFF;
-}
-
-.suggestion__like:before {
-  content: '\e86a';
-  font-family: "heart-like";
-  color: red;
 }
