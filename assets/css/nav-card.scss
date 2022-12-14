@@ -211,3 +211,11 @@
     border: 1px solid $color-blue;
     background-color: $color-white;
 }
+.detail-navbar-row {
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.detail-navbar {
+z-index: 0;
+top: 0;
+}

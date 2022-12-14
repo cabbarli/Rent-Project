@@ -243,6 +243,16 @@
   background-color: #FFFFFF;
 }
 
+.detail-navbar-row {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.detail-navbar {
+  z-index: 0;
+  top: 0;
+}
+
 @font-face {
   font-family: 'card-top-icon';
   src: url("../font/card-top-icon.eot?35658113");
@@ -1120,3 +1130,84 @@ footer {
 }
 
 /*================  Detail-page ===================*/
+.carousel .slide-button {
+  background-color: #F0F0F0;
+  color: black;
+  display: flex;
+  height: 32px;
+  width: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.carousel .carousel-btn {
+  opacity: 1;
+  display: flex;
+}
+
+.carousel .carousel-btn:hover {
+  opacity: 0.8;
+}
+
+.carousel .carousel-item-detail {
+  width: 744px;
+  height: 416px;
+}
+
+.carousel .carousel-item-detail img {
+  width: 744px;
+  height: 416px;
+}
+
+.carousel .carousel-inner {
+  border-radius: 12px 0px 0px 12px;
+}
+
+/* detail-page caeousel end */
+.slide-box {
+  margin-right: 16px;
+}
+
+.picture-box {
+  width: 212px;
+  height: 200px;
+  padding: 0;
+}
+
+.picture-box img {
+  width: 212px;
+  height: 200px;
+}
+
+.picture-box a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.picture-row {
+  margin-left: 0;
+}
+
+.picture-row div:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.picture-row div:nth-child(2) img {
+  border-radius: 0px 12px 0px 0px;
+}
+
+.picture-row div:nth-child(4) img {
+  border-radius: 0px 0px 12px 0px;
+}
+
+.picture-row div:nth-child(1) {
+  width: 212px;
+  margin-right: 16px;
+}
+
+.picture-row div:nth-child(3) {
+  width: 212px;
+  margin-right: 16px;
+}
