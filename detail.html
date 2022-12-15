@@ -15,9 +15,9 @@
 </head>
 <body>  
    <!-- nav start-->    
-   <div class="container-fluid">
+ <div class="container-fluid">
     <div class="row detail-navbar-row">
-     <div class="col d-flex">
+      <div class="col d-flex">
         <nav class=" navbar navbar-expand-lg navbar-size detail-navbar">         
            <a href="index.html" class="navbar-brand Logo logo-size"><img  src="assets/img/Logo-black.png" alt="LOGO png"></a>
            <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#nContent"  aria-controls="#nContent"  aria-label="menu ac/bagla butonu" aria-expanded="false"> <span class="navbar-toggler-icon"></span></button>
@@ -45,12 +45,14 @@
            </div>  <!--collapse end-->
    
         </nav>  <!--navbar end-->
-     </div> 
-   </div> <!-- nav end--> 
+      </div> 
+    </div> <!-- nav end--> 
  </div>  <!-- container-fluid end--> 
 
-         <!-- slider start -->
+         <!-- content start -->
 <div class="container p-0"> 
+
+  <!--row start (slide, picture box)-->
   <div class="row">
       <div class="col d-flex">     
             <div class="col p-0">
@@ -108,8 +110,81 @@
                 </div>
             </div> <!-- pictures box end -->
       </div> <!--col end-->         
-  </div> <!--row end-->
-</div> <!--container-fluid end (slayd end)-->
+  </div> <!--row end (slide, picture box)-->
+  <div class="row">
+       <!-- detail box start -->
+       <div class="col-6 detail">
+           <div class="col">
+              <h1 class="detail__title">Mərdəkan qəsəbəsi, 23cü keçid. Məhəllə 10</h1>
+              <ul class="d-flex detail__about">
+                <li>8+ nəfərlik</li>
+                <li>6 otaq</li>
+                <li>8 yataq</li>
+                <li>2 hamam</li>
+              </ul>
+           </div>
+           <!-- Mövcudluq -->
+           <div class="col"><h3 class="detail__subtitle detail__availability">Mövcudluluq</h3></div>
+           <div class="col d-flex">
+            <span class="detail__text detail__month">15 Noyabrdan başlıyaraq</span>
+            <span class="detail__text">Minimum 3 günlük</span>
+           </div>
+           <!-- cins seçimi -->
+           <div class="col"><h3 class="detail__subtitle detail__gender">Cins seçimi</h3></div>
+           <div class="col detail__text">Kişilər və Qadınlar</div>
+           <!-- detallar -->
+           <div class="col"><h3 class="detail__subtitle detail__detail">Detallar</h3></div>
+           <!-- detal content -->
+           <div class="col d-flex detail__content">
+              <div class="col">
+                <ul class="p-0">
+                  <li><img src="./assets/img/804-sun-outline.svg" alt="Günəş iconu"> Natural light</li>
+                  <li><img src="./assets/img/64-wifi-outline.svg" alt="Wifi iconu"> Wifi</li>
+                  <li><img src="./assets/img/513-laundry-outline.svg" alt="Paltaryuyan iconu"> Paltaryuyan</li>
+                  <li><img src="./assets/img/514-pool-outline.svg" alt="Hovuz iconu"> Hovuz</li>
+                  <li><img src="./assets/img/1611-heating-radiator-outline.svg" alt="Qızdırıcı iconu"> Qızdırıcı</li>
+                  <li><img src="./assets/img/821-airconditioner-outline.svg" alt="kondisioner iconu"> Kondisoner</li>
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="p-0">
+                  <li><img src="./assets/img/cigarette 1.svg" alt="Siqaret iconu"> Siqaret icazə verilir</li>
+                  <li><img src="./assets/img/" alt=""> Cütlüklərə icazə verilir</li>
+                </ul>
+              </div>
+           </div>
+
+       </div> <!-- detail box end -->
+       <!-- brone box start -->
+       <div class="col-6">
+            <div class="col bron">
+              <div class="col d-flex align-items-baseline justify-content-between">
+                <div class="d-flex align-items-baseline">
+                    <img src="./assets/img/manat.png" alt="manat iconu">
+                    <span class="bron__money">270</span>
+                    <span class="bron__slash">/</span>
+                    <span class="bron__day">3 günlük</span>
+                </div> 
+                <ul class="d-inline-flex bron__view p-0">
+                   <li class="d-flex align-items-baseline"><img src="./assets/img/vector-star.png" alt="Ulduz iconu"> 5.0</li>
+                   <li class="d-flex align-items-center">7 Baxış</li>
+                </ul>
+              </div>
+              <form action="#" method="post">
+                     <div class="col">
+                       <input type="text" placeholder="Ad, Soyad" aria-label="Ad soyad yazma qutusu" class="form-control">
+                     </div>
+                     <div class="col">
+                       <input type="text"  placeholder="Əlaqə nömrəsi" aria-label="Əlaqə nömrəsi qutusu" class="form-control">
+                     </div>
+                     <div class="col d-grid">
+                       <button type="submit" class="btn d-block submit-button" >Bron et</button>
+                     </div>
+              </form>
+            </div>
+       </div> <!-- brone box end -->
+  </div> <!--row end (detail)-->
+</div> <!--container content end -->
 
 
 

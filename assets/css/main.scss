@@ -530,3 +530,197 @@ footer {
     width: 212px;
     margin-right: 16px;
   }
+.detail {
+
+.detail__title {
+  color: #000000;
+  margin-top: 60px;
+  margin-bottom: 8px;
+  line-height: $line-32;
+  font: {
+    weight: $font-500;
+    size: $line-24;
+  }
+}  
+.detail__about {
+  padding: 0;
+  color: $color-blue;
+  line-height: $line-20;
+  font: {
+    weight: $font-500;
+    size: $font-14;
+  }
+  // li {
+  //   list-style: disc !important;
+  //   list-style-type:  black;
+  //   margin-right: 28px;
+  // }
+  li:nth-child(1){
+    list-style: none !important;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+  }
+  li::before {
+    content: "\2022";
+    color: black;
+    font-size: 7px;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -11px;
+    margin-right: 3px;
+  }
+  li:nth-child(1)::before {
+    content: "";
+  }
+}
+.detail__subtitle {
+  color: #161616;
+  line-height: 33px;
+  font: {
+    weight: $font-500;
+    size: 22px;
+  }
+ }
+.detail__info {
+  color: $color-black;
+  line-height: $line-24;
+  font: {
+    weight: $font-400;
+    size: $font-16;
+  }
+} 
+.detail__availability {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.detail__month {
+  margin-right: 160px;
+}
+.detail__gender {
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+.detail__detail {
+  margin-top: 50px;
+}
+.detail__text {
+  color: $color-black;
+  line-height: $line-24;
+  font: {
+    weight: $font-16;
+    size: $font-400;
+  }
+}
+.detail__content {
+  li {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    color: $color-black;
+    line-height: $line-24;
+    font: {
+      weight: $font-16;
+      size: $font-400;
+    }
+  }
+}
+}
+/*   Bron box start  */
+.bron {
+  border: 1px solid #E5E7EB;
+  background-color: $color-white1;
+  width: 370px;
+  height: 298px;
+  padding: 24px 22px 40px 22px;
+  box-shadow: 0px 20px 25px rgba(31, 41, 55, 0.1), 0px 10px 10px rgba(31, 41, 55, 0.04);
+  border-radius: 8px;
+  margin-top: 60px;
+  &__money {
+    margin-left: 8px;
+    color: $color-black3;
+    line-height: $line-21;
+    font: {
+      weight: $font-600;
+      size: $font-24;
+    }
+  }
+  &__day {
+    margin-left: 4px;
+    color: $color-black4;
+    line-height: $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+  }
+  &__slash {
+    margin-left: 4px;
+    color: $color-black4;
+    line-height: $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  }
+  &__view {
+    margin-bottom: 0;
+    li {
+      color: $color-black4;
+      line-height: $line-20;
+      font: {
+        weight: $font-500;
+        size: $font-14;
+      }
+    }
+    li:nth-child(2){
+      margin-left: 18px;
+    }
+    li img{
+      margin-right: 7px;
+    }
+    li:nth-child(2):before {
+      content: "\2022";
+      color: #6B7280;
+      font-size: 7px;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -11px;
+      margin-right: 3px;
+    }
+  }
+  form  {
+  input {
+    margin-top: 16px;
+    letter-spacing: 0.2px;
+    border-radius: 6px;
+    border: 1px solid #E6E6E6;
+    padding: 11px 21px;
+    color: $color-gray6;
+    line-height: $line-28;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  }
+  div:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
+  .submit-button {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: $color-blue;
+    border-radius: 6px;
+    line-height: $line-28;
+    color: $color-white1;
+    letter-spacing: 0.2px;
+    font: {
+      weight: $font-600;
+      size: $font-14;
+    }
+  }
+}
