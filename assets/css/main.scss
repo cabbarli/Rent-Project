@@ -624,6 +624,9 @@ footer {
       weight: $font-400;
       size: $font-16;
     }
+    &:hover {
+      color: #aba1a1;
+    }
   }
 }
 &__description {
@@ -643,6 +646,16 @@ footer {
 }
 .detail__map {
   margin-bottom: 71px;
+  .gmnoprint {
+    top: 25px !important;
+    margin-right: 10px !important;
+  }
+  .gm-svpc {
+    margin-top: 115px;
+  }
+  .gm-style-mtc {
+    top: -25px !important;
+  }
 }
 /*   Bron box start  */
 .bron {
@@ -737,6 +750,10 @@ footer {
     font: {
       weight: $font-600;
       size: $font-14;
+    }
+    &:hover {
+      background-color: #1667e1;
+      color: #cfffa8;
     }
   }
 }

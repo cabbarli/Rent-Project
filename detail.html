@@ -7,11 +7,7 @@
     <title>Detail-page</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
-
-
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> 
 </head>
 <body>  
    <!-- nav start-->    
@@ -208,11 +204,11 @@
                <h3 class="detail__location">Location</h3>
               </div>
               <!-- location map -->
-              <div class="col detail__map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24318.972015987416!2d49.        77018166606037!3d40.36737349656405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.        1!3m3!1m2!1s0x40307dca0a08ddf5%3A0xddd20fe143a690b6!2zxLDDp2VyacWfZWhpcg!5e0!3m2!1str!2s!4v1671174356570!5m2!1        str!2s" width="743" height="400" style="border:0;" allowfullscreen="" loading="lazy"         referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="col">
+                <div class="detail__map" id="map" style="width: 743px; height:400px;">
+                </div>
               </div>
             </div>     <!--col-> Map section end -->
-        
       </div>
     </div> <!-- col end -->            
   </div> <!--row end (detail)-->
@@ -289,8 +285,18 @@
   
    </div> <!-- container end -->
   </footer>
-  
+  <script>
+    function initMap() {
+      let map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: { lat: 40.375,  lng: 49.845}});
+    }
+  </script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3d7qFq2s1g3lWOpoESctLpsYHv5DlqME&callback=initMap" type="text/javascript"></script>
+
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   </body>
   </html>
+
+
+
+  

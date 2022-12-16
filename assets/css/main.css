@@ -1310,6 +1310,10 @@ footer {
   font-size: 16px;
 }
 
+.detail__content li:hover {
+  color: #aba1a1;
+}
+
 .detail__description {
   margin-top: 54px;
   margin-bottom: 16px;
@@ -1326,6 +1330,19 @@ footer {
 
 .detail__map {
   margin-bottom: 71px;
+}
+
+.detail__map .gmnoprint {
+  top: 25px !important;
+  margin-right: 10px !important;
+}
+
+.detail__map .gm-svpc {
+  margin-top: 115px;
+}
+
+.detail__map .gm-style-mtc {
+  top: -25px !important;
 }
 
 /*   Bron box start  */
@@ -1420,4 +1437,9 @@ footer {
   letter-spacing: 0.2px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.bron .submit-button:hover {
+  background-color: #1667e1;
+  color: #cfffa8;
 }
