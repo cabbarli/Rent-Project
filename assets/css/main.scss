@@ -532,7 +532,7 @@ footer {
   }
 .detail {
 
-.detail__title {
+&__title {
   color: #000000;
   margin-top: 60px;
   margin-bottom: 8px;
@@ -542,7 +542,7 @@ footer {
     size: $line-24;
   }
 }  
-.detail__about {
+&__about {
   padding: 0;
   color: $color-blue;
   line-height: $line-20;
@@ -577,7 +577,7 @@ footer {
     content: "";
   }
 }
-.detail__subtitle {
+&__subtitle {
   color: #161616;
   line-height: 33px;
   font: {
@@ -585,7 +585,7 @@ footer {
     size: 22px;
   }
  }
-.detail__info {
+&__info {
   color: $color-black;
   line-height: $line-24;
   font: {
@@ -593,38 +593,51 @@ footer {
     size: $font-16;
   }
 } 
-.detail__availability {
+&__availability {
   margin-top: 40px;
   margin-bottom: 16px;
 }
-.detail__month {
+&__month {
   margin-right: 160px;
 }
-.detail__gender {
+&__gender {
   margin-top: 50px;
   margin-bottom: 16px;
 }
-.detail__detail {
+&__detail {
   margin-top: 50px;
 }
-.detail__text {
+
+&__text {
   color: $color-black;
   line-height: $line-24;
   font: {
-    weight: $font-16;
-    size: $font-400;
+    weight: $font-400;
+    size: $font-16;
   }
 }
-.detail__content {
+&__content {
   li {
     margin-top: 36px;
     margin-bottom: 36px;
     color: $color-black;
     line-height: $line-24;
     font: {
-      weight: $font-16;
-      size: $font-400;
+      weight: $font-400;
+      size: $font-16;
     }
+  }
+}
+&__description {
+  margin-top: 54px;
+  margin-bottom: 16px;
+}
+&__location {
+  color: $color-black;
+  line-height: $line-27;
+  font: {
+    weight: $font-500;
+    size: $font-18;
   }
 }
 }

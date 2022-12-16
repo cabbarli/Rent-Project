@@ -1212,7 +1212,7 @@ footer {
   margin-right: 16px;
 }
 
-.detail .detail__title {
+.detail__title {
   color: #000000;
   margin-top: 60px;
   margin-bottom: 8px;
@@ -1221,7 +1221,7 @@ footer {
   font-size: 24px;
 }
 
-.detail .detail__about {
+.detail__about {
   padding: 0;
   color: #3E86F5;
   line-height: 20px;
@@ -1229,17 +1229,17 @@ footer {
   font-size: 14px;
 }
 
-.detail .detail__about li:nth-child(1) {
+.detail__about li:nth-child(1) {
   list-style: none !important;
 }
 
-.detail .detail__about li {
+.detail__about li {
   display: flex;
   align-items: center;
   margin-right: 18px;
 }
 
-.detail .detail__about li::before {
+.detail__about li::before {
   content: "\2022";
   color: black;
   font-size: 7px;
@@ -1250,56 +1250,68 @@ footer {
   margin-right: 3px;
 }
 
-.detail .detail__about li:nth-child(1)::before {
+.detail__about li:nth-child(1)::before {
   content: "";
 }
 
-.detail .detail__subtitle {
+.detail__subtitle {
   color: #161616;
   line-height: 33px;
   font-weight: 500;
   font-size: 22px;
 }
 
-.detail .detail__info {
+.detail__info {
   color: #272727;
   line-height: 24px;
   font-weight: 400;
   font-size: 16px;
 }
 
-.detail .detail__availability {
+.detail__availability {
   margin-top: 40px;
   margin-bottom: 16px;
 }
 
-.detail .detail__month {
+.detail__month {
   margin-right: 160px;
 }
 
-.detail .detail__gender {
+.detail__gender {
   margin-top: 50px;
   margin-bottom: 16px;
 }
 
-.detail .detail__detail {
+.detail__detail {
   margin-top: 50px;
 }
 
-.detail .detail__text {
+.detail__text {
   color: #272727;
   line-height: 24px;
-  font-weight: 16px;
-  font-size: 400;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.detail .detail__content li {
+.detail__content li {
   margin-top: 36px;
   margin-bottom: 36px;
   color: #272727;
   line-height: 24px;
-  font-weight: 16px;
-  font-size: 400;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.detail__description {
+  margin-top: 54px;
+  margin-bottom: 16px;
+}
+
+.detail__location {
+  color: #272727;
+  line-height: 27px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /*   Bron box start  */
