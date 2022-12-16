@@ -492,7 +492,9 @@ footer {
 .slide-box {
   margin-right: 16px;
 }
-
+.slide-picture-box {
+  width: 1200px;
+}
 .picture-box {
   width: 212px;
   height: 200px;
@@ -530,8 +532,9 @@ footer {
     width: 212px;
     margin-right: 16px;
   }
+  
 .detail {
-
+  width: 1200px;
 &__title {
   color: #000000;
   margin-top: 60px;
@@ -550,11 +553,6 @@ footer {
     weight: $font-500;
     size: $font-14;
   }
-  // li {
-  //   list-style: disc !important;
-  //   list-style-type:  black;
-  //   margin-right: 28px;
-  // }
   li:nth-child(1){
     list-style: none !important;
   }
@@ -631,8 +629,11 @@ footer {
 &__description {
   margin-top: 54px;
   margin-bottom: 16px;
+ }
 }
-&__location {
+.detail__location {
+  margin-top: 50px;
+  margin-bottom: 24px;
   color: $color-black;
   line-height: $line-27;
   font: {
@@ -640,6 +641,8 @@ footer {
     size: $font-18;
   }
 }
+.detail__map {
+  margin-bottom: 71px;
 }
 /*   Bron box start  */
 .bron {

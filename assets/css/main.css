@@ -1169,6 +1169,10 @@ footer {
   margin-right: 16px;
 }
 
+.slide-picture-box {
+  width: 1200px;
+}
+
 .picture-box {
   width: 212px;
   height: 200px;
@@ -1210,6 +1214,10 @@ footer {
 .picture-row div:nth-child(3) {
   width: 212px;
   margin-right: 16px;
+}
+
+.detail {
+  width: 1200px;
 }
 
 .detail__title {
@@ -1308,10 +1316,16 @@ footer {
 }
 
 .detail__location {
+  margin-top: 50px;
+  margin-bottom: 24px;
   color: #272727;
   line-height: 27px;
   font-weight: 500;
   font-size: 18px;
+}
+
+.detail__map {
+  margin-bottom: 71px;
 }
 
 /*   Bron box start  */
