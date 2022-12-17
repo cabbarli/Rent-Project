@@ -187,7 +187,7 @@
     color: rgb(203, 203, 203) !important;
 }
 .elan-box {
-    border: 1px solid rgb(226, 226, 254) !important;
+    border: 1px solid rgb(226, 226, 254) ;
     border-radius: 4px;
     background-color: #F5F5F5;
 } 
@@ -204,4 +204,18 @@
         weight: $font-500;
         size: $font-14;
     }
+}
+
+/*================  Detail-page ===================*/
+.detail-nav-button {
+    border: 1px solid $color-blue;
+    background-color: $color-white;
+}
+.detail-navbar-row {
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.detail-navbar {
+z-index: 0;
+top: 0;
 }
