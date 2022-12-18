@@ -1462,6 +1462,7 @@ footer {
   margin-top: 3px;
   width: 592px;
   /* kirayə kateqoriya buttonları */
+  /* Hansı tarixdə köçmək olar buttonu */
   /* şəhər seçmə buttonu */
   /* qiymət yazma buttonu */
   /* ev haqqında məlumat */
@@ -1523,6 +1524,11 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.advertised__move-date {
+  margin-bottom: 30px;
+  padding: 13px 17px;
 }
 
 .advertised__city-select {

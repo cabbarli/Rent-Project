@@ -818,6 +818,11 @@ footer {
   left: 0;
   opacity: 0;
   }
+  /* Hansı tarixdə köçmək olar buttonu */
+  &__move-date {
+    margin-bottom: 30px;
+    padding: 13px 17px;
+  }
   /* şəhər seçmə buttonu */
   &__city-select {
     -webkit-appearance: none !important;
