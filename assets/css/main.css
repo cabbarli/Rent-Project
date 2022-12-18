@@ -665,6 +665,18 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
+/* Chrome, Safari, Edge, Opera -> input number arrow hide*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox -> input number arrow hide*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /*===== carousel background =====*/
 .carousel__background {
   position: absolute;
@@ -1443,4 +1455,225 @@ footer {
 .bron .submit-button:hover {
   background-color: #1667e1;
   color: #cfffa8;
+}
+
+/* ================== Elan ver page-1 ===============*/
+.advertised {
+  margin-top: 3px;
+  width: 592px;
+  /* kirayə kateqoriya buttonları */
+  /* şəhər seçmə buttonu */
+  /* qiymət yazma buttonu */
+  /* ev haqqında məlumat */
+  /* şəkil əlavə etmə buttonu */
+  /* Geri və iləri buttonları */
+}
+
+.advertised__check {
+  padding: 0 20px;
+}
+
+.advertised__title {
+  margin-bottom: 10px;
+  color: #282C4B;
+  line-height: 35px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.advertised__subtitle-weight {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.advertised__subtitle {
+  margin-bottom: 14px;
+  color: #161616;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised__category-button {
+  color: #000000;
+  line-height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 184px;
+  transition: 250ms all;
+  border: 1px solid #E2E8EE;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__category-button:hover {
+  border-color: #859ab0;
+}
+
+.advertised__category-box {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.advertised__rent {
+  height: 48px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.advertised__city-select {
+  -webkit-appearance: none !important;
+  border-radius: 4px;
+  padding: 19px 17px;
+  color: #161616;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised__city-select-toggle::after {
+  content: none;
+}
+
+.advertised__city-select:hover {
+  border: 1px solid  #859ab0;
+}
+
+.advertised__city {
+  margin-bottom: 8px;
+  color: #161616;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__space {
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+
+.advertised__price-box {
+  padding: 19px 17px;
+  color: #C0C0C0;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised__price-box:hover {
+  border: 1px solid #859ab0;
+}
+
+.advertised__value {
+  position: absolute;
+  margin-left: 48px;
+  color: #161616;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised select, .advertised input {
+  border: 1px solid #E2E8EE;
+}
+
+.advertised__about-home {
+  padding: 19px 17px;
+  width: 590px;
+  height: 97px;
+  max-height: 98px;
+  color: #C0C0C0;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised__about-home:hover {
+  border: 1px solid #859ab0;
+}
+
+.advertised__choose-button {
+  padding: 10px 24px;
+  color: #3E86F5;
+  line-height: 170%;
+  background: #DFE4EC;
+  radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.advertised__choose-text {
+  color: #3A3A3A;
+  line-height: 130%;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__home-picture {
+  opacity: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.advertised__home-picture:hover {
+  box-shadow: none;
+}
+
+.advertised__home-picture:valid {
+  opacity: 1;
+}
+
+.advertised__home-picture:valid .advertised__choose-text {
+  opacity: 0;
+}
+
+.advertised__picture-box {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 26px 17px;
+  border: 1px dashed #E2E8EE;
+  transition: 200ms all;
+}
+
+.advertised__picture-box:hover {
+  border: 1px solid #859ab0;
+}
+
+.advertised__other-picture {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+.advertised__prew-next {
+  border: 1px solid #E2E8EE !important;
+  width: 184px;
+  padding: 0;
+  border-radius: 6px;
+}
+
+.advertised__prew-next a {
+  display: inline-block;
+  width: 100%;
+  color: #3A3A3A;
+  line-height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.advertised__prew-next:hover {
+  border: 1px solid #859ab0;
+  background-color: #3E86F5;
+}
+
+.advertised__prew-next:hover a {
+  color: #FDFDFD;
+  font-weight: 600;
+}
+
+input.advertised__home-picture::file-selector-button {
+  display: none;
 }

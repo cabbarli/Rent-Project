@@ -9,3 +9,15 @@
 body {
     font-family: 'Poppins', sans-serif !important;
 }
+
+/* Chrome, Safari, Edge, Opera -> input number arrow hide*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox -> input number arrow hide*/
+input[type=number] {
+  -moz-appearance: textfield;
+}

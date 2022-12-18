@@ -758,3 +758,213 @@ footer {
     }
   }
 }
+
+/* ================== Elan ver page-1 ===============*/
+.advertised {
+  margin-top: 3px;
+  width: 592px;
+  &__check {
+    padding: 0 20px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    color: $color-black1;
+    line-height: $line-35;
+  font: {
+    weight: $font-600;
+    size: $font-32;
+  }
+  }
+  &__subtitle-weight {
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+   margin-bottom: 14px;
+   color: $color-black5;
+   line-height: $line-24;
+   font: {
+    weight: $font-400;
+    size: $font-16;
+   }
+  }
+  /* kirayə kateqoriya buttonları */
+  &__category-button {
+  color: $color-black4;  
+  line-height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 184px;
+  transition: 250ms all;
+  border: 1px solid $color-gray7;
+  &:hover {
+    border-color: #859ab0;
+  }
+  color: $color-black4;
+  font: {
+    weight: $font-400;
+    size: $font-14;
+  }
+  }
+  &__category-box {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  &__rent {
+  height: 48px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  }
+  /* şəhər seçmə buttonu */
+  &__city-select {
+    -webkit-appearance: none !important;
+    border-radius: 4px;
+    padding: 19px 17px;
+    color: $color-black5;
+    line-height: $line-24;
+    font: {
+    weight: $font-400;
+    size: $font-16;
+    }
+    &-toggle::after {
+      content: none;
+    }
+    &:hover {
+      border: 1px solid  #859ab0;
+    }
+  }
+  &__city {
+    margin-bottom: 8px;
+    color: $color-black5;
+    line-height: $line-21;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  }
+    /* qiymət yazma buttonu */
+  &__space {
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+  &__price-box {
+    padding: 19px 17px;
+    color: #C0C0C0;
+    line-height:  $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+    &:hover {
+      border: 1px solid $color-gray8;
+    }
+  }
+  &__value {
+    position: absolute;
+    margin-left: 48px;
+    color: $color-black5;
+    line-height:  $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+  }
+  select, input {
+    border: 1px solid $color-gray7;
+  }
+  /* ev haqqında məlumat */
+  &__about-home {
+    padding: 19px 17px;
+    width: 590px;
+    height: 97px;
+    max-height: 98px;
+    color: #C0C0C0;
+    line-height:  $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+    &:hover {
+      border: 1px solid  $color-gray8;
+    }
+  }
+  /* şəkil əlavə etmə buttonu */
+   &__choose-button {
+    padding: 10px 24px;
+    color: $color-blue;
+    line-height: 170%;
+    background: #DFE4EC;
+    radius: 4px;
+    font: {
+      weight: $font-500;
+      size: $font-14;
+    }
+   }
+   &__choose-text {
+    color: $color-black6;
+    line-height: 130%;
+    font: {
+      weight: $font-400;
+      size: $font-14;     
+    }
+   }
+   &__home-picture {
+     opacity: 0;
+     border: none !important;
+     box-shadow: none !important;
+     &:hover {
+      box-shadow: none;
+     }
+     &:valid {
+      opacity: 1;
+      .advertised__choose-text {
+        opacity: 0;
+      }
+     }
+   }
+   &__picture-box {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 26px 17px;
+    border: 1px dashed $color-gray7;
+    transition: 200ms all;
+    &:hover {
+      border: 1px solid  $color-gray8;
+    }
+   }
+   &__other-picture {
+    margin-top: 14px;
+    margin-bottom: 30px;
+   }
+   /* Geri və iləri buttonları */
+   &__prew-next {
+    border: 1px solid $color-gray7 !important;
+    width: 184px;
+    padding: 0;
+    border-radius: 6px;
+    a {
+      display: inline-block;
+      width: 100%;
+      color: $color-black6;
+      line-height: 48px;
+      font: {
+        weight: $font-500;
+        size: $font-14;
+      }
+    }
+    &:hover {
+      border: 1px solid  $color-gray8;
+      background-color: $color-blue;
+      a {
+      color: $color-white1;
+      font-weight: 600;
+      }
+    }
+   }
+}
+input.advertised__home-picture::file-selector-button {
+  display: none;
+}
