@@ -822,6 +822,11 @@ footer {
   &__move-date {
     margin-bottom: 30px;
     padding: 13px 17px;
+    border: 1px solid $color-gray7;
+    &:hover {
+      border: 1px solid  #859ab0;
+      border-radius: 6px;
+    }
   }
   /* şəhər seçmə buttonu */
   &__city-select {
