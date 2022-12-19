@@ -32,3 +32,7 @@ function changeBgcolor1 (){
    function changeFunction() {
     document.querySelector(".advertised__value").style.right = "20px";
    }
+   // detail map and elan-page3-map 
+   function initMap() {
+    let map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: { lat: 40.375,  lng: 49.845}});
+  }
