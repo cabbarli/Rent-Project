@@ -1133,6 +1133,7 @@ input.advertised__home-picture::file-selector-button {
    }
   }
   &__form-title {
+    margin-bottom: 20px;
     color: $color-black7;
     line-height: $line-36;
     letter-spacing: 0.2px;
@@ -1141,8 +1142,12 @@ input.advertised__home-picture::file-selector-button {
       size: $font-20;
     }
   }
+  &__form-box {
+    width: 400px;
+  } 
   &__form {
     label {
+      margin-top: 14px;
       color: $color-black7;
       line-height: $font-28;
       font: {
@@ -1150,6 +1155,25 @@ input.advertised__home-picture::file-selector-button {
         size: $font-16;
       }
     }
+    input {
+      height: 45px;
+      border: 1px solid $color-gray9;
+      border-radius: 6px;
+      background: #ffffff;
+      font: {
+        size: $font-14;
+        weight: $font-500;
+      }
+      &:hover {
+        border: 1px solid  $color-gray8;
+      }
+    }
+  }
+  &__submit-button {
+    margin-top: 28px;
+    height: 40px;
+    font-size: $font-14;
+    font-weight: $font-500;
   }
 }
 

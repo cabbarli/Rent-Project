@@ -1957,6 +1957,7 @@ input.advertised__home-picture::file-selector-button {
 }
 
 .sing-up__form-title {
+  margin-bottom: 20px;
   color: #393939;
   line-height: 36px;
   letter-spacing: 0.2px;
@@ -1964,11 +1965,36 @@ input.advertised__home-picture::file-selector-button {
   font-size: 20px;
 }
 
+.sing-up__form-box {
+  width: 400px;
+}
+
 .sing-up__form label {
+  margin-top: 14px;
   color: #393939;
   line-height: 28px;
   font-weight: 500;
   font-size: 16px;
+}
+
+.sing-up__form input {
+  height: 45px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sing-up__form input:hover {
+  border: 1px solid #859ab0;
+}
+
+.sing-up__submit-button {
+  margin-top: 28px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 body, html {

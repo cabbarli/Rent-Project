@@ -16,24 +16,28 @@
   <div class="row g-0 p-0 m-0">
     <!-- sing up left box (qeydiyyat qutusu)-->
     <div class="col d-flex sing-up">
-       <div class="col">
-        <h3 class="sing-up__form-title">Qeydiyyat</h3>
-        <form action="#" class="sing-up__form">
-          <div class="mb-3 mt-3">
-            <label for="mai" class="form-label">Email</label>
-            <input type="mai" class="form-control" id="mai" name="email">
-          </div>
-          <div class="mb-3">
-            <label for="paswd" class="form-label">Şifrə</label>
-            <input type="password" class="form-control" id="paswd" name="paswd">
-          </div>
-          <div class="mb-3">
-            <label for="pas-d" class="form-label">Şifrəni təsdiqlə</label>
-            <input type="password" class="form-control" id="pas-d" name="pas-d">
-          </div>
-         
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+       <div class="col d-flex justify-content-center align-items-center">
+        <div class="sing-up__form-box">
+          <h3 class="sing-up__form-title text-start">Qeydiyyat</h3>
+          <form action="#" class="sing-up__form">
+            <div>
+              <label for="mai" class="form-label">Email</label>
+              <input type="mai" class="form-control" id="mai" name="email">
+            </div>
+            <div>
+              <label for="paswd" class="form-label">Şifrə</label>
+              <input type="password" class="form-control" id="paswd" name="paswd">
+            </div>
+            <div>
+              <label for="pas-d" class="form-label">Şifrəni təsdiqlə</label>
+              <input type="password" class="form-control" id="pas-d" name="pas-d">
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary d-block sing-up__submit-button">Qeydiyyat</button>
+            </div>
+          </form>
+        </div>
+       
        </div>
         <!-- sing up left box (velcome-box) -->
        <div class="col">
@@ -47,19 +51,10 @@
            </div>
          </div>
        </div><!-- sing up left box end -->
-    </div>
-   
     </div>  <!-- col end -->
   </div>  <!-- row end -->
 </div> <!-- container end -->
   
-       
-       
-   
-     
-
-
-
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
