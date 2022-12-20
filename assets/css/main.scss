@@ -1086,16 +1086,9 @@ input.advertised__home-picture::file-selector-button {
 } 
 
 /*========== Qeydiyyatdan keç səhifəsi ==========*/
-// .sing-up-page {
-//   background-image: url(../img/villa1.png);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   width: 100%;
-//   height: 100%;
-// }
-.sing-up {
 
+.sing-up {
+  display: flex;
   &__picture-box {
   position: relative;
   }
@@ -1176,10 +1169,161 @@ input.advertised__home-picture::file-selector-button {
     font-weight: $font-500;
   }
 }
+/* ================ Login pages ================ */
 
-
-body, html {
+.log-in {
+  display: flex;
+  &__picture-box {
+  position: relative;
+  }
+  img {
+  width: 100%;
+  max-height: 100%;
+  }
+ &__background {
+  position: absolute;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  left: 0px;
+  top: 0px;
+  background: rgba(39, 39, 39, 0.4);
+  z-index: 2;
+ }
+ &__title {
+  position: absolute;
+  z-index: 5;
+   h1{
+    color: $color-white;
+    line-height: 60px;
+    font: {
+      weight: $font-600;
+      size: $font-40;
+    }
+   }
+   span {
+    color: #CFCFCF;
+    line-height: $line-30;
+    font: {
+      weight: $font-500;
+      size: $font-20;
+    }
+   }
+  }
+  &__form-title {
+    margin-bottom: 20px;
+    color: $color-black7;
+    line-height: $line-42;
+    letter-spacing: 0.2px;
+    font: {
+      weight: $font-500;
+      size: $font-20;
+    }
+  }
+  &__form-box {
+    width: 400px;
+  } 
+  &__form {
+    label {
+      margin-top: 14px;
+      color: $color-black7;
+      line-height: $font-28;
+      font: {
+        weight: $font-500;
+        size: $font-16;
+      }
+    }
+  }
+  &__input {
+    height: 45px;
+    border: 1px solid $color-gray9;
+    border-radius: 6px;
+    background: #ffffff;
+    font: {
+      size: $font-14;
+      weight: $font-500;
+    }
+    &:hover {
+      border: 1px solid  $color-gray8;
+    }
+  }
+  &__check-box {
+    input {
+      margin-right: 11px;
+      margin-top: 3px;
+    }
+    label {
+      color: #666666;
+      line-height: $line-21;
+      font: {
+        weight: $font-400;
+        size: $font-14;
+      }
+    }
+    span a {
+      color: $color-blue1;
+      transition: 200ms all;
+      line-height: $line-21;
+      font: {
+        weight: $font-400;
+        size: $font-14;
+      }
+      &:hover {
+        color: #8c98aa;
+      }
+    } 
+  }
+  &__submit-button {
+    margin-top: 28px;
+    margin-bottom: 14px;
+    height: 40px;
+    font-size: $font-14;
+    font-weight: $font-500;
+  }
+  &__create-account {
+    span{
+      line-height: $line-18;
+      color: $color-blue1;
+      font: {
+        size: $font-16;
+        weight: $font-400;
+      }
+    }
+    a {
+      text-decoration: underline !important;
+      line-height: $line-18;
+      color: $color-blue;
+      transition: 200ms all;
+      font: {
+        size: $font-16;
+        weight: $font-500;
+      }
+      &:hover {
+        color: #0056d7;
+      }
+    }
+   
+  }
 }
+
+/* ==================== RESPONSIVE ==================== */
+/* sing-up rsponsive */
+@media only screen and (max-width:813px) {
+  .sing-up {
+      display: block;
+      &__picture-box {
+       
+        top: 0;
+      }
+      &__form-box {
+       
+        margin-top: 50%;
+      }
+  }
+  }
+/* log in rsponsive */
+@media only screen and (max-width:813px) {
+  .log-in {
+      display: block;
+
+  }
+  }
