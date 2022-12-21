@@ -1,0 +1,53 @@
+/* ======= == sing-up-page.html responsive ========= */
+@media only screen and (max-width: 1199px) {
+  .sing-up__title {
+    display: none;
+  }
+  .sing-up__picture-box {
+    width: 100%;
+  }
+  .sing-up__form-col {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    top: 0;
+    background: #d7d7d7;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0.8);
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .sing-up__form-box {
+    width: 360px;
+  }
+}
+
+/* ========== login-page.html responsive ========== */
+@media only screen and (max-width: 1199px) {
+  .log-in__title {
+    display: none;
+  }
+  .log-in__picture-box {
+    width: 100%;
+  }
+  .log-in__form-col {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    top: 0;
+    background: #d7d7d7;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0.8);
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .log-in__form-box {
+    width: 360px;
+  }
+}
