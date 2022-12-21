@@ -40,14 +40,6 @@
   font-family: "card-top-icon";
 }
 
-.navbar .slide-favori:hover {
-  color: yellow;
-}
-
-.navbar .slide-favori:hover::before {
-  color: red;
-}
-
 .navbar .slide-dropdown {
   margin-right: 37px;
   line-height: 40px;
@@ -62,25 +54,8 @@
   font-size: 8px;
 }
 
-.navbar .slide-dropdown:hover {
-  color: yellow;
-}
-
-.navbar .slide-dropdown::after {
-  color: #ffffff;
-}
-
-.navbar .slide-dropdown:hover::after {
-  color: #cbcbcb !important;
-}
-
 .navbar .user {
   transition: 200ms all !important;
-}
-
-.navbar .dropdown-box:hover .user {
-  background-color: #17cd01;
-  border-radius: 50px;
 }
 
 .navbar .dropdown-item {
@@ -91,18 +66,6 @@
   padding: 3px 7px;
   border-radius: 20px;
   transition: 200ms all;
-}
-
-.navbar .Logo:hover {
-  box-shadow: 3px 3px 40px 3px #e1dede;
-}
-
-.navbar .elan {
-  transition: 200ms all !important;
-}
-
-.navbar .elan:hover {
-  box-shadow: 3px 3px 40px 3px #e1dede;
 }
 
 /*===== slide bottom card start =====*/
@@ -201,22 +164,6 @@
   color: #272727 !important;
 }
 
-.slide-favori-color:hover {
-  color: #ffcc00 !important;
-}
-
-.dropdown-color::after {
-  color: #272727 !important;
-}
-
-.dropdown-color:hover {
-  color: #ffcc00 !important;
-}
-
-.slide-dropdown:hover::after {
-  color: #cbcbcb !important;
-}
-
 .elan-box {
   border: 1px solid #e2e2fe;
   border-radius: 4px;
@@ -231,26 +178,41 @@
   padding: 0 21px;
   width: 100%;
   display: block;
-  color: #3E86F5;
+  color: #3E86F5 !important;
   line-height: 39px;
+  background-color: #FDFDFD;
   font-weight: 500;
   font-size: 14px;
 }
 
-/*================  Detail-page ===================*/
-.detail-nav-button {
-  border: 1px solid #3E86F5;
-  background-color: #FFFFFF;
+/* ===================== header page ================== */
+/* navbar -> qeydiyyat butonu */
+.sing-up-button {
+  width: 98px;
+  background: #FFFFFF;
+  border-radius: 4px;
 }
 
-.detail-navbar-row {
-  margin-top: 42px;
-  margin-bottom: 42px;
+.sing-up-button a {
+  line-height: 40px;
+  width: 100%;
+  display: inline-block;
+  color: #3E86F5;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.detail-navbar {
-  z-index: 0;
-  top: 0;
+/* navbar -> daxil ol butonu */
+.log-in-button {
+  padding-left: 10px;
+  margin-right: 37px;
+}
+
+.log-in-button a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
 }
 
 @font-face {
@@ -774,6 +736,7 @@
 
 body {
   font-family: 'Poppins', sans-serif !important;
+  background-color: #FDFDFD;
 }
 
 /* Chrome, Safari, Edge, Opera -> input number arrow hide*/
@@ -1337,6 +1300,21 @@ footer {
 .picture-row div:nth-child(3) {
   width: 212px;
   margin-right: 16px;
+}
+
+.detail-nav-button {
+  border: 1px solid #3E86F5;
+  background-color: #FFFFFF;
+}
+
+.detail-navbar-row {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.detail-navbar {
+  z-index: 0;
+  top: 0;
 }
 
 .detail {
@@ -1919,6 +1897,7 @@ input.advertised__home-picture::file-selector-button {
 
 /*========== Qeydiyyatdan keç səhifəsi ==========*/
 .sing-up {
+  background-color: #FDFDFD;
   display: flex;
 }
 
@@ -1966,7 +1945,7 @@ input.advertised__home-picture::file-selector-button {
   line-height: 36px;
   letter-spacing: 0.2px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .sing-up__form-box {
@@ -2003,6 +1982,7 @@ input.advertised__home-picture::file-selector-button {
 
 /* ================ Login pages ================ */
 .log-in {
+  background-color: #FDFDFD;
   display: flex;
 }
 
@@ -2050,7 +2030,7 @@ input.advertised__home-picture::file-selector-button {
   line-height: 42px;
   letter-spacing: 0.2px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .log-in__form-box {
@@ -2105,7 +2085,18 @@ input.advertised__home-picture::file-selector-button {
 .log-in__submit-button {
   margin-top: 28px;
   margin-bottom: 14px;
-  height: 40px;
+}
+
+.log-in__submit-button a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.log-in__submit-button {
+  color: #FFFFFF;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: 500;
 }
@@ -2128,6 +2119,16 @@ input.advertised__home-picture::file-selector-button {
 
 .log-in__create-account a:hover {
   color: #0056d7;
+}
+
+/* ============== Update password2 page ============== */
+.update-password-box input {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
 }
 
 /* ==================== RESPONSIVE ==================== */

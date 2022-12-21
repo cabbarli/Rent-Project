@@ -532,7 +532,18 @@ footer {
     width: 212px;
     margin-right: 16px;
   }
-  
+.detail-nav-button {
+    border: 1px solid $color-blue;
+    background-color: $color-white;
+}
+.detail-navbar-row {
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.detail-navbar {
+z-index: 0;
+top: 0;
+}  
 .detail {
   width: 1200px;
 &__title {
@@ -1088,6 +1099,7 @@ input.advertised__home-picture::file-selector-button {
 /*========== Qeydiyyatdan keç səhifəsi ==========*/
 
 .sing-up {
+  background-color: $color-white1;
   display: flex;
   &__picture-box {
   position: relative;
@@ -1132,7 +1144,7 @@ input.advertised__home-picture::file-selector-button {
     letter-spacing: 0.2px;
     font: {
       weight: $font-500;
-      size: $font-20;
+      size: $font-28;
     }
   }
   &__form-box {
@@ -1172,6 +1184,7 @@ input.advertised__home-picture::file-selector-button {
 /* ================ Login pages ================ */
 
 .log-in {
+  background-color:$color-white1;
   display: flex;
   &__picture-box {
   position: relative;
@@ -1216,7 +1229,7 @@ input.advertised__home-picture::file-selector-button {
     letter-spacing: 0.2px;
     font: {
       weight: $font-500;
-      size: $font-20;
+      size: $font-28;
     }
   }
   &__form-box {
@@ -1272,12 +1285,22 @@ input.advertised__home-picture::file-selector-button {
       }
     } 
   }
-  &__submit-button {
+  &__submit-button { 
     margin-top: 28px;
     margin-bottom: 14px;
-    height: 40px;
-    font-size: $font-14;
-    font-weight: $font-500;
+    a {
+      display: inline-block;
+      color: $color-white;
+      // height: 40px;
+      font-size: $font-14;
+      font-weight: $font-500;
+    }
+  }
+  &__submit-button { 
+      color: $color-white;
+      color: $color-white;
+      font-size: $font-14;
+      font-weight: $font-500;
   }
   &__create-account {
     span{
@@ -1304,6 +1327,17 @@ input.advertised__home-picture::file-selector-button {
    
   }
 }
+/* ============== Update password2 page ============== */
+.update-password-box {
+  input {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: $color-white;
+    border: 1px solid $color-gray9;
+  }
+}
 
 /* ==================== RESPONSIVE ==================== */
 /* sing-up rsponsive */
@@ -1327,3 +1361,8 @@ input.advertised__home-picture::file-selector-button {
 
   }
   }
+
+
+ 
+
+ 
