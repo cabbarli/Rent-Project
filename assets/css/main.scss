@@ -1009,7 +1009,7 @@ input.advertised__home-picture::file-selector-button {
     justify-content: center;
     width: 190px;
     height: 62px;
-    border: 1px solid $color-gray7;
+    // border: 1px solid $color-gray7;
     border-radius: 6px;
   span{
     color: $color-black;
@@ -1020,60 +1020,71 @@ input.advertised__home-picture::file-selector-button {
     }
    }
  }
-//  &__tv::before {
-    
- 
-//  } 
+ &__tv::before {
+    font-family: "detail";
+    content: '\e893';
+    margin-right: 16px;
+    font-size: $font-24;
+ } 
  &__wifi::before {
     font-family: 'techizat-icon';
     content: '\e87b';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__paltaryuyan::before {
     font-family: 'techizat-icon';
     content: '\e87a';
     margin-right: 16px;
+    font-size: $font-24;
  }
 &__kondisoner::before {
     font-family: 'techizat-icon';
     content: '\e877';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__qızdırıcı::before {
     font-family: 'techizat-icon';
     content: '\e876';
     margin-right: 16px;
+    font-size: $font-24;
  } 
  &__lift::before {
     font-family: 'techizat-icon';
     content: '\e881'; 
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__parking::before {
     font-family: 'techizat-icon';
     content: '\e87c';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__terras::before {
     font-family: 'techizat-icon';
     content: '\e882';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__hovuz::before {
     font-family: 'techizat-icon';
     content: '\e878';
     margin-right: 16px;
+    font-size: $font-26;
  } 
  &__səs::before {
     font-family: 'techizat-icon';
     content: '\e885'; 
     margin-right: 16px;
-    font-size: 14px;
+    font-size: $font-22;
  } 
  &__meydan::before {
     font-family: 'techizat-icon';
     content: '\e87e';
     margin-right: 16px;
+    font-size: $font-24;
  } 
  &__bilyard::before {
     font-family: 'techizat-icon';
@@ -1081,11 +1092,31 @@ input.advertised__home-picture::file-selector-button {
     margin-right: 16px;
     border: 1px solid $color-black;
     border-radius: 50%;
+    font-size: $font-22;
  } 
  &__caqquzi::before {
     font-family: 'techizat-icon';
     content: '\e87d';
-    margin-right: 16px;
+    font-size: $font-28;
+    position: absolute;
+    left: 16px;
+    top: 15px;
+ }
+ &__cigarette::before {
+  font-family: "detail";
+  content: '\e86d'; 
+  margin-right: 16px;
+  font-size: $font-24;
+  color: $color-black;
+ } 
+ &__couple::before {
+  font-family: "detail";
+  content: '\e899';
+  font-size: 46px;
+  position: absolute;
+  margin-top: 8px;
+  left: -37px;
+  color: $color-black;
  }
  /* icazə verilir section */
  &__techizat {
@@ -1095,7 +1126,37 @@ input.advertised__home-picture::file-selector-button {
   width: 285px;
   margin-bottom: 30px;
  }
+ &__choose-button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+ } 
+ &__equipment input:checked ~.advertised__change-color{
+  color: #3E86F5;
+ }
+ &__equipment input:checked ~.advertised__change-color::before {
+  color: #3E86F5;
+ }
+ &__equipment input:checked ~.advertised__change-color::before {
+  border-color: #3E86F5;
+ }
+ &__choose-button-border {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid $color-gray7;
+  border-radius: 6px;
+ }
+ &__choose-button:checked + .advertised__choose-button-border {
+  border: 1px solid $color-blue;
 } 
+}
 /* ------- Elan ver page 4 ------*/
 .advertised {
   &__next-prew-button {
@@ -1195,7 +1256,7 @@ input.advertised__home-picture::file-selector-button {
   &__failed-img-box {
     margin-top: 66px;
     margin-bottom: 46px;
-    
+
   }
 }
 /*============== Qeydiyyatdan keç səhifəsi ==============*/
@@ -1443,4 +1504,5 @@ input.advertised__home-picture::file-selector-button {
   }
 }
 
+ 
  

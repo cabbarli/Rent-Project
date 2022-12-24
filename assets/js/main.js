@@ -36,3 +36,4 @@ function changeBgcolor1 (){
    function initMap() {
     let map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: { lat: 40.375,  lng: 49.845}});
   }
+

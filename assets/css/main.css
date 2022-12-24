@@ -132,7 +132,7 @@
   letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
+  font-line-height: 28px;
   font-style: normal;
 }
 
@@ -725,6 +725,67 @@
 }
 
 /* '' */
+@font-face {
+  font-family: 'detail';
+  src: url("../font/detail.eot?67926740");
+  src: url("../font/detail.eot?67926740#iefix") format("embedded-opentype"), url("../font/detail.woff2?67926740") format("woff2"), url("../font/detail.woff?67926740") format("woff"), url("../font/detail.ttf?67926740") format("truetype"), url("../font/detail.svg?67926740#detail") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'detail';
+      src: url('../font/detail.svg?67926740#detail') format('svg');
+    }
+  }
+  */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "detail";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cigarette-1:before {
+  content: '\e86d';
+}
+
+/* '' */
+.icon-d67b9cb2-d99c-4cd8-a3b4-61452ad3be93:before {
+  content: '\e893';
+}
+
+/* '' */
+.icon-couple-svgrepo-com:before {
+  content: '\e899';
+}
+
+/* '' */
 * {
   box-sizing: border-box !important;
   margin: 0;
@@ -1816,7 +1877,6 @@ input.advertised__home-picture::file-selector-button {
   justify-content: center;
   width: 190px;
   height: 62px;
-  border: 1px solid #E2E8EE;
   border-radius: 6px;
 }
 
@@ -1827,65 +1887,81 @@ input.advertised__home-picture::file-selector-button {
   font-size: 16px;
 }
 
+.advertised__tv::before {
+  font-family: "detail";
+  content: '\e893';
+  margin-right: 16px;
+  font-size: 24px;
+}
+
 .advertised__wifi::before {
   font-family: 'techizat-icon';
   content: '\e87b';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__paltaryuyan::before {
   font-family: 'techizat-icon';
   content: '\e87a';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__kondisoner::before {
   font-family: 'techizat-icon';
   content: '\e877';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__qızdırıcı::before {
   font-family: 'techizat-icon';
   content: '\e876';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__lift::before {
   font-family: 'techizat-icon';
   content: '\e881';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__parking::before {
   font-family: 'techizat-icon';
   content: '\e87c';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__terras::before {
   font-family: 'techizat-icon';
   content: '\e882';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__hovuz::before {
   font-family: 'techizat-icon';
   content: '\e878';
   margin-right: 16px;
+  font-size: 26px;
 }
 
 .advertised__səs::before {
   font-family: 'techizat-icon';
   content: '\e885';
   margin-right: 16px;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .advertised__meydan::before {
   font-family: 'techizat-icon';
   content: '\e87e';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__bilyard::before {
@@ -1894,12 +1970,34 @@ input.advertised__home-picture::file-selector-button {
   margin-right: 16px;
   border: 1px solid #272727;
   border-radius: 50%;
+  font-size: 22px;
 }
 
 .advertised__caqquzi::before {
   font-family: 'techizat-icon';
   content: '\e87d';
+  font-size: 28px;
+  position: absolute;
+  left: 16px;
+  top: 15px;
+}
+
+.advertised__cigarette::before {
+  font-family: "detail";
+  content: '\e86d';
   margin-right: 16px;
+  font-size: 24px;
+  color: #272727;
+}
+
+.advertised__couple::before {
+  font-family: "detail";
+  content: '\e899';
+  font-size: 46px;
+  position: absolute;
+  margin-top: 8px;
+  left: -37px;
+  color: #272727;
 }
 
 .advertised__techizat {
@@ -1909,6 +2007,42 @@ input.advertised__home-picture::file-selector-button {
 .advertised__equipment-size {
   width: 285px;
   margin-bottom: 30px;
+}
+
+.advertised__choose-button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.advertised__equipment input:checked ~ .advertised__change-color {
+  color: #3E86F5;
+}
+
+.advertised__equipment input:checked ~ .advertised__change-color::before {
+  color: #3E86F5;
+}
+
+.advertised__equipment input:checked ~ .advertised__change-color::before {
+  border-color: #3E86F5;
+}
+
+.advertised__choose-button-border {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #E2E8EE;
+  border-radius: 6px;
+}
+
+.advertised__choose-button:checked + .advertised__choose-button-border {
+  border: 1px solid #3E86F5;
 }
 
 /* ------- Elan ver page 4 ------*/
