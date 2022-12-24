@@ -1663,12 +1663,12 @@ footer {
 
 .advertised__category-button {
   color: #000000;
-  line-height: 48px;
+  height: 48px;
   padding-top: 0;
   padding-bottom: 0;
   width: 184px;
   transition: 250ms all;
-  border: 1px solid #E2E8EE;
+  position: relative;
   color: #000000;
   font-weight: 400;
   font-size: 14px;
@@ -1685,6 +1685,23 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.advertised__category-choose {
+  transition: 300ms all;
+  border-radius: 6px;
+  border: 1px solid #E2E8EE;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.advertised__rent:checked + .advertised__category-choose {
+  color: white;
+  background-color: #00bcd4;
 }
 
 .advertised__move-date {
