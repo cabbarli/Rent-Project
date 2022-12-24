@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Silkscreen:wght@400;700&display=swap');
 
+
 /*===== carousel background =====*/
 
 .carousel__background {
@@ -18,7 +19,6 @@
   background: rgba(39, 39, 39, 0.4);
   z-index: 2;
 }
-
 /*===== kateqoriya=====*/
 .category {
   margin-top: 70px;
@@ -536,6 +536,9 @@ footer {
 .detail-nav-button {
     border: 1px solid $color-blue;
     background-color: $color-white;
+    a { 
+      border-radius: 4px;
+    }
 }
 .detail-navbar-row {
     margin-top: 42px;
@@ -770,8 +773,8 @@ top: 0;
     }
   }
 }
-
-/* ================== Elan ver page-1 ===============*/
+/* ================== Elan ver pages start ===============*/
+/* ------------- Elan ver page-1 ------------*/
 .advertised {
   margin-top: 3px;
   width: 592px;
@@ -793,12 +796,9 @@ top: 0;
    color: $color-black5;
    line-height: $line-24;
    font: {
-    weight: $font-400;
+    weight: $font-500;
     size: $font-16;
    }
-  }
-  &__subtitle-weight {
-    font-weight: 400;
   }
   /* kirayə kateqoriya buttonları */
   &__category-button {
@@ -985,7 +985,7 @@ top: 0;
 input.advertised__home-picture::file-selector-button {
   display: none;
 }
-/* ================= Elan ver page-2 detallar ===============*/
+/* ----- Elan ver page-2 detallar -- --*/
 .advertised {
   width: 590px;
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
@@ -1096,9 +1096,109 @@ input.advertised__home-picture::file-selector-button {
   margin-bottom: 30px;
  }
 } 
-
-/*========== Qeydiyyatdan keç səhifəsi ==========*/
-
+/* ------- Elan ver page 4 ------*/
+.advertised {
+  &__next-prew-button {
+    margin-top: 30px;
+    margin-bottom: 217px;
+  }
+  &__contact-box {
+    width: 285px;
+    height: 62px;
+   }
+  &__contact-title {
+    color: $color-black5;
+    line-height: $line-21;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  } 
+  &__subtitle-weight {
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  &__name-lastname-box {
+    height: 62px;
+  }
+  &__person-radio {
+    color: $color-black4;
+    line-height: $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+  }
+  &__person-radio-box {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    label {
+      color: $color-black4;
+      line-height: $line-24;
+      font: {
+        weight: $font-400;
+        size: $font-16;
+      }
+    }
+  }
+}
+/*----- elan ver succes page -----*/
+.advertised {
+ &__succes-img {
+   margin-top: 66px;
+   margin-bottom: 46px;
+ }
+ &__success-title {
+  color: $color-black4;
+  line-height: $line-30;
+  font: {
+    weight: $font-500;
+    size: $font-20;
+  }
+ }
+ &__success-info {
+  width: 203px;
+  color: #7B7B7B;
+  line-height: $line-21;
+  font: {
+    weight: $font-400;
+    size: $font-14;
+  }
+ }
+ &__success-info-box {
+  width: 203px;
+  margin-top: 9px;
+  margin-bottom: 24px;
+ }
+ &__success-details {
+  width: 255px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #4D4D4D;
+  line-height: $line-21;
+  font: {
+    weight: $font-500;
+    size: $font-14;
+  }
+  &:hover {
+    border: 1px solid #cfdbe8;
+    background-color: #ffffff;
+  }
+}
+}
+/*----- elan ver failed page -----*/
+.advertised {
+  &__failed-img-box {
+    margin-top: 66px;
+    margin-bottom: 46px;
+    
+  }
+}
+/*============== Qeydiyyatdan keç səhifəsi ==============*/
 .sing-up {
   background-color: $color-white1;
   display: flex;
@@ -1329,7 +1429,6 @@ input.advertised__home-picture::file-selector-button {
         color: #0056d7;
       }
     }
-   
   }
 }
 /* ============== Update password2 page ============== */
@@ -1343,10 +1442,5 @@ input.advertised__home-picture::file-selector-button {
     border: 1px solid $color-gray9;
   }
 }
-
-
-
-
- 
 
  

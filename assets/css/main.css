@@ -132,7 +132,7 @@
   letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 14px;
-  font-line-height: 28px;
+  line-height: 28px;
   font-style: normal;
 }
 
@@ -751,6 +751,21 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.advertised ::placeholder, .sing-up ::placeholder, .log-in ::placeholder, .card-body ::placeholder {
+  color: #C0C0C0;
+  /* Firefox */
+}
+
+.advertised :-ms-input-placeholder, .sing-up :-ms-input-placeholder, .log-in :-ms-input-placeholder, .card-body :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #C0C0C0;
+}
+
+.advertised ::-ms-input-placeholder, .sing-up ::-ms-input-placeholder, .log-in ::-ms-input-placeholder, .card-body ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #C0C0C0;
+}
+
 /*===== carousel background =====*/
 .carousel__background {
   position: absolute;
@@ -1307,6 +1322,10 @@ footer {
   background-color: #FFFFFF;
 }
 
+.detail-nav-button a {
+  border-radius: 4px;
+}
+
 .detail-navbar-row {
   margin-top: 42px;
   margin-bottom: 42px;
@@ -1546,7 +1565,8 @@ footer {
   color: #cfffa8;
 }
 
-/* ================== Elan ver page-1 ===============*/
+/* ================== Elan ver pages start ===============*/
+/* ------------- Elan ver page-1 ------------*/
 .advertised {
   margin-top: 3px;
   width: 592px;
@@ -1576,12 +1596,8 @@ footer {
   margin-bottom: 14px;
   color: #161616;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-}
-
-.advertised__subtitle-weight {
-  font-weight: 400;
 }
 
 .advertised__category-button {
@@ -1773,7 +1789,7 @@ input.advertised__home-picture::file-selector-button {
   display: none;
 }
 
-/* ================= Elan ver page-2 detallar ===============*/
+/* ----- Elan ver page-2 detallar -- --*/
 .advertised {
   width: 590px;
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
@@ -1895,7 +1911,105 @@ input.advertised__home-picture::file-selector-button {
   margin-bottom: 30px;
 }
 
-/*========== Qeydiyyatdan keç səhifəsi ==========*/
+/* ------- Elan ver page 4 ------*/
+.advertised__next-prew-button {
+  margin-top: 30px;
+  margin-bottom: 217px;
+}
+
+.advertised__contact-box {
+  width: 285px;
+  height: 62px;
+}
+
+.advertised__contact-title {
+  color: #161616;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__subtitle-weight {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.advertised__name-lastname-box {
+  height: 62px;
+}
+
+.advertised__person-radio {
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised__person-radio-box {
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+.advertised__person-radio-box label {
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*----- elan ver succes page -----*/
+.advertised__succes-img {
+  margin-top: 66px;
+  margin-bottom: 46px;
+}
+
+.advertised__success-title {
+  color: #000000;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.advertised__success-info {
+  width: 203px;
+  color: #7B7B7B;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__success-info-box {
+  width: 203px;
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+
+.advertised__success-details {
+  width: 255px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #4D4D4D;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.advertised__success-details:hover {
+  border: 1px solid #cfdbe8;
+  background-color: #ffffff;
+}
+
+/*----- elan ver failed page -----*/
+.advertised__failed-img-box {
+  margin-top: 66px;
+  margin-bottom: 46px;
+}
+
+/*============== Qeydiyyatdan keç səhifəsi ==============*/
 .sing-up {
   background-color: #FDFDFD;
   display: flex;
