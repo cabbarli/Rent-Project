@@ -4,7 +4,9 @@
 @import "variables";
 @import "reset";
 
+
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Silkscreen:wght@400;700&display=swap');
+
 
 /*===== carousel background =====*/
 
@@ -17,7 +19,6 @@
   background: rgba(39, 39, 39, 0.4);
   z-index: 2;
 }
-
 /*===== kateqoriya=====*/
 .category {
   margin-top: 70px;
@@ -458,6 +459,169 @@ footer {
 }
  
 /*================  Detail-page ===================*/
+/* picture section -> right bar start */
+.gall {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.gall .imgthumb,
+.gall .imgcont {
+  background-color: transparent;
+  width: 100%;
+}
+.gall .thumbbox {
+  top: -15px;
+  position: relative;
+  background-color: transparent;
+  height: 58px;
+  overflow: hidden;
+  padding: 0;
+  border: solid 2px grey;
+  margin: 0 20px 0 20px;
+  border-radius: 10px;
+}
+.gall .imgthumb {
+  position: absolute;
+  display: block;
+  top: 0;
+  padding: 0;
+  height: 100%;
+  width: 1000px;
+  background-color: #222222;
+  text-align: left;
+}
+.gall .imgcont {
+  padding-bottom: 5px;
+  display: inline-block;
+  border: solid 2px grey;
+  border-radius: 8px;
+}
+.gall .imgthumb img {
+  display: inline-block;
+  margin: 4px 0px 0 8px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.gall .imgcont img,
+.gall .imgcont span {
+  display: inline-block;
+}
+.gall .imgcont img {
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 98%;
+  cursor: pointer;
+}
+.gall .btnl,
+.gall .btnr {
+  padding: 2px 5px 2px 5px;
+  border: solid 2px grey;
+  border-radius: 8px;
+  background-color: #222222;
+  min-height: 18px;
+  font: bolder 14px san-serif;
+  color: #dddddd;
+  cursor: pointer;
+}
+.gall .btnl {
+  position: absolute;
+  left: 4px;
+  bottom: 30px;
+}
+.gall .btnr {
+  float: right;
+  position: absolute;
+  right: 4px;
+  bottom: 30px;
+}
+/* float win */
+.gall .overlayer,
+.gall .outerframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 0;
+}
+.gall .overlayer {
+  background-color: #222222;
+  opacity: 0.75;
+}
+.gall .outerframe .outerbox {
+  position: relative;
+  top: 20px;
+  margin: 0 auto 0 auto;
+  z-index: 10;
+  opacity: 1;
+}
+.gall .imgbox {
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+.gall .img {
+  position: relative;
+  opacity: 1;
+  z-index: 10;
+  border-radius: 8px;
+  border: solid 3px grey;
+}
+.gall .desc,
+.gall .close,
+.gall .less,
+.gall .greater,
+.gall .displ {
+  padding: 2px 10px 2px 10px;
+  border: solid 3px grey;
+  border-radius: 8px;
+  background-color: #333333;
+  min-height: 18px;
+  font: bolder 14px Arial, san-serif;
+}
+.gall .desc {
+  position: relative;
+  top: -18px;
+  z-index: 15;
+  display: inherit;
+  font: bolder 14px Arial, san-serif;
+  background-color: #333333;
+}
+.gall .close,
+.gall .less,
+.gall .greater,
+.gall .displ {
+  z-index: 15;
+  top: -13px;
+  color: #dddddd;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+.gall .inactive {
+  color: grey;
+}
+.gall .close {
+  position: absolute;
+  right: 10px;
+}
+.gall .btntop {
+  position: absolute;
+  top: -9px;
+  z-index: 15;
+  width: 100%;
+}
+/* turn back button*/
+.turn-back-button {
+  top: 20px;
+  left: 20px;
+}
+/* picture section -> right bar end */
 .carousel {
 
  .slide-button {
@@ -532,7 +696,21 @@ footer {
     width: 212px;
     margin-right: 16px;
   }
-  
+.detail-nav-button {
+    border: 1px solid $color-blue;
+    background-color: $color-white;
+    a { 
+      border-radius: 4px;
+    }
+}
+.detail-navbar-row {
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+.detail-navbar {
+z-index: 0;
+top: 0;
+}  
 .detail {
   width: 1200px;
 &__title {
@@ -758,8 +936,8 @@ footer {
     }
   }
 }
-
-/* ================== Elan ver page-1 ===============*/
+/* ================== Elan ver pages start ===============*/
+/* ------------- Elan ver page-1 ------------*/
 .advertised {
   margin-top: 3px;
   width: 592px;
@@ -781,22 +959,19 @@ footer {
    color: $color-black5;
    line-height: $line-24;
    font: {
-    weight: $font-400;
+    weight: $font-500;
     size: $font-16;
    }
-  }
-  &__subtitle-weight {
-    font-weight: 400;
   }
   /* kirayə kateqoriya buttonları */
   &__category-button {
   color: $color-black4;  
-  line-height: 48px;
+  height: 48px;
   padding-top: 0;
   padding-bottom: 0;
   width: 184px;
-  transition: 250ms all;
-  border: 1px solid $color-gray7;
+  transition: 200ms all;
+  position: relative;
   &:hover {
     border-color: #859ab0;
   }
@@ -813,6 +988,21 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
+  }
+  &__category-choose {
+    transition: 300ms all;  
+    border-radius: 6px;
+    border: 1px solid $color-gray7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  &__rent:checked + .advertised__category-choose{
+    color: white;
+    background-color: #00bcd4;
   }
   /* Hansı tarixdə köçmək olar buttonu */
   &__move-date {
@@ -973,7 +1163,7 @@ footer {
 input.advertised__home-picture::file-selector-button {
   display: none;
 }
-/* ================= Elan ver page-2 detallar ===============*/
+/* ----- Elan ver page-2 detallar -- --*/
 .advertised {
   width: 590px;
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
@@ -997,7 +1187,7 @@ input.advertised__home-picture::file-selector-button {
     justify-content: center;
     width: 190px;
     height: 62px;
-    border: 1px solid $color-gray7;
+    // border: 1px solid $color-gray7;
     border-radius: 6px;
   span{
     color: $color-black;
@@ -1008,60 +1198,71 @@ input.advertised__home-picture::file-selector-button {
     }
    }
  }
-//  &__tv::before {
-    
- 
-//  } 
+ &__tv::before {
+    font-family: "detail";
+    content: '\e893';
+    margin-right: 16px;
+    font-size: $font-24;
+ } 
  &__wifi::before {
     font-family: 'techizat-icon';
     content: '\e87b';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__paltaryuyan::before {
     font-family: 'techizat-icon';
     content: '\e87a';
     margin-right: 16px;
+    font-size: $font-24;
  }
 &__kondisoner::before {
     font-family: 'techizat-icon';
     content: '\e877';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__qızdırıcı::before {
     font-family: 'techizat-icon';
     content: '\e876';
     margin-right: 16px;
+    font-size: $font-24;
  } 
  &__lift::before {
     font-family: 'techizat-icon';
     content: '\e881'; 
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__parking::before {
     font-family: 'techizat-icon';
     content: '\e87c';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__terras::before {
     font-family: 'techizat-icon';
     content: '\e882';
     margin-right: 16px;
+    font-size: $font-24;
  }
  &__hovuz::before {
     font-family: 'techizat-icon';
     content: '\e878';
     margin-right: 16px;
+    font-size: $font-26;
  } 
  &__səs::before {
     font-family: 'techizat-icon';
     content: '\e885'; 
     margin-right: 16px;
-    font-size: 14px;
+    font-size: $font-22;
  } 
  &__meydan::before {
     font-family: 'techizat-icon';
     content: '\e87e';
     margin-right: 16px;
+    font-size: $font-24;
  } 
  &__bilyard::before {
     font-family: 'techizat-icon';
@@ -1069,11 +1270,31 @@ input.advertised__home-picture::file-selector-button {
     margin-right: 16px;
     border: 1px solid $color-black;
     border-radius: 50%;
+    font-size: $font-22;
  } 
  &__caqquzi::before {
     font-family: 'techizat-icon';
     content: '\e87d';
-    margin-right: 16px;
+    font-size: $font-28;
+    position: absolute;
+    left: 16px;
+    top: 15px;
+ }
+ &__cigarette::before {
+  font-family: "detail";
+  content: '\e86d'; 
+  margin-right: 16px;
+  font-size: $font-24;
+  color: $color-black;
+ } 
+ &__couple::before {
+  font-family: "detail";
+  content: '\e899';
+  font-size: 46px;
+  position: absolute;
+  margin-top: 8px;
+  left: -37px;
+  color: $color-black;
  }
  /* icazə verilir section */
  &__techizat {
@@ -1083,4 +1304,383 @@ input.advertised__home-picture::file-selector-button {
   width: 285px;
   margin-bottom: 30px;
  }
+ &__choose-button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+ } 
+ &__equipment input:checked ~.advertised__change-color{
+  color: #3E86F5;
+ }
+ &__equipment input:checked ~.advertised__change-color::before {
+  color: #3E86F5;
+ }
+ &__equipment input:checked ~.advertised__change-color::before {
+  border-color: #3E86F5;
+ }
+ &__choose-button-border {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid $color-gray7;
+  border-radius: 6px;
+ }
+ &__choose-button:checked + .advertised__choose-button-border {
+  border: 1px solid $color-blue;
 } 
+}
+/* ------- Elan ver page 4 ------*/
+.advertised {
+  &__next-prew-button {
+    margin-top: 30px;
+    margin-bottom: 217px;
+  }
+  &__contact-box {
+    width: 285px;
+    height: 62px;
+   }
+  &__contact-title {
+    color: $color-black5;
+    line-height: $line-21;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  } 
+  &__subtitle-weight {
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  &__name-lastname-box {
+    height: 62px;
+  }
+  &__person-radio {
+    color: $color-black4;
+    line-height: $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+  }
+  &__person-radio-box {
+    margin-top: 12px;
+    margin-bottom: 2px;
+    label {
+      color: $color-black4;
+      line-height: $line-24;
+      font: {
+        weight: $font-400;
+        size: $font-16;
+      }
+    }
+  }
+}
+/*----- elan ver succes page -----*/
+.advertised {
+ &__succes-img {
+   margin-top: 66px;
+   margin-bottom: 46px;
+ }
+ &__success-title {
+  color: $color-black4;
+  line-height: $line-30;
+  font: {
+    weight: $font-500;
+    size: $font-20;
+  }
+ }
+ &__success-info {
+  width: 203px;
+  color: #7B7B7B;
+  line-height: $line-21;
+  font: {
+    weight: $font-400;
+    size: $font-14;
+  }
+ }
+ &__success-info-box {
+  width: 203px;
+  margin-top: 9px;
+  margin-bottom: 24px;
+ }
+ &__success-details {
+  width: 255px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #4D4D4D;
+  line-height: $line-21;
+  font: {
+    weight: $font-500;
+    size: $font-14;
+  }
+  &:hover {
+    border: 1px solid #cfdbe8;
+    background-color: #ffffff;
+  }
+}
+}
+/*----- elan ver failed page -----*/
+.advertised {
+  &__failed-img-box {
+    margin-top: 66px;
+    margin-bottom: 46px;
+
+  }
+}
+/*============== Qeydiyyatdan keç səhifəsi ==============*/
+.sing-up {
+  background-color: $color-white1;
+  display: flex;
+  &__picture-box {
+  position: relative;
+  height: 100vh;
+  width: 730px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+ &__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(39, 39, 39, 0.4);
+  z-index: 2;
+ }
+ &__title {
+  position: absolute;
+  z-index: 5;
+   h1{
+    color: $color-white;
+    line-height: 60px;
+    font: {
+      weight: $font-600;
+      size: $font-40;
+    }
+   }
+   span {
+    color: #CFCFCF;
+    line-height: $line-30;
+    font: {
+      weight: $font-500;
+      size: $font-20;
+    }
+   }
+  }
+  &__form-title {
+    margin-bottom: 20px;
+    color: $color-black7;
+    line-height: $line-36;
+    letter-spacing: 0.2px;
+    font: {
+      weight: $font-500;
+      size: $font-28;
+    }
+  }
+  &__form-box {
+    width: 400px;
+  } 
+  &__form {
+    label {
+      margin-top: 14px;
+      color: $color-black7;
+      line-height: $font-28;
+      font: {
+        weight: $font-500;
+        size: $font-16;
+      }
+    }
+    input {
+      height: 45px;
+      border: 1px solid $color-gray9;
+      border-radius: 6px;
+      background: #ffffff;
+      font: {
+        size: $font-14;
+        weight: $font-500;
+      }
+      &:hover {
+        border: 1px solid  $color-gray8;
+      }
+    }
+  }
+  &__submit-button {
+    margin-top: 28px;
+    height: 40px;
+    font-size: $font-14;
+    font-weight: $font-500;
+  }
+}
+/* ================ Login pages ================ */
+
+.log-in {
+  background-color:$color-white1;
+  display: flex;
+  &__picture-box {
+  position: relative;
+  height: 100vh;
+  width: 730px;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+ &__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(39, 39, 39, 0.4);
+  z-index: 2;
+ }
+ &__title {
+  position: absolute;
+  z-index: 5;
+   h1{
+    color: $color-white;
+    line-height: 60px;
+    font: {
+      weight: $font-600;
+      size: $font-40;
+    }
+   }
+   span {
+    color: #CFCFCF;
+    line-height: $line-30;
+    font: {
+      weight: $font-500;
+      size: $font-20;
+    }
+   }
+  }
+  &__form-title {
+    margin-bottom: 20px;
+    color: $color-black7;
+    line-height: $line-42;
+    letter-spacing: 0.2px;
+    font: {
+      weight: $font-500;
+      size: $font-28;
+    }
+  }
+  &__form-box {
+    width: 400px;
+  } 
+  &__form {
+    label {
+      margin-top: 14px;
+      color: $color-black7;
+      line-height: $font-28;
+      font: {
+        weight: $font-500;
+        size: $font-16;
+      }
+    }
+  }
+  &__input {
+    height: 45px;
+    border: 1px solid $color-gray9;
+    border-radius: 6px;
+    background: #ffffff;
+    font: {
+      size: $font-14;
+      weight: $font-500;
+    }
+    &:hover {
+      border: 1px solid  $color-gray8;
+    }
+  }
+  &__check-box {
+    input {
+      margin-right: 11px;
+      margin-top: 3px;
+    }
+    label {
+      color: #666666;
+      line-height: $line-21;
+      font: {
+        weight: $font-400;
+        size: $font-14;
+      }
+    }
+    span a {
+      color: $color-blue1;
+      transition: 200ms all;
+      line-height: $line-21;
+      font: {
+        weight: $font-400;
+        size: $font-14;
+      }
+      &:hover {
+        color: #8c98aa;
+      }
+    } 
+  }
+  &__submit-button { 
+    margin-top: 28px;
+    margin-bottom: 14px;
+    a {
+      display: inline-block;
+      color: $color-white;
+      // height: 40px;
+      font-size: $font-14;
+      font-weight: $font-500;
+    }
+  }
+  &__submit-button { 
+      color: $color-white;
+      color: $color-white;
+      font-size: $font-14;
+      font-weight: $font-500;
+  }
+  &__create-account {
+    span{
+      line-height: $line-18;
+      color: $color-blue1;
+      font: {
+        size: $font-16;
+        weight: $font-400;
+      }
+    }
+    a {
+      text-decoration: underline !important;
+      line-height: $line-18;
+      color: $color-blue;
+      transition: 200ms all;
+      font: {
+        size: $font-16;
+        weight: $font-500;
+      }
+      &:hover {
+        color: #0056d7;
+      }
+    }
+  }
+}
+/* ============== Update password2 page ============== */
+.update-password-box {
+  input {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: $color-white;
+    border: 1px solid $color-gray9;
+  }
+}
+
+ 
+ 

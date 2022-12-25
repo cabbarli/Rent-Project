@@ -8,6 +8,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif !important;
+    background-color: $color-white1;
 }
 
 /* Chrome, Safari, Edge, Opera -> input number arrow hide*/
@@ -21,3 +22,18 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.advertised, .sing-up, .log-in, .card-body{
+  ::placeholder {
+    color: #C0C0C0;
+    /* Firefox */
+   }
+   
+   :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color:#C0C0C0;
+   }
+   
+   ::-ms-input-placeholder { /* Microsoft Edge */
+     color: #C0C0C0;
+   }
+}
+

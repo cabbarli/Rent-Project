@@ -40,14 +40,6 @@
   font-family: "card-top-icon";
 }
 
-.navbar .slide-favori:hover {
-  color: yellow;
-}
-
-.navbar .slide-favori:hover::before {
-  color: red;
-}
-
 .navbar .slide-dropdown {
   margin-right: 37px;
   line-height: 40px;
@@ -62,25 +54,8 @@
   font-size: 8px;
 }
 
-.navbar .slide-dropdown:hover {
-  color: yellow;
-}
-
-.navbar .slide-dropdown::after {
-  color: #ffffff;
-}
-
-.navbar .slide-dropdown:hover::after {
-  color: #cbcbcb !important;
-}
-
 .navbar .user {
   transition: 200ms all !important;
-}
-
-.navbar .dropdown-box:hover .user {
-  background-color: #17cd01;
-  border-radius: 50px;
 }
 
 .navbar .dropdown-item {
@@ -91,18 +66,6 @@
   padding: 3px 7px;
   border-radius: 20px;
   transition: 200ms all;
-}
-
-.navbar .Logo:hover {
-  box-shadow: 3px 3px 40px 3px #e1dede;
-}
-
-.navbar .elan {
-  transition: 200ms all !important;
-}
-
-.navbar .elan:hover {
-  box-shadow: 3px 3px 40px 3px #e1dede;
 }
 
 /*===== slide bottom card start =====*/
@@ -201,22 +164,6 @@
   color: #272727 !important;
 }
 
-.slide-favori-color:hover {
-  color: #ffcc00 !important;
-}
-
-.dropdown-color::after {
-  color: #272727 !important;
-}
-
-.dropdown-color:hover {
-  color: #ffcc00 !important;
-}
-
-.slide-dropdown:hover::after {
-  color: #cbcbcb !important;
-}
-
 .elan-box {
   border: 1px solid #e2e2fe;
   border-radius: 4px;
@@ -231,26 +178,41 @@
   padding: 0 21px;
   width: 100%;
   display: block;
-  color: #3E86F5;
+  color: #3E86F5 !important;
   line-height: 39px;
+  background-color: #FDFDFD;
   font-weight: 500;
   font-size: 14px;
 }
 
-/*================  Detail-page ===================*/
-.detail-nav-button {
-  border: 1px solid #3E86F5;
-  background-color: #FFFFFF;
+/* ===================== header page ================== */
+/* navbar -> qeydiyyat butonu */
+.sing-up-button {
+  width: 98px;
+  background: #FFFFFF;
+  border-radius: 4px;
 }
 
-.detail-navbar-row {
-  margin-top: 42px;
-  margin-bottom: 45px;
+.sing-up-button a {
+  line-height: 40px;
+  width: 100%;
+  display: inline-block;
+  color: #3E86F5;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.detail-navbar {
-  z-index: 0;
-  top: 0;
+/* navbar -> daxil ol butonu */
+.log-in-button {
+  padding-left: 10px;
+  margin-right: 37px;
+}
+
+.log-in-button a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
 }
 
 @font-face {
@@ -763,6 +725,67 @@
 }
 
 /* '' */
+@font-face {
+  font-family: 'detail';
+  src: url("../font/detail.eot?67926740");
+  src: url("../font/detail.eot?67926740#iefix") format("embedded-opentype"), url("../font/detail.woff2?67926740") format("woff2"), url("../font/detail.woff?67926740") format("woff"), url("../font/detail.ttf?67926740") format("truetype"), url("../font/detail.svg?67926740#detail") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'detail';
+      src: url('../font/detail.svg?67926740#detail') format('svg');
+    }
+  }
+  */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "detail";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cigarette-1:before {
+  content: '\e86d';
+}
+
+/* '' */
+.icon-d67b9cb2-d99c-4cd8-a3b4-61452ad3be93:before {
+  content: '\e893';
+}
+
+/* '' */
+.icon-couple-svgrepo-com:before {
+  content: '\e899';
+}
+
+/* '' */
 * {
   box-sizing: border-box !important;
   margin: 0;
@@ -774,6 +797,7 @@
 
 body {
   font-family: 'Poppins', sans-serif !important;
+  background-color: #FDFDFD;
 }
 
 /* Chrome, Safari, Edge, Opera -> input number arrow hide*/
@@ -786,6 +810,21 @@ input::-webkit-inner-spin-button {
 /* Firefox -> input number arrow hide*/
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.advertised ::placeholder, .sing-up ::placeholder, .log-in ::placeholder, .card-body ::placeholder {
+  color: #C0C0C0;
+  /* Firefox */
+}
+
+.advertised :-ms-input-placeholder, .sing-up :-ms-input-placeholder, .log-in :-ms-input-placeholder, .card-body :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #C0C0C0;
+}
+
+.advertised ::-ms-input-placeholder, .sing-up ::-ms-input-placeholder, .log-in ::-ms-input-placeholder, .card-body ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #C0C0C0;
 }
 
 /*===== carousel background =====*/
@@ -1253,6 +1292,192 @@ footer {
 }
 
 /*================  Detail-page ===================*/
+/* picture section -> right bar start */
+.gall {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.gall .imgthumb,
+.gall .imgcont {
+  background-color: transparent;
+  width: 100%;
+}
+
+.gall .thumbbox {
+  top: -15px;
+  position: relative;
+  background-color: transparent;
+  height: 58px;
+  overflow: hidden;
+  padding: 0;
+  border: solid 2px grey;
+  margin: 0 20px 0 20px;
+  border-radius: 10px;
+}
+
+.gall .imgthumb {
+  position: absolute;
+  display: block;
+  top: 0;
+  padding: 0;
+  height: 100%;
+  width: 1000px;
+  background-color: #222222;
+  text-align: left;
+}
+
+.gall .imgcont {
+  padding-bottom: 5px;
+  display: inline-block;
+  border: solid 2px grey;
+  border-radius: 8px;
+}
+
+.gall .imgthumb img {
+  display: inline-block;
+  margin: 4px 0px 0 8px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.gall .imgcont img,
+.gall .imgcont span {
+  display: inline-block;
+}
+
+.gall .imgcont img {
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 98%;
+  cursor: pointer;
+}
+
+.gall .btnl,
+.gall .btnr {
+  padding: 2px 5px 2px 5px;
+  border: solid 2px grey;
+  border-radius: 8px;
+  background-color: #222222;
+  min-height: 18px;
+  font: bolder 14px san-serif;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+.gall .btnl {
+  position: absolute;
+  left: 4px;
+  bottom: 30px;
+}
+
+.gall .btnr {
+  float: right;
+  position: absolute;
+  right: 4px;
+  bottom: 30px;
+}
+
+/* float win */
+.gall .overlayer,
+.gall .outerframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 0;
+}
+
+.gall .overlayer {
+  background-color: #222222;
+  opacity: 0.75;
+}
+
+.gall .outerframe .outerbox {
+  position: relative;
+  top: 20px;
+  margin: 0 auto 0 auto;
+  z-index: 10;
+  opacity: 1;
+}
+
+.gall .imgbox {
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+
+.gall .img {
+  position: relative;
+  opacity: 1;
+  z-index: 10;
+  border-radius: 8px;
+  border: solid 3px grey;
+}
+
+.gall .desc,
+.gall .close,
+.gall .less,
+.gall .greater,
+.gall .displ {
+  padding: 2px 10px 2px 10px;
+  border: solid 3px grey;
+  border-radius: 8px;
+  background-color: #333333;
+  min-height: 18px;
+  font: bolder 14px Arial, san-serif;
+}
+
+.gall .desc {
+  position: relative;
+  top: -18px;
+  z-index: 15;
+  display: inherit;
+  font: bolder 14px Arial, san-serif;
+  background-color: #333333;
+}
+
+.gall .close,
+.gall .less,
+.gall .greater,
+.gall .displ {
+  z-index: 15;
+  top: -13px;
+  color: #dddddd;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.gall .inactive {
+  color: grey;
+}
+
+.gall .close {
+  position: absolute;
+  right: 10px;
+}
+
+.gall .btntop {
+  position: absolute;
+  top: -9px;
+  z-index: 15;
+  width: 100%;
+}
+
+/* turn back button*/
+.turn-back-button {
+  top: 20px;
+  left: 20px;
+}
+
+/* picture section -> right bar end */
 .carousel .slide-button {
   background-color: #F0F0F0;
   color: black;
@@ -1337,6 +1562,25 @@ footer {
 .picture-row div:nth-child(3) {
   width: 212px;
   margin-right: 16px;
+}
+
+.detail-nav-button {
+  border: 1px solid #3E86F5;
+  background-color: #FFFFFF;
+}
+
+.detail-nav-button a {
+  border-radius: 4px;
+}
+
+.detail-navbar-row {
+  margin-top: 42px;
+  margin-bottom: 42px;
+}
+
+.detail-navbar {
+  z-index: 0;
+  top: 0;
 }
 
 .detail {
@@ -1568,7 +1812,8 @@ footer {
   color: #cfffa8;
 }
 
-/* ================== Elan ver page-1 ===============*/
+/* ================== Elan ver pages start ===============*/
+/* ------------- Elan ver page-1 ------------*/
 .advertised {
   margin-top: 3px;
   width: 592px;
@@ -1598,22 +1843,18 @@ footer {
   margin-bottom: 14px;
   color: #161616;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-}
-
-.advertised__subtitle-weight {
-  font-weight: 400;
 }
 
 .advertised__category-button {
   color: #000000;
-  line-height: 48px;
+  height: 48px;
   padding-top: 0;
   padding-bottom: 0;
   width: 184px;
-  transition: 250ms all;
-  border: 1px solid #E2E8EE;
+  transition: 200ms all;
+  position: relative;
   color: #000000;
   font-weight: 400;
   font-size: 14px;
@@ -1630,6 +1871,23 @@ footer {
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.advertised__category-choose {
+  transition: 300ms all;
+  border-radius: 6px;
+  border: 1px solid #E2E8EE;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.advertised__rent:checked + .advertised__category-choose {
+  color: white;
+  background-color: #00bcd4;
 }
 
 .advertised__move-date {
@@ -1795,7 +2053,7 @@ input.advertised__home-picture::file-selector-button {
   display: none;
 }
 
-/* ================= Elan ver page-2 detallar ===============*/
+/* ----- Elan ver page-2 detallar -- --*/
 .advertised {
   width: 590px;
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
@@ -1822,7 +2080,6 @@ input.advertised__home-picture::file-selector-button {
   justify-content: center;
   width: 190px;
   height: 62px;
-  border: 1px solid #E2E8EE;
   border-radius: 6px;
 }
 
@@ -1833,65 +2090,81 @@ input.advertised__home-picture::file-selector-button {
   font-size: 16px;
 }
 
+.advertised__tv::before {
+  font-family: "detail";
+  content: '\e893';
+  margin-right: 16px;
+  font-size: 24px;
+}
+
 .advertised__wifi::before {
   font-family: 'techizat-icon';
   content: '\e87b';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__paltaryuyan::before {
   font-family: 'techizat-icon';
   content: '\e87a';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__kondisoner::before {
   font-family: 'techizat-icon';
   content: '\e877';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__qızdırıcı::before {
   font-family: 'techizat-icon';
   content: '\e876';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__lift::before {
   font-family: 'techizat-icon';
   content: '\e881';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__parking::before {
   font-family: 'techizat-icon';
   content: '\e87c';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__terras::before {
   font-family: 'techizat-icon';
   content: '\e882';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__hovuz::before {
   font-family: 'techizat-icon';
   content: '\e878';
   margin-right: 16px;
+  font-size: 26px;
 }
 
 .advertised__səs::before {
   font-family: 'techizat-icon';
   content: '\e885';
   margin-right: 16px;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .advertised__meydan::before {
   font-family: 'techizat-icon';
   content: '\e87e';
   margin-right: 16px;
+  font-size: 24px;
 }
 
 .advertised__bilyard::before {
@@ -1900,12 +2173,34 @@ input.advertised__home-picture::file-selector-button {
   margin-right: 16px;
   border: 1px solid #272727;
   border-radius: 50%;
+  font-size: 22px;
 }
 
 .advertised__caqquzi::before {
   font-family: 'techizat-icon';
   content: '\e87d';
+  font-size: 28px;
+  position: absolute;
+  left: 16px;
+  top: 15px;
+}
+
+.advertised__cigarette::before {
+  font-family: "detail";
+  content: '\e86d';
   margin-right: 16px;
+  font-size: 24px;
+  color: #272727;
+}
+
+.advertised__couple::before {
+  font-family: "detail";
+  content: '\e899';
+  font-size: 46px;
+  position: absolute;
+  margin-top: 8px;
+  left: -37px;
+  color: #272727;
 }
 
 .advertised__techizat {
@@ -1915,4 +2210,378 @@ input.advertised__home-picture::file-selector-button {
 .advertised__equipment-size {
   width: 285px;
   margin-bottom: 30px;
+}
+
+.advertised__choose-button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.advertised__equipment input:checked ~ .advertised__change-color {
+  color: #3E86F5;
+}
+
+.advertised__equipment input:checked ~ .advertised__change-color::before {
+  color: #3E86F5;
+}
+
+.advertised__equipment input:checked ~ .advertised__change-color::before {
+  border-color: #3E86F5;
+}
+
+.advertised__choose-button-border {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #E2E8EE;
+  border-radius: 6px;
+}
+
+.advertised__choose-button:checked + .advertised__choose-button-border {
+  border: 1px solid #3E86F5;
+}
+
+/* ------- Elan ver page 4 ------*/
+.advertised__next-prew-button {
+  margin-top: 30px;
+  margin-bottom: 217px;
+}
+
+.advertised__contact-box {
+  width: 285px;
+  height: 62px;
+}
+
+.advertised__contact-title {
+  color: #161616;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__subtitle-weight {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.advertised__name-lastname-box {
+  height: 62px;
+}
+
+.advertised__person-radio {
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.advertised__person-radio-box {
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+.advertised__person-radio-box label {
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*----- elan ver succes page -----*/
+.advertised__succes-img {
+  margin-top: 66px;
+  margin-bottom: 46px;
+}
+
+.advertised__success-title {
+  color: #000000;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.advertised__success-info {
+  width: 203px;
+  color: #7B7B7B;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.advertised__success-info-box {
+  width: 203px;
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+
+.advertised__success-details {
+  width: 255px;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  color: #4D4D4D;
+  line-height: 21px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.advertised__success-details:hover {
+  border: 1px solid #cfdbe8;
+  background-color: #ffffff;
+}
+
+/*----- elan ver failed page -----*/
+.advertised__failed-img-box {
+  margin-top: 66px;
+  margin-bottom: 46px;
+}
+
+/*============== Qeydiyyatdan keç səhifəsi ==============*/
+.sing-up {
+  background-color: #FDFDFD;
+  display: flex;
+}
+
+.sing-up__picture-box {
+  position: relative;
+  height: 100vh;
+  width: 730px;
+}
+
+.sing-up img {
+  height: 100%;
+  width: 100%;
+}
+
+.sing-up__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(39, 39, 39, 0.4);
+  z-index: 2;
+}
+
+.sing-up__title {
+  position: absolute;
+  z-index: 5;
+}
+
+.sing-up__title h1 {
+  color: #FFFFFF;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.sing-up__title span {
+  color: #CFCFCF;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sing-up__form-title {
+  margin-bottom: 20px;
+  color: #393939;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.sing-up__form-box {
+  width: 400px;
+}
+
+.sing-up__form label {
+  margin-top: 14px;
+  color: #393939;
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sing-up__form input {
+  height: 45px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sing-up__form input:hover {
+  border: 1px solid #859ab0;
+}
+
+.sing-up__submit-button {
+  margin-top: 28px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ================ Login pages ================ */
+.log-in {
+  background-color: #FDFDFD;
+  display: flex;
+}
+
+.log-in__picture-box {
+  position: relative;
+  height: 100vh;
+  width: 730px;
+}
+
+.log-in img {
+  height: 100%;
+  width: 100%;
+}
+
+.log-in__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(39, 39, 39, 0.4);
+  z-index: 2;
+}
+
+.log-in__title {
+  position: absolute;
+  z-index: 5;
+}
+
+.log-in__title h1 {
+  color: #FFFFFF;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.log-in__title span {
+  color: #CFCFCF;
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.log-in__form-title {
+  margin-bottom: 20px;
+  color: #393939;
+  line-height: 42px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.log-in__form-box {
+  width: 400px;
+}
+
+.log-in__form label {
+  margin-top: 14px;
+  color: #393939;
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.log-in__input {
+  height: 45px;
+  border: 1px solid #E6E6E6;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.log-in__input:hover {
+  border: 1px solid #859ab0;
+}
+
+.log-in__check-box input {
+  margin-right: 11px;
+  margin-top: 3px;
+}
+
+.log-in__check-box label {
+  color: #666666;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.log-in__check-box span a {
+  color: #32568A;
+  transition: 200ms all;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.log-in__check-box span a:hover {
+  color: #8c98aa;
+}
+
+.log-in__submit-button {
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.log-in__submit-button a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.log-in__submit-button {
+  color: #FFFFFF;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.log-in__create-account span {
+  line-height: 18px;
+  color: #32568A;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.log-in__create-account a {
+  text-decoration: underline !important;
+  line-height: 18px;
+  color: #3E86F5;
+  transition: 200ms all;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.log-in__create-account a:hover {
+  color: #0056d7;
+}
+
+/* ============== Update password2 page ============== */
+.update-password-box input {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E6E6;
 }

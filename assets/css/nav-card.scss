@@ -25,12 +25,6 @@
             font-size: 25px;
             font-family: "card-top-icon";
         }
-        &:hover {
-            color: yellow;
-            &::before {
-                color: red;
-            }
-        }
     }
     .slide-dropdown {
         margin-right: $margin-33;
@@ -43,23 +37,9 @@
             font-family: "icon-vector";
             font-size: 8px;
         }
-       
-        &:hover {
-            color: yellow;
-         }
-        &::after{             
-                color: #ffffff;         
-         }
-        &:hover::after {
-        color: rgb(203, 203, 203) !important;
-         }
         }
         .user {
          transition: 200ms all !important;
-        }
-        .dropdown-box:hover .user {
-            background-color: #17cd01;
-            border-radius: 50px;
         }
         .dropdown-item {
             font-size: 13px;
@@ -69,15 +49,12 @@
             border-radius: 20px;
             transition: 200ms all;
         }
-       .Logo:hover {
-            box-shadow:3px 3px 40px 3px rgb(225, 222, 222) ;
-          }
-       .elan {
-            transition: 200ms all !important;
-       }   
-       .elan:hover {
-            box-shadow:3px 3px 40px 3px rgb(225, 222, 222) ;
-       }   
+    //    .elan {
+    //         transition: 200ms all !important;
+    //    }   
+    //    .elan:hover {
+    //         box-shadow:3px 3px 40px 3px rgb(225, 222, 222) ;
+    //    }   
 }   
        
 
@@ -174,18 +151,6 @@
 .slide-favori-color {
     color: $color-black !important;
   }
-.slide-favori-color:hover {
-    color: #ffcc00 !important;
-}  
-.dropdown-color::after {
-    color: $color-black !important;
-}
-.dropdown-color:hover {
-   color: #ffcc00 !important;
-}
-.slide-dropdown:hover::after {
-    color: rgb(203, 203, 203) !important;
-}
 .elan-box {
     border: 1px solid rgb(226, 226, 254) ;
     border-radius: 4px;
@@ -198,24 +163,39 @@
     padding: 0 21px;
     width: 100%;
     display: block;
-    color:$color-blue;
+    color:$color-blue !important;
     line-height: 39px;
+    background-color: $color-white1;
     font: {
         weight: $font-500;
         size: $font-14;
     }
 }
-
-/*================  Detail-page ===================*/
-.detail-nav-button {
-    border: 1px solid $color-blue;
-    background-color: $color-white;
-}
-.detail-navbar-row {
-    margin-top: 42px;
-    margin-bottom: 42px;
-}
-.detail-navbar {
-z-index: 0;
-top: 0;
-}
+/* ===================== header page ================== */
+/* navbar -> qeydiyyat butonu */
+.sing-up-button {
+    width: 98px; 
+    background: #FFFFFF;
+    border-radius: 4px;
+    a {
+     line-height: 40px;
+     width: 100%;
+     display: inline-block;
+     color: $color-blue;
+     font: {
+      weight: $font-500;
+      size: $font-14;
+     }
+    }
+  }
+/* navbar -> daxil ol butonu */
+.log-in-button {
+    padding-left: 10px;
+    margin-right: $margin-33;
+    a {
+        display: inline-block;
+        font-size: 16px;
+        line-height: $line-h40;
+        color: white;
+    }
+ }
