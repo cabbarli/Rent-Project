@@ -758,3 +758,329 @@ footer {
     }
   }
 }
+
+/* ================== Elan ver page-1 ===============*/
+.advertised {
+  margin-top: 3px;
+  width: 592px;
+  &__check {
+    padding: 0 20px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    color: $color-black1;
+    line-height: $line-35;
+  font: {
+    weight: $font-600;
+    size: $font-32;
+  }
+  }
+  &__subtitle {
+   margin-top: 30px;
+   margin-bottom: 14px;
+   color: $color-black5;
+   line-height: $line-24;
+   font: {
+    weight: $font-400;
+    size: $font-16;
+   }
+  }
+  &__subtitle-weight {
+    font-weight: 400;
+  }
+  /* kirayə kateqoriya buttonları */
+  &__category-button {
+  color: $color-black4;  
+  line-height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 184px;
+  transition: 250ms all;
+  border: 1px solid $color-gray7;
+  &:hover {
+    border-color: #859ab0;
+  }
+  color: $color-black4;
+  font: {
+    weight: $font-400;
+    size: $font-14;
+  }
+  }
+  &__rent {
+  height: 48px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  }
+  /* Hansı tarixdə köçmək olar buttonu */
+  &__move-date {
+    padding: 13px 17px;
+    border: 1px solid $color-gray7;
+    &:hover {
+      border: 1px solid  #859ab0;
+      border-radius: 6px;
+    }
+  }
+  /* şəhər seçmə buttonu */
+  &__city-select {
+    -webkit-appearance: none !important;
+    border-radius: 4px;
+    padding: 19px 17px;
+    color: $color-black5;
+    line-height: $line-24;
+    font: {
+    weight: $font-400;
+    size: $font-16;
+    }
+    &-toggle::after {
+      content: none;
+    }
+    &:hover {
+      border: 1px solid  #859ab0;
+    }
+  }
+  &__city {
+    margin-bottom: 8px;
+    color: $color-black5;
+    line-height: $line-21;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  }
+    /* qiymət yazma buttonu */
+  &__space {
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+  &__price-box {
+    padding: 19px 17px;
+    color: #C0C0C0;
+    line-height:  $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+    &:hover {
+      border: 1px solid $color-gray8;
+    }
+  }
+  &__value {
+    position: absolute;
+    margin-left: 48px;
+    color: $color-black5;
+    line-height:  $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+  }
+  select, input {
+    border: 1px solid $color-gray7;
+  }
+  /* ev haqqında məlumat */
+  &__about-home {
+    padding: 19px 17px;
+    width: 590px;
+    height: 97px;
+    max-height: 98px;
+    color: #C0C0C0;
+    line-height:  $line-24;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+    &:hover {
+      border: 1px solid  $color-gray8;
+    }
+  }
+  /* şəkil əlavə etmə buttonu */
+   &__choose-button {
+    padding: 10px 24px;
+    color: $color-blue;
+    line-height: 170%;
+    background: #DFE4EC;
+    border-radius: 4px;
+    font: {
+      weight: $font-500;
+      size: $font-14;
+    }
+   }
+   &__choose-text {
+    color: $color-black6;
+    line-height: 130%;
+    font: {
+      weight: $font-400;
+      size: $font-14;     
+    }
+   }
+   &__home-picture {
+     opacity: 0;
+     border: none !important;
+     box-shadow: none !important;
+     &:hover {
+      box-shadow: none;
+     }
+     &:valid {
+      opacity: 1;
+      .advertised__choose-text {
+        opacity: 0;
+      }
+     }
+   }
+   &__picture-box {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 26px 17px;
+    border: 1px dashed $color-gray7;
+    transition: 200ms all;
+    &:hover {
+      border: 1px solid  $color-gray8;
+    }
+   }
+   &__other-picture {
+    margin-top: 14px;
+    margin-bottom: 30px;
+   }
+   /* Geri və iləri buttonları */
+   &__prew-next {
+    border: 1px solid $color-gray7 !important;
+    width: 184px;
+    padding: 0;
+    border-radius: 6px;
+    a {
+      display: inline-block;
+      width: 100%;
+      color: $color-black6;
+      line-height: 48px;
+      font: {
+        weight: $font-500;
+        size: $font-14;
+      }
+    }
+    &:hover {
+      border: 1px solid  $color-gray8;
+      background-color: $color-blue;
+      a {
+      color: $color-white1;
+      font-weight: 600;
+      }
+    }
+   }
+}
+input.advertised__home-picture::file-selector-button {
+  display: none;
+}
+/* ================= Elan ver page-2 detallar ===============*/
+.advertised {
+  width: 590px;
+  /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
+  &__details-title {
+    margin-top: 14px;
+    color: $color-black5;
+    line-height: $line-21;
+    font: {
+      weight: $font-400;
+      size: $font-14;
+    }
+  }
+  &__details {
+    height: 48px;
+  }
+  /* Təchizatlar */
+  &__equipment {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 62px;
+    border: 1px solid $color-gray7;
+    border-radius: 6px;
+  span{
+    color: $color-black;
+    line-height: $line-27;
+    font: {
+      weight: $font-400;
+      size: $font-16;
+    }
+   }
+ }
+//  &__tv::before {
+    
+ 
+//  } 
+ &__wifi::before {
+    font-family: 'techizat-icon';
+    content: '\e87b';
+    margin-right: 16px;
+ }
+ &__paltaryuyan::before {
+    font-family: 'techizat-icon';
+    content: '\e87a';
+    margin-right: 16px;
+ }
+&__kondisoner::before {
+    font-family: 'techizat-icon';
+    content: '\e877';
+    margin-right: 16px;
+ }
+ &__qızdırıcı::before {
+    font-family: 'techizat-icon';
+    content: '\e876';
+    margin-right: 16px;
+ } 
+ &__lift::before {
+    font-family: 'techizat-icon';
+    content: '\e881'; 
+    margin-right: 16px;
+ }
+ &__parking::before {
+    font-family: 'techizat-icon';
+    content: '\e87c';
+    margin-right: 16px;
+ }
+ &__terras::before {
+    font-family: 'techizat-icon';
+    content: '\e882';
+    margin-right: 16px;
+ }
+ &__hovuz::before {
+    font-family: 'techizat-icon';
+    content: '\e878';
+    margin-right: 16px;
+ } 
+ &__səs::before {
+    font-family: 'techizat-icon';
+    content: '\e885'; 
+    margin-right: 16px;
+    font-size: 14px;
+ } 
+ &__meydan::before {
+    font-family: 'techizat-icon';
+    content: '\e87e';
+    margin-right: 16px;
+ } 
+ &__bilyard::before {
+    font-family: 'techizat-icon';
+    content: '\e886';
+    margin-right: 16px;
+    border: 1px solid $color-black;
+    border-radius: 50%;
+ } 
+ &__caqquzi::before {
+    font-family: 'techizat-icon';
+    content: '\e87d';
+    margin-right: 16px;
+ }
+ /* icazə verilir section */
+ &__techizat {
+  margin-top: 10px;
+ }
+ &__equipment-size {
+  width: 285px;
+  margin-bottom: 30px;
+ }
+} 
