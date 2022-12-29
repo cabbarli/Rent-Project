@@ -943,15 +943,11 @@ input[type=number] {
 .immg {
   position: absolute;
   left: 0;
-  cursor: pointer;
-}
-
-.imgg {
-  cursor: pointer;
 }
 
 /*============ Önə çıxan təkliflər hissəsi and content start ===============*/
 figure {
+  position: relative;
   background: #FFFFFF;
   box-shadow: 0px 68px 84px -48px rgba(226, 238, 249, 0.6);
   border-radius: 10px;
@@ -977,6 +973,15 @@ figcaption {
 
 .suggestion__title-box {
   padding: 0;
+}
+
+.suggestion__detail-link {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 3;
 }
 
 .suggestion__img {
@@ -1025,6 +1030,8 @@ figcaption {
   height: 40px;
   border-radius: 10px;
   background-color: #FFFFFF;
+  z-index: 5;
+  cursor: pointer;
 }
 
 .suggestion__col-middle {
@@ -1138,166 +1145,8 @@ figcaption {
   margin-top: 96px;
 }
 
-.suggestion__like {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 15px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #FFFFFF;
-}
-
-.suggestion__like:before {
-  content: '\e86a';
-  font-family: "heart-like";
-  color: red;
-}
-
 .navbar-size {
   width: 1197px;
-}
-
-/*============= Footer start ====================*/
-footer {
-  margin-top: 95px;
-  padding-top: 71px;
-  color: #FDFDFD !important;
-  background-color: #272727;
-}
-
-.foot-logo {
-  line-height: 36px;
-  margin-bottom: 10px;
-  color: #FDFDFD;
-  transition: 200ms all;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.foot-logo:hover {
-  color: #0cf967;
-}
-
-.foot-text {
-  width: 236px;
-  line-height: 24px;
-  opacity: 0.88;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.foot-nav h3 {
-  line-height: 24px;
-  margin-bottom: 25px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.foot-nav li {
-  margin-bottom: 14px;
-}
-
-.foot-nav li a {
-  line-height: 16px;
-  color: #FDFDFD;
-  transition: 200ms all;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.foot-nav li a:hover {
-  color: #cfcfcf;
-}
-
-.foot-email {
-  right: 0;
-}
-
-.foot-email .right-arrow-icon:before {
-  content: '\e863';
-  font-family: 'right-arrow';
-}
-
-.foot-email .foot-email {
-  margin-right: 10px;
-  border-radius: 0;
-  background-color: #FDFDFD;
-  line-height: 24px;
-  color: #272727;
-  font-weight: 400;
-  font-size: 15px;
-}
-
-.foot-email .foot-label {
-  width: 292px;
-  margin-bottom: 27px;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.foot-email .foot-submit {
-  border-radius: 4px;
-  background-color: #FDFDFD;
-}
-
-.foot-email .foot-submit:hover {
-  color: green;
-  background-color: rgba(236, 236, 234, 0.856);
-}
-
-/* footer bottom box */
-.foot-bottom-box {
-  padding: 26px 0 43px 0;
-  border-top: 0.3px solid rgba(209, 163, 163, 0.32);
-}
-
-.foot-bottom-box .foot-copyright {
-  letter-spacing: -0.204545px;
-  color: #FDFDFD;
-  line-height: 22px;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-.foot-bottom-box .foot-sosial a {
-  margin-left: 44px;
-}
-
-.foot-bottom-box .foot-facebook:before {
-  content: '\e868';
-  font-family: "sosial-icon";
-  color: #FDFDFD;
-  transition: 220ms all;
-}
-
-.foot-bottom-box .foot-facebook:hover:before {
-  color: #cfcfcf;
-}
-
-.foot-bottom-box .foot-instagram:before {
-  content: '\e867';
-  font-family: "sosial-icon";
-  color: #FDFDFD;
-  transition: 220ms all;
-}
-
-.foot-bottom-box .foot-instagram:hover:before {
-  color: #cfcfcf;
-}
-
-.foot-bottom-box .foot-twetter:before {
-  content: '\e866';
-  font-family: "sosial-icon";
-  color: #FDFDFD;
-  transition: 220ms all;
-}
-
-.foot-bottom-box .foot-twetter:hover:before {
-  color: #cfcfcf;
 }
 
 /*================  Detail-page ===================*/
@@ -2628,3 +2477,146 @@ input.advertised__home-picture::file-selector-button {
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
 }
+
+/* ============= Bağ, həyət, bina evləri start ====== */
+/* ================== Footer start ================== */
+footer {
+  margin-top: 95px;
+  padding-top: 71px;
+  color: #FDFDFD !important;
+  background-color: #272727;
+}
+
+.foot-logo {
+  line-height: 36px;
+  margin-bottom: 10px;
+  color: #FDFDFD;
+  transition: 200ms all;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.foot-logo:hover {
+  color: #0cf967;
+}
+
+.foot-text {
+  width: 236px;
+  line-height: 24px;
+  opacity: 0.88;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.foot-nav h3 {
+  line-height: 24px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.foot-nav li {
+  margin-bottom: 14px;
+}
+
+.foot-nav li a {
+  line-height: 16px;
+  color: #FDFDFD;
+  transition: 200ms all;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.foot-nav li a:hover {
+  color: #cfcfcf;
+}
+
+.foot-email {
+  right: 0;
+}
+
+.foot-email .right-arrow-icon:before {
+  content: '\e863';
+  font-family: 'right-arrow';
+}
+
+.foot-email .foot-email {
+  margin-right: 10px;
+  border-radius: 0;
+  background-color: #FDFDFD;
+  line-height: 24px;
+  color: #272727;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.foot-email .foot-label {
+  width: 292px;
+  margin-bottom: 27px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.foot-email .foot-submit {
+  border-radius: 4px;
+  background-color: #FDFDFD;
+}
+
+.foot-email .foot-submit:hover {
+  color: green;
+  background-color: rgba(236, 236, 234, 0.856);
+}
+
+/* footer bottom box */
+.foot-bottom-box {
+  padding: 26px 0 43px 0;
+  border-top: 0.3px solid rgba(209, 163, 163, 0.32);
+}
+
+.foot-bottom-box .foot-copyright {
+  letter-spacing: -0.204545px;
+  color: #FDFDFD;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.foot-bottom-box .foot-sosial a {
+  margin-left: 44px;
+}
+
+.foot-bottom-box .foot-facebook:before {
+  content: '\e868';
+  font-family: "sosial-icon";
+  color: #FDFDFD;
+  transition: 220ms all;
+}
+
+.foot-bottom-box .foot-facebook:hover:before {
+  color: #cfcfcf;
+}
+
+.foot-bottom-box .foot-instagram:before {
+  content: '\e867';
+  font-family: "sosial-icon";
+  color: #FDFDFD;
+  transition: 220ms all;
+}
+
+.foot-bottom-box .foot-instagram:hover:before {
+  color: #cfcfcf;
+}
+
+.foot-bottom-box .foot-twetter:before {
+  content: '\e866';
+  font-family: "sosial-icon";
+  color: #FDFDFD;
+  transition: 220ms all;
+}
+
+.foot-bottom-box .foot-twetter:hover:before {
+  color: #cfcfcf;
+}
+
+/*================ Footer end =================*/
