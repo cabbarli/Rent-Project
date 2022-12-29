@@ -1528,6 +1528,7 @@ input.advertised__home-picture::file-selector-button {
     font-weight: $font-500;
   }
 }
+
 /* ================ Login pages ================ */
 
 .log-in {
@@ -1691,7 +1692,17 @@ input.advertised__home-picture::file-selector-button {
         color: #0056d7;
       }
     }
-  }
+   }
+    /*----- error password ------*/
+    &__error-password {
+      label  {
+        color: $color-red;
+      }
+      input {
+        border-color: $color-red;
+        color: $color-red;
+      }
+    }
 }
 /* ============== Update password2 page ============== */
 .update-password-box {

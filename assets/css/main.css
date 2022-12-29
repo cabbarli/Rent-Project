@@ -2447,6 +2447,7 @@ input.advertised__home-picture::file-selector-button {
 .log-in {
   background-color: #FDFDFD;
   display: flex;
+  /*----- error password ------*/
 }
 
 .log-in__picture-box {
@@ -2607,6 +2608,15 @@ input.advertised__home-picture::file-selector-button {
 
 .log-in__create-account a:hover {
   color: #0056d7;
+}
+
+.log-in__error-password label {
+  color: #D92020;
+}
+
+.log-in__error-password input {
+  border-color: #D92020;
+  color: #D92020;
 }
 
 /* ============== Update password2 page ============== */
