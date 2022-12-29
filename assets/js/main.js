@@ -12,9 +12,14 @@
     let map = new google.maps.Map(document.getElementById('map'), {zoom: 7, center: { lat: 40.375,  lng: 49.845}});
   }
 
+  /* heart like button */
+ function chn() {
+  var menu = document.querySelector(".immg");
+  menu.classList.toggle("key");
+ }
 
-  /*  detail top-right picture section */
-var Gall = function () {
+  /*====== detail top-right picture section =====*/
+  var Gall = function () {
 
   var gal;
   var imgs;
@@ -627,3 +632,5 @@ Gall.Run("gal0");
 //Gall.Run("gal1");
 
 //Gall.ImgBox("gal0", 1);
+
+

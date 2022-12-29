@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
+    <title>index2</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     
@@ -24,17 +25,22 @@
                   <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#nContent"  aria-controls="#nContent"  aria-label="menu ac/bagla butonu" aria-expanded="false"> <span class="navbar-toggler-icon"></span></button>
                   <div class="collapse navbar-collapse" id="nContent">
                     <div class=" d-flex  align-items-center ms-auto">
-                       <div class="">                      
+                       <div>                      
                         <a href="favori-page.html" class="slide-favori d-flex">Favorilər</a>
                        </div>
-                       <div class="d-flex align-items-center">
+                       <div class="dropdown dropdown-box d-flex align-items-center flex-row">
                         <span><img class="user" src="./assets/img/user.png" alt="user icon"></span>
-                        <div class=" border-0 log-in-button">
-                         <a class="align-items-end" href="login-page.html">Daxil ol</a>
-                        </div>
+
+                        <button class="btn border-0 slide-dropdown d-flex align-items-center flex-row" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span>Hacı 27</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Şifrəni yenilə</a></li>
+                          <li><a class="dropdown-item" href="#">Çıxış et</a></li>
+                        </ul>
                        </div>
-                       <div class="sing-up-button d-flex justify-content-center align-items-center">
-                        <a class="d-flex justify-content-center " href="sing-up-page.html">Qeydiyyat</a>
+                       <div>
+                        <a href="elan-page1.html" class="elan"> <img src="assets/img/Frame 1321315304.png" alt="Elan ver button"> </a>
                        </div>
                     
                     </div> 
@@ -159,13 +165,17 @@
             </div>   
           </div>
         </div>
-       
+
         <div class="row suggestion__img">
           <div class="col d-flex p-0">
             <div class="col">  <!-- suggestion box 1 start -->
               <figure>
                 <div  class="d-inline-flex position-relative suggestion__img-box">
-                 <div class="suggestion__like-icon  position-absolute"></div>
+                 <div class="suggestion__like-icon position-absolute">
+                 <div class="position-relative"  onclick="chn();">
+                    <img class="imgg" src="./assets/img/heartt.png" alt="">
+                    <img class="immg" src="./assets/img/heart2.png" alt="">
+                 </div> 
                  <img src="./assets/img/c3829351e8.png" alt="ev şəkli" class="img-fluid suggestion__img">
                 </div> 
                 <a href="detail.html">
@@ -504,7 +514,7 @@
       <h3 class="">Pulsuz elan dərc et və sənə uyğun <br> kirayəçini tap!</h3>
      </div> 
      <div class="col p-0 position-absolute advertise__link">
-      <a href="#" class=" ">Elan ver</a>
+      <a href="elan-page1.html" class=" ">Elan ver</a>
      </div> 
       <img class="adverise-img img-fluid p-0" src="./assets/img/Defne-Bagevi-Bina-9-1 1.png" alt="ev şəkli">
     </div>
