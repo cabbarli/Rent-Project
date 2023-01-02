@@ -2,6 +2,9 @@
 /*===== slide card start =====*/
 .card-body {
     padding:20px 5px;
+    &__select-col {
+        display: flex;
+    }
 }
 /*===== slide top card start =====*/
 .navbar {
@@ -114,7 +117,6 @@
         border-radius: $border-6;
         height:  $height-50;
         margin-right: 10px;
-        color: #9F9F9F;
         letter-spacing: 0.2px;
         font: {
             weight:$font-400;
@@ -135,7 +137,7 @@
                 size:$font-15;
             }
             &:hover {
-                background-color: #20d300;
+                background-color: #0051cb;
             }
         }
      }

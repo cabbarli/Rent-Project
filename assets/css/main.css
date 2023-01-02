@@ -12,6 +12,10 @@
   padding: 20px 5px;
 }
 
+.card-body__select-col {
+  display: flex;
+}
+
 /*===== slide top card start =====*/
 .navbar {
   top: 38px;
@@ -128,7 +132,6 @@
   border-radius: 6px;
   height: 50px;
   margin-right: 10px;
-  color: #9F9F9F;
   letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 14px;
@@ -148,7 +151,7 @@
 }
 
 .slide-card2 .search__submit:hover {
-  background-color: #20d300;
+  background-color: #0051cb;
 }
 
 .slide-card2 option {
@@ -827,6 +830,216 @@ input[type=number] {
   color: #C0C0C0;
 }
 
+/* ======= == sing-up-page.html responsive ========= */
+@media only screen and (max-width: 1199px) {
+  .sing-up__title {
+    display: none;
+  }
+  .sing-up__picture-box {
+    width: 100%;
+  }
+  .sing-up__form-col {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    top: 0;
+    background: #d7d7d7;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0.8);
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .sing-up__form-box {
+    width: 360px;
+  }
+}
+
+/* ========== login-page.html responsive ========== */
+@media only screen and (max-width: 1199px) {
+  .log-in__title {
+    display: none;
+  }
+  .log-in__picture-box {
+    width: 100%;
+  }
+  .log-in__form-col {
+    position: absolute;
+    z-index: 4;
+    bottom: 0;
+    top: 0;
+    background: #d7d7d7;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0.8);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .log-in__form-box {
+    width: 360px;
+  }
+}
+
+/* ============= index.html responnsive =========== */
+@media (min-width: 1200px) {
+  /* menu */
+  .container {
+    max-width: 1224px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* card section */
+  .slide-card2 .select__metro {
+    width: 230px;
+  }
+  .slide-card2 .select__room {
+    width: 92px;
+  }
+  .slide-card2 .select__home {
+    width: 141px;
+  }
+  .slide-card2 .search__text {
+    width: 220px;
+  }
+  .slide-card2 .search__submit {
+    width: 110px;
+  }
+  .slide-card2 .select {
+    padding: 0 13px;
+  }
+  .card-body {
+    padding: 12px 5px;
+  }
+  /* rent box */
+  .rent-boxs .rent-day {
+    padding: 60px 20px;
+  }
+  .rent-boxs .rent-month {
+    padding: 60px 20px;
+  }
+  .rent-boxs .sale {
+    padding: 60px 20px;
+    width: 170px;
+  }
+  .rent-boxs p {
+    width: 170px;
+  }
+  /*category */
+  .category .category-box {
+    margin-right: 10px;
+  }
+  /* slide picture height */
+  .carousel .carousel-inner div {
+    height: 610px;
+  }
+  .carousel .carousel-inner div img {
+    height: 610px;
+  }
+  /* content section */
+  .suggestion__col-middle {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* card section */
+  .container-card {
+    bottom: 18%;
+  }
+  .card-body {
+    padding: 16px;
+  }
+  .card-body__select-col {
+    display: block;
+  }
+  .card-body__select-col div:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+  .card-body__select-col .select {
+    padding: 0;
+    border-right: none;
+  }
+  .card-body__select-col .select__room {
+    width: 100%;
+  }
+  .card-body__select-col .select__home {
+    width: 100%;
+  }
+  .card-body__select-col .select__metro {
+    width: 100%;
+  }
+  .card-body__select-col .search {
+    padding: 0;
+  }
+  .card-body__select-col .search div:nth-child(2) {
+    margin-top: 10px;
+  }
+  .card-body__select-col .search .search__text {
+    width: 100%;
+  }
+  .card-body__select-col .search .search__submit {
+    width: 100%;
+  }
+  .category {
+    text-align: center;
+    display: block !important;
+  }
+  .category-box {
+    margin: auto !important;
+  }
+  .suggestion__img-box {
+    max-width: 245px;
+    height: 210px;
+  }
+  .suggestion__img-height {
+    height: 190px;
+    max-width: 166px;
+  }
+  .suggestion__img-title {
+    font-size: 17px;
+  }
+  .suggestion__img-adress {
+    font-size: 12px;
+  }
+  .suggestion__properties {
+    font-size: 11px;
+    margin-right: 7px;
+  }
+  .margin-size .col:nth-child(1) {
+    margin-right: 11px;
+  }
+  .margin-size .col:nth-child(2) {
+    margin-right: 11px;
+  }
+  .margin-size .col:nth-last-child(1) {
+    margin-left: 11px;
+  }
+  .suggestion__img-adress {
+    max-width: 157px;
+  }
+  .suggestion .img-adress-size {
+    max-width: 205px;
+  }
+  .foot-top-box {
+    display: block !important;
+  }
+  .foot-top-box div:nth-child(1) {
+    justify-content: space-between;
+  }
+  .foot-top-box .foot-email-box {
+    margin-bottom: 140px;
+  }
+  .foot-top-box .foot-email {
+    left: 0;
+  }
+}
+
 /*===== carousel background =====*/
 .carousel__background {
   position: absolute;
@@ -845,8 +1058,8 @@ input[type=number] {
 }
 
 .category .category-box {
-  width: 335px;
-  margin-right: 95px;
+  max-width: 335px;
+  margin-right: 112px;
 }
 
 .category .category-box .category-box__text {
@@ -869,7 +1082,7 @@ input[type=number] {
 }
 
 .category .category-box .category-box__about {
-  width: 335px;
+  max-width: 335px;
   line-height: 32px;
   color: #747582;
   font-weight: 400;
@@ -907,7 +1120,7 @@ input[type=number] {
 }
 
 .rent-boxs p {
-  width: 179px;
+  max-width: 179px;
   line-height: 27px;
   color: #747582;
   font-weight: 400;
@@ -984,15 +1197,6 @@ figcaption {
   z-index: 3;
 }
 
-.suggestion__img {
-  height: 100%;
-  border-radius: 8px;
-}
-
-.suggestion__img-height {
-  height: 240px;
-}
-
 .suggestion__title {
   line-height: 35px;
   color: #282C4B;
@@ -1065,16 +1269,19 @@ figcaption {
 }
 
 .suggestion__img-box {
+  max-width: 387px;
   height: 245px;
 }
 
 .suggestion__img {
   height: 100%;
+  width: 100%;
   border-radius: 8px;
 }
 
 .suggestion__img-height {
   height: 240px;
+  max-width: 285px;
 }
 
 .suggestion__properties {
@@ -1103,8 +1310,7 @@ figcaption {
   margin-top: 87px;
 }
 
-.advertise .advertise__title {
-  top: 117px;
+.advertise__box {
   left: 57px;
 }
 
@@ -1114,11 +1320,6 @@ figcaption {
   color: #FFFFFF;
   font-size: 28px;
   font-weight: 700;
-}
-
-.advertise .advertise__link {
-  bottom: 117px;
-  left: 57px;
 }
 
 .advertise .advertise__link a {
@@ -1368,6 +1569,14 @@ figcaption {
 
 .carousel .carousel-inner {
   border-radius: 12px 0px 0px 12px;
+}
+
+.carousel .carousel-inner div {
+  height: 683px;
+}
+
+.carousel .carousel-inner div img {
+  height: 683px;
 }
 
 /* detail-page caeousel end */

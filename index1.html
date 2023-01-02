@@ -7,10 +7,11 @@
     <title>index1</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     
-<div class="container-fluid p-0">
+<div class="container-fluid">
     <div class="row g-0">
         <div class="col">
              
@@ -18,7 +19,7 @@
                          <!-- slide screen color -->
                 <div class="carousel__background"></div>
                          <!-- navbar menu sart -->
-           <div class="container p-0 m-0 position-absolute">           
+           <div class="container position-absolute container-size">           
             <nav class="navbar navbar-expand-lg">            
                   <a href="index.html" class="navbar-brand Logo"><img  src="assets/img/Logo.png" alt="LOGO png"></a>
                   <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#nContent"  aria-controls="#nContent"  aria-label="menu ac/bagla butonu" aria-expanded="false"> <span class="navbar-toggler-icon"></span></button>
@@ -43,12 +44,12 @@
             </nav>  <!--navbar end-->
           </div>   <!--container end-->     
                               <!-- slide bottom card start -->
-              <div class="container position-absolute p-0 container-card">
+              <div class="container position-absolute container-card nav-size">
                <div class="card slide-card2" >
                     <div class="card-body">
                           <form action="#" name="form" id="myForm">
                              <div class="row">
-                                <div class="col d-flex">
+                                <div class="col card-body__select-col">
                                    
                                    <div class="select">
                                     <label class="form-label" for="metro">Metro</label>
@@ -62,7 +63,7 @@
 
                                    <div  class="select">
                                     <label class="form-label" for="room">Otaq sayı</label>
-                                    <select class="form-select select__room  border-0" name="room" id="room>" aria-label="Açılan selekt qutusu">
+                                    <select class="form-select select__room  border-0" name="room" id="room" aria-label="Açılan selekt qutusu">
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                       <option value="3">3</option>
@@ -78,9 +79,13 @@
                                     </select>
                                   </div>
 
-                                  <div class="search d-flex align-items-center">
-                                       <input type="search" placeholder="Daxil et" class="form-control search__text d-inline-block" aria-label="axtarış mətni girmək üçün qutu" name="metin">
-                                       <input type="submit" class="form-control search__submit btn d-inline-block " value="Axtar" aria-label="axtar butonu">
+                                  <div class="search display-block d-lg-flex align-items-center">
+                                    <div>
+                                      <input type="search" placeholder="Daxil et" class="form-control search__text d-inline-block" aria-label="axtarış mətni girmək üçün qutu" name="metin">
+                                    </div>
+                                    <div>
+                                      <input type="submit" class="form-control search__submit btn d-inline-block " value="Axtar" aria-label="axtar butonu">
+                                    </div>
                                   </div>
                                 </div> <!--col end-->   
                              </div> <!--row end-->    
@@ -116,8 +121,9 @@
 <!-- Content section start -->
 <div class="container p-0 justify-content-center d-flex flex-column">
     <!-- kateqoriyalar section start-->
+<div class="container">
     <div class="row">
-        <div class="col d-flex category p-0 justify-content-center">
+        <div class="col d-block d-lg-flex category justify-content-center">
              <div class="col category-box">
                 <p class="category-box__text">Ən yaxşı xidmət</p>
                 <h1 class="category-box__title">Kateqoriyalar</h1>
@@ -142,25 +148,24 @@
                       </div>
                    </div> <!-- col end -->              
              </div>  <!-- col end -->
-
         </div> <!-- col end -->
     </div> <!-- row end ( kateqoriyalar section end) -->
-     
+</div>  <!-- container end -->
+
     <!-- Önə çıxan təkliflər bölməsi start -->
-    <div class="row ">
-    <div class="col p-0">
+<div class="container">
+  <div class="row">
+    <div class="col">
       <div class="suggestion">
-        <div class="row">
           <div class="suggestion__title-box ">
             <h2 class="suggestion__title">Önə çıxan təkliflər</h2>
             <div class="d-flex">
                <span class="suggestion__text">İstifadəçilərimizin ən çox istifadə etdiyi seçimləri sizin üçün sıraladıq</span>
                <a href="one-cixan-teklifler.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt=""></a>
             </div>   
-          </div>
-        </div>    
-        <div class="row suggestion__img">
-          <div class="col d-flex p-0">
+          </div>      
+        <div class="row">
+          <div class="col d-flex">
             <div class="col">  <!-- suggestion box 1 start -->
               <figure>
                 <div  class="d-inline-flex position-relative suggestion__img-box">
@@ -170,7 +175,7 @@
                       <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
                     </div> 
                  </div>
-                 <img src="./assets/img/c3829351e8.png" alt="home picture" class="img-fluid suggestion__img">
+                 <img src="./assets/img/c3829351e8.png" alt="home picture" class="suggestion__img img-fluid">
                 </div> 
                 <a href="detail.html" class="suggestion__detail-link"></a>
                    <figcaption>
@@ -235,20 +240,20 @@
       </div> <!-- suggestion end -->
     </div> <!-- col end -->
   </div> <!-- row end ( Önə çıxan təkliflər bölməsi end)-->
-    
+</div>  <!-- container end -->    
+
     <!-- Bağ evləri bölməsi start -->
-<div class="row">
-  <div class="col p-0">
-    <div class="row">
+<div class="container">
+ <div class="row">
+  <div class="col">
       <div class="suggestion__title-box title-margin">    
         <div class="d-flex align-items-center">
           <h2 class="suggestion__title">Bağ evləri</h2>
            <a href="garden-houses.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt=""></a>
         </div>   
       </div> <!--  suggestion__title-box end -->
-    </div>
     <div class="row">
-       <div class="col p-0 d-flex margin-size">
+       <div class="col d-flex margin-size">
          <div class="col"> <!--box l start-->
            <figure>
             <div  class="d-inline-flex position-relative suggestion__img-height">
@@ -340,21 +345,21 @@
       </div> <!-- col end -->
     </div> <!-- row end -->
   </div> <!-- col end Bağ evləri bölməsi  - -->  
-</div> <!-- row end,  Bağ evləri bölməsi  -->
+ </div> <!-- row end,  Bağ evləri bölməsi  -->
+</div>  <!-- container end -->  
 
  <!-- Həyət evləri bölməsi start -->
+<div class="container"> 
  <div class="row">
-  <div class="col p-0">
-    <div class="row">
+  <div class="col">
         <div class="suggestion__title-box title-margin">    
           <div class="d-flex align-items-center">
             <h2 class="suggestion__title">Həyət evləri</h2>
              <a href="yard-houses.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt=""></a>
           </div>   
-        </div> <!--  suggestion__title-box end -->
-    </div>    
+        </div> <!--  suggestion__title-box end -->   
     <div class="row">
-       <div class="col p-0 d-flex margin-size">
+       <div class="col d-flex margin-size">
          <div class="col"> <!--box l start-->
            <figure>
             <div  class="d-inline-flex position-relative suggestion__img-height">
@@ -446,21 +451,21 @@
       </div> <!-- col end -->
     </div> <!-- row end -->
   </div> <!-- col end, Həyət evləri bölməsi  - -->  
-</div> <!-- row end,  Həyət evləri bölməsi  -->
+ </div> <!-- row end,  Həyət evləri bölməsi  -->
+</div>  <!-- container end -->  
 
  <!-- Bina evləri bölməsi start -->
+<div class="container">
  <div class="row">
-  <div class="col p-0">
-    <div class="row">
+  <div class="col">
         <div class="suggestion__title-box title-margin">    
           <div class="d-flex align-items-center">
             <h2 class="suggestion__title">Bina evləri</h2>
              <a href="building-houses.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt="bina şəkli"></a>
           </div>   
         </div> <!--  suggestion__title-box end -->
-    </div> 
     <div class="row">
-       <div class="col p-0 d-flex margin-size">
+       <div class="col d-flex margin-size">
          <div class="col"> <!--box l start-->
            <figure>
             <div  class="d-inline-flex position-relative suggestion__img-height">
@@ -552,31 +557,40 @@
       </div> <!-- col end -->
     </div> <!-- row end -->
   </div> <!-- col end, Bina evləri bölməsi  - -->  
-</div> <!-- row end,  Bina evləri bölməsi  -->
+ </div> <!-- row end,  Bina evləri bölməsi  -->
+</div> <!-- container end -->
 
 <!-- Elan vermə bölməsi -->
-<div class="row">
-  <div class="col p-0">
-    <div  class="row advertise position-relative">
-     <div class="col p-0 position-absolute advertise__title">
-      <h3 class="">Pulsuz elan dərc et və sənə uyğun <br> kirayəçini tap!</h3>
-     </div> 
-     <div class="col p-0 position-absolute advertise__link">
-      <a href="#" class=" ">Elan ver</a>
-     </div> 
-      <img class="adverise-img img-fluid p-0" src="./assets/img/Defne-Bagevi-Bina-9-1 1.png" alt="ev şəkli">
+<div class="container">
+ <div class="row">
+  <div class="col">
+    <div  class="advertise position-relative d-flex align-items-center">
+     <div class="position-absolute advertise__box">
+        <div class="col advertise__title">
+          <h3 class="">Pulsuz elan dərc et və sənə uyğun <br> kirayəçini tap!</h3>
+         </div> 
+         <div class="col advertise__link">
+          <a href="#" class=" ">Elan ver</a>
+         </div>
+     </div>
+        
+
+      <img class="adverise-img img-fluid" src="./assets/img/Defne-Bagevi-Bina-9-1 1.png" alt="ev şəkli">
     </div>
+   </div>
   </div>
-</div>
-</div> <!-- col end (content section end) -->
+ </div> <!-- col end  -->
+
+</div> <!--  container end (content section end) -->
 
 <!---------------------- Footer start ------------------------>
-<footer>
+<div class="containerr">
+ <footer>
   <!-- footer-top start -->
- <div class="container p-0">  
+  <div class="container">  
   <div class="row"> <!--Top row start -->
    <div class="col d-flex p-0 foot-top-box">
-    <div class="col-sm-6 d-flex justify-content-between">
+    <div class="col-lg-6 d-flex justify-content-between">
       <div class="foot__logo-box">
           <a href="#" class="foot-logo d-inline-block">Logo</a>
           <p class="foot-text">Subscribe to keep up with the
@@ -599,10 +613,8 @@
         </ul>
       </div>
     </div>
-    <div class="col-sm-6 position-relative">
-
+    <div class="col-lg-6 position-relative foot-email-box">
       <div class="foot-email position-absolute">
-
           <form action="#" method="post">
             <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
               not simply random text. It has roots.</label>
@@ -620,7 +632,7 @@
     </div>
    </div> <!-- col end -->
   </div> <!--Top row end -->
-
+ <div class="container p-0">
   <div class="row"> <!--bottom row start -->
     <div class="col position-relative foot-bottom-box">
       <div class="col d-inline-flex">
@@ -635,9 +647,11 @@
       </div>
     </div> <!--bottom col end -->
   </div> <!--bottom row end -->
-
  </div> <!-- container end -->
-</footer>
+  </div> <!-- container end -->
+ </footer>
+</div> <!-- container end  -->
+
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
