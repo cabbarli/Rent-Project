@@ -1631,6 +1631,10 @@ footer {
    }
  }
 }
+.foot-email-box {
+     display: flex;
+    justify-content: end;
+}
 .foot-email {
   right: 0;
   .right-arrow-icon:before {
