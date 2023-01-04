@@ -506,6 +506,9 @@
     margin-top: 11px;
     margin-bottom: 10px;
   }
+  .suggestion__img-title img {
+    vertical-align: inherit;
+  }
   .suggestion__img-adress {
     font-size: 13px;
   }
@@ -572,5 +575,8 @@
   }
   footer {
     padding-top: 36px;
+  }
+  .suggestion__properties-hide {
+    display: block !important;
   }
 }

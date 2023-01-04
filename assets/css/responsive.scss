@@ -545,6 +545,9 @@
       font-weight: $font-600;
       margin-top: 11px;
       margin-bottom: 10px;
+      img {
+        vertical-align: inherit;
+      }
     }
     .suggestion__img-adress {
       font-size: 13px;
@@ -623,7 +626,9 @@
     footer {
       padding-top: 36px;
     }
-  
+    .suggestion__properties-hide {
+      display: block !important;
+    }
  
 
 

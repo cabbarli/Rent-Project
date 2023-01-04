@@ -146,6 +146,9 @@
     .margin-size .col:nth-child(1){
       margin-right: 20px;
     }
+    .suggestion__properties-hide {
+      display: none !important;
+    }
     .suggestion {
       &__title-box {
         padding: 0;
