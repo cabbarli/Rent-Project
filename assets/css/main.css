@@ -1249,6 +1249,135 @@ input[type=number] {
   }
 }
 
+@media (max-width: 575.98px) {
+  .category {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .rent-boxs .rent-day {
+    background-color: #FDFDFD;
+    box-shadow: none;
+  }
+  .suggestion__title-box h2 {
+    text-align: center;
+    max-width: 257px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 14px;
+  }
+  .suggestion__title-box div {
+    display: block !important;
+    text-align: center;
+  }
+  .suggestion__title-box .suggestion__text {
+    display: block;
+  }
+  .suggestion__title-box .suggestion__link {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .suggestion__title-box .suggestion__text {
+    max-width: 257px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 14px;
+  }
+  .suggestion__col-middle {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .title-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .suggestion__col {
+    display: block !important;
+  }
+  .suggestion__col div:nth-child(n +3) {
+    display: none;
+  }
+  .suggestion__col div:nth-child(2) figure {
+    margin-bottom: 0;
+  }
+  .suggestion__col figure:nth-child(1) {
+    margin-bottom: 29px;
+  }
+  .suggestion__cols {
+    display: block !important;
+  }
+  .suggestion__cols div:nth-child(n +3) {
+    display: none;
+  }
+  .suggestion__img-box {
+    min-width: 343px;
+    height: 217px;
+  }
+  .suggestion__img-height {
+    min-width: 343px;
+    height: 217px;
+  }
+  .suggestion__like-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .suggestion__like-icon .imgg {
+    width: 35px;
+    height: 35px;
+  }
+  .suggestion__like-icon .immg {
+    width: 35px;
+    height: 35px;
+  }
+  .img-adress-size {
+    max-width: 317px;
+  }
+  .suggestion__img-title {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 600;
+    margin-top: 11px;
+    margin-bottom: 10px;
+  }
+  .suggestion__img-adress {
+    font-size: 13px;
+  }
+  .suggestion__properties {
+    font-size: 13px;
+    line-height: 14px;
+    margin-right: 21px;
+  }
+  .suggestion__home img {
+    width: 15px;
+    height: 21px;
+  }
+  .suggestion__bed img {
+    width: 21px;
+    height: 15px;
+  }
+  .suggestion__wide img {
+    width: 19px;
+    height: 19px;
+  }
+  .display-xs-style {
+    display: flex;
+    justify-content: center;
+  }
+  .adverise-img-1 {
+    display: none !important;
+  }
+  .adverise-img-2 {
+    display: block !important;
+  }
+  .advertise {
+    height: 400px;
+    min-width: 343px;
+  }
+  .advertise img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /*===== carousel background =====*/
 .carousel__background {
   position: absolute;
