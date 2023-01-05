@@ -884,7 +884,7 @@ input[type=number] {
   }
 }
 
-/* ============= index.html responnsive =========== */
+/* ================= index.html responnsive min-width: 1200px=============== */
 @media (min-width: 1200px) {
   /* menu */
   .container {
@@ -892,6 +892,7 @@ input[type=number] {
   }
 }
 
+/*==================== min-width:  992px and max-width: max-width: 1199.98px ===================*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* card section */
   .slide-card2 .select__metro {
@@ -947,6 +948,7 @@ input[type=number] {
   }
 }
 
+/*==================== min-width: 768px and max-width:  991.98px ===================*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* card section */
   .container-card {
@@ -1040,6 +1042,7 @@ input[type=number] {
   }
 }
 
+/*==================== min-width: 576px and max-width: 767.98px ===================*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   .container-card {
     bottom: 18%;
@@ -1172,6 +1175,7 @@ input[type=number] {
   }
 }
 
+/*==================== max 576 px ===================*/
 @media (max-width: 576px) {
   .container-card {
     bottom: 18%;
@@ -1221,7 +1225,9 @@ input[type=number] {
     height: 550px;
   }
   .container-card {
-    bottom: 13%;
+    bottom: 12%;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .carousel-indicators {
     display: none;
@@ -1250,6 +1256,15 @@ input[type=number] {
 }
 
 @media (max-width: 575.98px) {
+  .slide-show-picture {
+    display: none !important;
+  }
+  .margin-size .col:nth-child(2) {
+    margin-right: 0;
+  }
+  .margin-size .col:nth-child(1) {
+    margin-right: 0;
+  }
   .category {
     margin-top: 40px;
     margin-bottom: 0;
@@ -1309,11 +1324,11 @@ input[type=number] {
     display: none;
   }
   .suggestion__img-box {
-    min-width: 343px;
+    max-width: 343px;
     height: 217px;
   }
   .suggestion__img-height {
-    min-width: 343px;
+    max-width: 343px;
     height: 217px;
   }
   .suggestion__like-icon {
@@ -1410,6 +1425,45 @@ input[type=number] {
   }
   .suggestion__properties-hide {
     display: block !important;
+  }
+  .carousel {
+    height: 550px;
+    background-image: url(../img/hose-pic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 550px 100%;
+  }
+}
+
+@media (max-width: 281px) {
+  .margin-size .col:nth-child(2) {
+    margin-right: 0;
+  }
+  .margin-size .col:nth-child(1) {
+    margin-right: 0;
+  }
+  .suggestion__like-icon {
+    width: 29px;
+    height: 29px;
+  }
+  .suggestion__like-icon .imgg {
+    width: 29px;
+    height: 29px;
+  }
+  .suggestion__like-icon .immg {
+    width: 29px;
+    height: 29px;
+  }
+  .suggestion__img-box {
+    max-width: 255px;
+    height: 200px;
+  }
+  .suggestion__img-height {
+    max-width: 255px;
+    height: 200px;
+  }
+  .suggestion__like-icon {
+    right: 32px;
   }
 }
 
