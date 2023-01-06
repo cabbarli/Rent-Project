@@ -11,9 +11,9 @@
 </head>
 <body>  
    <!-- nav start-->    
- <div class="container-fluid">
+ <div class="container">
     <div class="row detail-navbar-row">
-      <div class="col d-flex">
+      <div class="col">
         <nav class=" navbar navbar-expand-lg navbar-size detail-navbar">         
            <a href="index.html" class="navbar-brand Logo logo-size"><img  src="assets/img/Logo-black.png" alt="LOGO png"></a>
            <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#nContent"  aria-controls="#nContent"  aria-label="menu ac/bagla butonu" aria-expanded="false"> <span class="navbar-toggler-icon"></span></button>
@@ -45,9 +45,10 @@
  </div>  <!-- container-fluid end--> 
 
          <!-- content start -->
-<div class="container-fluid d-flex align-items-center flex-column p-0 "> 
+<div class="container-fluid p-0 "> 
 
   <!-- elan ver page 1 start -->
+ <div class="container d-flex align-items-center flex-column">
   <div class="row">
       <div class="col"> 
          <!-- elan ver box start -->    
@@ -164,77 +165,79 @@
         </div> <!-- elan ver box end -->    
       </div> <!-- col- end-->         
   </div> <!-- row- elan page 1 end -->
+</div> <!-- container end -->  
     
 </div> <!--container content end -->  
 
 <!---------------------- Footer start ------------------------>
-<footer>  
-    <!-- footer-top start -->
-   <div class="container p-0">  
-    <div class="row"> <!--Top row start -->
-     <div class="col d-flex p-0 foot-top-box">
-      <div class="col-sm-6 d-flex justify-content-between">
-        <div class="foot__logo-box">
-            <a href="#" class="foot-logo d-inline-block">Logo</a>
-            <p class="foot-text">Subscribe to keep up with the
-              latest news</p>
-        </div>
-        <div class="foot-nav text-start">
-          <h3>Hqqımızda</h3>
-          <ul class="p-0">
-            <li><a href="#">Our Product</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Our Service</a></li>
-          </ul>
-        </div>
-        <div class="foot-nav text-start">
-          <h3>Əlaqə</h3>
-          <ul class="p-0">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-6 position-relative">
-  
-        <div class="foot-email position-absolute">
-  
-            <form action="#" method="post">
-              <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
-                not simply random text. It has roots.</label>
-              <div class="col">
-                <div class="col d-inline-flex">
-                     <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
-                </div>
-                <div class="col d-inline-flex">
-                     <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
-                </div> 
-            </div> <!--form -> col end -->
-           </form> <!--form end --> 
-         
-        </div> <!-- foot-email end -->
-      </div>
-     </div> <!-- col end -->
-    </div> <!--Top row end -->
-  
-    <div class="row"> <!--bottom row start -->
-      <div class="col position-relative foot-bottom-box">
-        <div class="col d-inline-flex">
-          <span class="foot-copyright">Copyright © 2022 All rights reserved.</span>
-        </div>
-        <div class="col d-inline-flex end-0 position-absolute">
-          <div class="foot-sosial">
-            <a href="#" class="foot-facebook"></a>
-            <a href="#" class="foot-twetter"></a>
-            <a href="#" class="foot-instagram"></a>
-          </div>
-        </div>
-      </div> <!--bottom col end -->
-    </div> <!--bottom row end -->
-  
+<div>
+  <footer>
+   <!-- footer-top start -->
+   <div class="container-fluid">  
+   <div class="row"> <!--Top row start -->
+    <div class="col d-lg-flex foot-top-box">
+     <div class="col-lg-6 d-block d-sm-flex justify-content-between foot-top-box__inner">
+       <div class="foot__logo-box">
+           <a href="#" class="foot-logo d-inline-block">Logo</a>
+           <p class="foot-text">Subscribe to keep up with the
+             latest news</p>
+       </div>
+       <div class="foot-nav text-start">
+         <h3>Hqqımızda</h3>
+         <ul class="p-0">
+           <li><a href="#">Our Product</a></li>
+           <li><a href="#">Tutorials</a></li>
+           <li><a href="#">Our Service</a></li>
+         </ul>
+       </div>
+       <div class="foot-nav text-start">
+         <h3>Əlaqə</h3>
+         <ul class="p-0">
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Careers</a></li>
+           <li><a href="#">Contact us</a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="col-lg-6 position-relative foot-email-box">
+       <div class="foot-email">
+           <form action="#" method="post">
+             <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
+               not simply random text. It has roots.</label>
+             <div class="col">
+               <div class="col d-inline-flex">
+                    <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
+               </div>
+               <div class="col d-inline-flex">
+                    <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
+               </div> 
+           </div> <!--form -> col end -->
+          </form> <!--form end --> 
+        
+       </div> <!-- foot-email end -->
+     </div>
+    </div> <!-- col end -->
+   </div> <!--Top row end -->
+  <div class="container-fluid">
+   <div class="row"> <!--bottom row start -->
+     <div class="col position-relative foot-bottom-box">
+       <div class="col d-inline-flex">
+         <span class="foot-copyright">Copyright © 2022 All rights reserved.</span>
+       </div>
+       <div class="col d-inline-flex end-0 position-absolute">
+         <div class="foot-sosial">
+           <a href="#" class="foot-facebook"></a>
+           <a href="#" class="foot-twetter"></a>
+           <a href="#" class="foot-instagram"></a>
+         </div>
+       </div>
+     </div> <!--bottom col end -->
+   </div> <!--bottom row end -->
+  </div> <!-- container end -->
    </div> <!-- container end -->
-</footer>
+  </footer>
+ </div> <!-- container end  -->
+ 
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>

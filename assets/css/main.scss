@@ -147,7 +147,7 @@
       margin-right: 20px;
     }
     .suggestion__properties-hide {
-      display: none !important  ;
+      display: none !important;
     }
     .suggestion {
       &__title-box {
@@ -215,6 +215,9 @@
         font: {
           size:$font-20;
           weight:$font-600;
+        }
+        img {
+          vertical-align: inherit !important;
         }
       }
       &__img-adress {
@@ -312,8 +315,8 @@
   margin-bottom: 40px;
   margin-top: 96px;
  }
-.navbar-size {
-  width: 1197px;
+.cols-margin-size {
+  margin-bottom: 20px;
 }
 /*================  Detail-page ===================*/
 /* picture section -> right bar start */

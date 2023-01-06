@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index2</title>
+    <title>indexx 2</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
     
-<div class="container-fluid ">
+<div class="container-fluid g-0">
     <div class="row g-0">
         <div class="col">
              
@@ -18,13 +19,13 @@
                          <!-- slide screen color -->
                 <div class="carousel__background"></div>
                          <!-- navbar menu sart -->
-           <div class="container p-0 m-0 position-absolute">           
+           <div class="container position-absolute container-size">           
             <nav class="navbar navbar-expand-lg">            
                   <a href="index.html" class="navbar-brand Logo"><img  src="assets/img/Logo.png" alt="LOGO png"></a>
                   <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#nContent"  aria-controls="#nContent"  aria-label="menu ac/bagla butonu" aria-expanded="false"> <span class="navbar-toggler-icon"></span></button>
                   <div class="collapse navbar-collapse" id="nContent">
                     <div class=" d-flex  align-items-center ms-auto">
-                       <div>                      
+                       <div class="">                      
                         <a href="favori-page.html" class="slide-favori d-flex">Favorilər</a>
                        </div>
                        <div class="dropdown dropdown-box d-flex align-items-center flex-row">
@@ -48,12 +49,12 @@
             </nav>  <!--navbar end-->
           </div>   <!--container end-->     
                               <!-- slide bottom card start -->
-              <div class="container position-absolute p-0 container-card">
+              <div class="container position-absolute container-card nav-size">
                <div class="card slide-card2" >
                     <div class="card-body">
                           <form action="#" name="form" id="myForm">
                              <div class="row">
-                                <div class="col d-flex">
+                                <div class="col card-body__select-col">
                                    
                                    <div class="select">
                                     <label class="form-label" for="metro">Metro</label>
@@ -67,7 +68,7 @@
 
                                    <div  class="select">
                                     <label class="form-label" for="room">Otaq sayı</label>
-                                    <select class="form-select select__room  border-0" name="room" id="room>" aria-label="Açılan selekt qutusu">
+                                    <select class="form-select select__room  border-0" name="room" id="room" aria-label="Açılan selekt qutusu">
                                       <option value="1">1</option>
                                       <option value="2">2</option>
                                       <option value="3">3</option>
@@ -83,9 +84,13 @@
                                     </select>
                                   </div>
 
-                                  <div class="search d-flex align-items-center">
-                                       <input type="search" placeholder="Daxil et" class="form-control search__text d-inline-block" aria-label="axtarış mətni girmək üçün qutu" name="metin">
-                                       <input type="submit" class="form-control search__submit btn d-inline-block " value="Axtar" aria-label="axtar butonu">
+                                  <div class="search display-block d-lg-flex align-items-center">
+                                    <div>
+                                      <input type="search" placeholder="Daxil et" class="form-control search__text d-inline-block" aria-label="axtarış mətni girmək üçün qutu" name="metin">
+                                    </div>
+                                    <div>
+                                      <input type="submit" class="form-control search__submit btn d-inline-block " value="Axtar" aria-label="axtar butonu">
+                                    </div>
                                   </div>
                                 </div> <!--col end-->   
                              </div> <!--row end-->    
@@ -101,7 +106,8 @@
                     <button class="slide-btn"  data-bs-target="#mySlide" data-bs-slide-to="2" aria-label="üçüncü slayd"></button>
                  </div>
                     <!-- carousel-indicators end -->
-                <div class="carousel-inner">
+               
+                <div class="carousel-inner slide-show-picture"> 
                     <div class="carousel-item active" data-bs-interval="3000">
                         <img src="assets/img/6143BE70-8431-4101-B57E-2B05135EA967.png" alt="villa ev şekli" class="d-block w-100 img-fluid">
                     </div> 
@@ -119,17 +125,18 @@
 </div> <!--container-fluid end (slayd end)-->
 
 <!-- Content section start -->
-<div class="container justify-content-center d-flex flex-column">
+<div class="container p-0 justify-content-center d-flex flex-column">
     <!-- kateqoriyalar section start-->
+<div class="container">
     <div class="row">
-        <div class="col d-flex category p-0 justify-content-center">
+        <div class="col d-block d-lg-flex category justify-content-center">
              <div class="col category-box">
                 <p class="category-box__text">Ən yaxşı xidmət</p>
                 <h1 class="category-box__title">Kateqoriyalar</h1>
                 <p class="category-box__about">We will bring the breathe of our experience and industry knowledge to help you succeed</p>
              </div>
              <div class="col  d-flex ">     
-                   <div class="col d-flex rent-boxs">
+                   <div class="col rent-boxs  d-sm-flex">
                      <div class="col sale ">
                         <span class="sale__icon" aria-label="satılıq evlər ikon"></span>
                         <h3 class="sale__title">Satılıq evlər</h3>
@@ -147,38 +154,36 @@
                       </div>
                    </div> <!-- col end -->              
              </div>  <!-- col end -->
-
         </div> <!-- col end -->
     </div> <!-- row end ( kateqoriyalar section end) -->
-     
+</div>  <!-- container end -->
+
     <!-- Önə çıxan təkliflər bölməsi start -->
-    <div class="row ">
-    <div class="col p-0">
+<div class="container">
+  <div class="row">
+    <div class="col">
       <div class="suggestion">
-        <div class="row">
           <div class="suggestion__title-box ">
             <h2 class="suggestion__title">Önə çıxan təkliflər</h2>
             <div class="d-flex">
                <span class="suggestion__text">İstifadəçilərimizin ən çox istifadə etdiyi seçimləri sizin üçün sıraladıq</span>
                <a href="one-cixan-teklifler.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt=""></a>
             </div>   
-          </div>
-        </div>
-       
-        <div class="row suggestion__img">
-          <div class="col d-flex p-0">
-            <div class="col">  <!-- suggestion box 1 start -->
+          </div>      
+        <div class="row">
+          <div class="col d-flex suggestion__col">
+            <div class="col display-xs-style">  <!-- suggestion box 1 start -->
               <figure>
-                <div  class="d-inline-flex position-relative suggestion__img-box">
+                <div  class="d-flex position-relative suggestion__img-box">
                  <div class="suggestion__like-icon  position-absolute">
                     <div class="position-relative"  onclick="chn();">
-                      <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                      <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-                   </div> 
+                      <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                      <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                    </div> 
                  </div>
-                 <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                 <img src="./assets/img/c3829351e8.png" alt="home picture" class="suggestion__img img-fluid">
                 </div> 
-                <a href="detail.html" class="suggestion__detail-link"></a>    
+                <a href="detail.html" class="suggestion__detail-link"></a>
                    <figcaption>
                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
@@ -190,14 +195,14 @@
                    </figcaption>
               </figure>
             </div>  <!-- suggestion box 1 end -->        
-            <div class="col suggestion__col-middle">  <!-- suggestion box 2 start -->
+            <div class="col suggestion__col-middle display-xs-style">  <!-- suggestion box 2 start -->
               <figure>
-                <div  class="d-inline-flex position-relative suggestion__img-box">
-                  <div class="suggestion__like-icon  position-absolute">
+                <div  class="d-flex position-relative suggestion__img-box">
+                 <div class="suggestion__like-icon position-absolute">
                     <div class="position-relative"  onclick="chn();">
-                      <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                      <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-                   </div> 
+                      <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                      <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                    </div> 
                  </div>
                  <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
                 </div> 
@@ -215,14 +220,14 @@
             </div> <!-- suggestion box 2 end -->      
             <div class="col">  <!-- suggestion box 3 start -->
               <figure>
-                <div  class="d-inline-flex position-relative suggestion__img-box">
-                  <div class="suggestion__like-icon  position-absolute">
+                <div  class="d-flex position-relative suggestion__img-box">
+                 <div class="suggestion__like-icon position-absolute">
                     <div class="position-relative"  onclick="chn();">
-                      <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                      <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-                   </div> 
+                      <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                      <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                    </div> 
                  </div>
-                 <img src="./assets/img/c3829351e8.png" alt="home picture" class="img-fluid suggestion__img">
+                 <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
                 </div> 
                 <a href="detail.html" class="suggestion__detail-link"></a>
                   <figcaption>
@@ -239,33 +244,32 @@
           </div>  <!-- suggestion__img col end -->       
         </div>  <!-- suggestion__img end -->    
       </div> <!-- suggestion end -->
-
     </div> <!-- col end -->
-    </div> <!-- row end ( Önə çıxan təkliflər bölməsi end)-->
-    
+  </div> <!-- row end ( Önə çıxan təkliflər bölməsi end)-->
+</div>  <!-- container end -->    
+
     <!-- Bağ evləri bölməsi start -->
-<div class="row">
-  <div class="col p-0">
-    <div class="row">
+<div class="container">
+ <div class="row">
+  <div class="col">
       <div class="suggestion__title-box title-margin">    
         <div class="d-flex align-items-center">
           <h2 class="suggestion__title">Bağ evləri</h2>
            <a href="garden-houses.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt=""></a>
         </div>   
       </div> <!--  suggestion__title-box end -->
-    </div>
     <div class="row">
-       <div class="col p-0 d-flex margin-size">
-         <div class="col"> <!--box l start-->
+       <div class="col d-flex margin-size suggestion__cols">
+         <div class="col display-xs-style"> <!--box l start-->
            <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
-             <img src="./assets/img/unsplash_pmhdkgRCbtE.png" alt="home picture"  class="img-fluid suggestion__img">
+             <img src="./assets/img/unsplash_pmhdkgRCbtE.png" alt="home picture" class="img-fluid suggestion__img">
             </div> 
             <a href="detail.html" class="suggestion__detail-link"></a>
                <figcaption>
@@ -274,18 +278,19 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
            </figure>
         </div> <!--box l end-->
-        <div class="col"> <!--box 2 start-->
+        <div class="col display-xs-style"> <!--box 2 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/unsplash_z11gbBo13ro.png" alt="home picture" class="img-fluid suggestion__img">
             </div> 
@@ -296,20 +301,21 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
         </div><!--box 2 end-->
         <div class="col"> <!--box 3 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
-             <img src="./assets/img/unsplash_sZ9F_XkGJfI.png" alt="home picture" class="img-fluid suggestion__img">
+             <img src="./assets/img/unsplash_sZ9F_XkGJfI.png" alt="home picture"  class="img-fluid suggestion__img">
             </div> 
             <a href="detail.html" class="suggestion__detail-link"></a>
                <figcaption>
@@ -318,18 +324,19 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
         </div><!--box 3 end-->
         <div class="col">
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/unsplash_EMPLSuvDuhQ.png" alt="home picture"  class="img-fluid suggestion__img">
             </div> 
@@ -340,6 +347,7 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
@@ -347,29 +355,29 @@
       </div> <!-- col end -->
     </div> <!-- row end -->
   </div> <!-- col end Bağ evləri bölməsi  - -->  
-</div> <!-- row end,  Bağ evləri bölməsi  -->
+ </div> <!-- row end,  Bağ evləri bölməsi  -->
+</div>  <!-- container end -->  
 
  <!-- Həyət evləri bölməsi start -->
+<div class="container"> 
  <div class="row">
-  <div class="col p-0">
-    <div class="row">
+  <div class="col">
         <div class="suggestion__title-box title-margin">    
           <div class="d-flex align-items-center">
             <h2 class="suggestion__title">Həyət evləri</h2>
              <a href="yard-houses.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt=""></a>
           </div>   
-        </div> <!--  suggestion__title-box end -->
-    </div>    
+        </div> <!--  suggestion__title-box end -->   
     <div class="row">
-       <div class="col p-0 d-flex margin-size">
-         <div class="col"> <!--box l start-->
+       <div class="col d-flex margin-size suggestion__cols">
+         <div class="col display-xs-style"> <!--box l start-->
            <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/6143BE70-8431-4101-B57E-2B05135EA967 (2).png" alt="home picture"  class="img-fluid suggestion__img">
             </div> 
@@ -380,18 +388,19 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
            </figure>
         </div> <!--box l end-->
-        <div class="col"> <!--box 2 start-->
+        <div class="col display-xs-style"> <!--box 2 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/unsplash_sZ9F_XkGJfI.png" alt="home picture" class="img-fluid suggestion__img">
             </div> 
@@ -402,42 +411,44 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
         </div><!--box 2 end-->
         <div class="col"> <!--box 3 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
-                <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
-             </div>
-             <img src="./assets/img/unsplash_EMPLSuvDuhQ.png" alt="home picture" class="img-fluid suggestion__img">
-            </div> 
+            <div  class="d-flex position-relative suggestion__img-height">
+              <div class="suggestion__like-icon position-absolute">
+                 <div class="position-relative"  onclick="chn();">
+                   <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                   <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                 </div> 
+              </div>
+              <img src="./assets/img/unsplash_EMPLSuvDuhQ.png" alt="home picture" class="img-fluid suggestion__img">
+            </div>
             <a href="detail.html" class="suggestion__detail-link"></a>
                <figcaption>
                 <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                <span class="suggestion__img-adress">Mərdəkan rayonu, 15ci küçə </span>
+                <span class="suggestion__img-adress">Mzərdəkan rayonu, 15ci küçə </span>
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
         </div><!--box 3 end-->
         <div class="col"> <!--box 4 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+              <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
-             </div>
-             <img src="./assets/img/unsplash_z11gbBo13ro.png" alt="home picture"  class="img-fluid suggestion__img">
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
+              </div>
+              <img src="./assets/img/unsplash_z11gbBo13ro.png" alt="home picture" class="img-fluid suggestion__img">
             </div> 
             <a href="detail.html" class="suggestion__detail-link"></a>
                <figcaption>
@@ -446,6 +457,7 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
@@ -453,31 +465,31 @@
       </div> <!-- col end -->
     </div> <!-- row end -->
   </div> <!-- col end, Həyət evləri bölməsi  - -->  
-</div> <!-- row end,  Həyət evləri bölməsi  -->
+ </div> <!-- row end,  Həyət evləri bölməsi  -->
+</div>  <!-- container end -->  
 
  <!-- Bina evləri bölməsi start -->
+<div class="container">
  <div class="row">
-  <div class="col p-0">
-    <div class="row">
+  <div class="col">
         <div class="suggestion__title-box title-margin">    
           <div class="d-flex align-items-center">
             <h2 class="suggestion__title">Bina evləri</h2>
              <a href="building-houses.html"  class="suggestion__link ms-auto d-inline-block">Hamısına bax<img src="./assets/img/Vector (1).png" alt="bina şəkli"></a>
           </div>   
         </div> <!--  suggestion__title-box end -->
-    </div> 
     <div class="row">
-       <div class="col p-0 d-flex margin-size">
-         <div class="col"> <!--box l start-->
+       <div class="col d-flex margin-size suggestion__cols">
+         <div class="col display-xs-style"> <!--box l start-->
            <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
-             <img src="./assets/img/unsplash_r8BnWwIlsEQ.png" alt="home picture" class="img-fluid suggestion__img">
+             <img src="./assets/img/unsplash_r8BnWwIlsEQ.png"alt="home picture"  class="img-fluid suggestion__img">
             </div> 
             <a href="detail.html" class="suggestion__detail-link"></a>
                <figcaption>
@@ -486,18 +498,19 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
            </figure>
         </div> <!--box l end-->
-        <div class="col"> <!--box 2 start-->
+        <div class="col display-xs-style"> <!--box 2 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/unsplash_5QwcfSLEjBQ.png" alt="home picture"  class="img-fluid suggestion__img">
             </div> 
@@ -508,18 +521,19 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
         </div><!--box 2 end-->
         <div class="col"> <!--box 3 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/unsplash__eJwy_sHIUs.png" alt="home picture"  class="img-fluid suggestion__img">
             </div> 
@@ -530,18 +544,19 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
         </div><!--box 3 end-->
         <div class="col"> <!--box 4 start-->
           <figure>
-            <div  class="d-inline-flex position-relative suggestion__img-height">
-              <div class="suggestion__like-icon  position-absolute">
+            <div  class="d-flex position-relative suggestion__img-height">
+             <div class="suggestion__like-icon position-absolute">
                 <div class="position-relative"  onclick="chn();">
-                  <img class="imgg" src="./assets/img/heartt.png" alt="empty heart img">
-                  <img class="immg" src="./assets/img/heart2.png" alt="filled heart img">
-               </div> 
+                  <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                  <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                </div> 
              </div>
              <img src="./assets/img/unsplash_JVXcRDu1tVI.png" alt="home picture"  class="img-fluid suggestion__img">
             </div> 
@@ -552,6 +567,7 @@
                 <div class="d-flex">
                   <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
                   <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                  <span class="suggestion__wide suggestion__properties suggestion__properties-hide"><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                 </div>
                </figcaption>
           </figure>
@@ -559,31 +575,39 @@
       </div> <!-- col end -->
     </div> <!-- row end -->
   </div> <!-- col end, Bina evləri bölməsi  - -->  
-</div> <!-- row end,  Bina evləri bölməsi  -->
+ </div> <!-- row end,  Bina evləri bölməsi  -->
+</div> <!-- container end -->
 
 <!-- Elan vermə bölməsi -->
-<div class="row">
-  <div class="col p-0">
-    <div  class="advertise position-relative">
-     <div class="col p-0 position-absolute advertise__title">
-      <h3 class="">Pulsuz elan dərc et və sənə uyğun <br> kirayəçini tap!</h3>
-     </div> 
-     <div class="col p-0 position-absolute advertise__link">
-      <a href="elan-page1.html" class=" ">Elan ver</a>
-     </div> 
-      <img class="adverise-img img-fluid p-0" src="./assets/img/Defne-Bagevi-Bina-9-1 1.png" alt="ev şəkli">
+<div class="container">
+ <div class="row">
+  <div class="col">
+    <div  class="advertise position-relative d-flex align-items-center">
+     <div class="position-absolute advertise__box">
+        <div class="col advertise__title">
+          <h3 class="">Pulsuz elan dərc et və sənə uyğun <br> kirayəçini tap!</h3>
+         </div> 
+         <div class="col advertise__link">
+          <a href="#" class=" ">Elan ver</a>
+         </div>
+     </div>    
+      <img class="adverise-img img-fluid adverise-img-1" src="./assets/img/Defne-Bagevi-Bina-9-1 1.png" alt="ev şəkli">
+      <img class="adverise-img img-fluid adverise-img-2" src="./assets/img/bag-evi.png" alt="ev şəkli" style="display: none;">
     </div>
+   </div>
   </div>
-</div>
-</div> <!-- col end (content section end) -->
+ </div> <!-- col end  -->
+
+</div> <!--  container end (content section end) -->
 
 <!---------------------- Footer start ------------------------>
-<footer>
+<div>
+ <footer>
   <!-- footer-top start -->
- <div class="container p-0">  
+  <div class="container-fluid">  
   <div class="row"> <!--Top row start -->
-   <div class="col d-flex p-0 foot-top-box">
-    <div class="col-sm-6 d-flex justify-content-between">
+   <div class="col d-lg-flex foot-top-box">
+    <div class="col-lg-6 d-block d-sm-flex justify-content-between foot-top-box__inner">
       <div class="foot__logo-box">
           <a href="#" class="foot-logo d-inline-block">Logo</a>
           <p class="foot-text">Subscribe to keep up with the
@@ -606,10 +630,8 @@
         </ul>
       </div>
     </div>
-    <div class="col-sm-6 position-relative">
-
-      <div class="foot-email position-absolute">
-
+    <div class="col-lg-6 position-relative foot-email-box">
+      <div class="foot-email">
           <form action="#" method="post">
             <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
               not simply random text. It has roots.</label>
@@ -627,7 +649,7 @@
     </div>
    </div> <!-- col end -->
   </div> <!--Top row end -->
-
+ <div class="container-fluid">
   <div class="row"> <!--bottom row start -->
     <div class="col position-relative foot-bottom-box">
       <div class="col d-inline-flex">
@@ -642,9 +664,11 @@
       </div>
     </div> <!--bottom col end -->
   </div> <!--bottom row end -->
-
  </div> <!-- container end -->
-</footer>
+  </div> <!-- container end -->
+ </footer>
+</div> <!-- container end  -->
+
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>

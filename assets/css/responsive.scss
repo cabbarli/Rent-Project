@@ -134,6 +134,18 @@
 }
 /*==================== min-width: 768px and max-width:  991.98px ===================*/
 @media (min-width: 768px) and (max-width: 991.98px){
+  .suggestion__like-icon {
+    width: 35px;
+    height: 35px;
+    .imgg {
+      width: 35px;
+      height: 35px;
+    } 
+    .immg {
+      width: 35px;
+      height: 35px;
+    }
+  }
   /* card section */
   .container-card {
     bottom: 18%;
@@ -208,6 +220,9 @@
     }
     .suggestion__img-adress {
       max-width: 157px;
+    }
+    .suggestion__text {
+       width: 518px;
     }
     .suggestion .img-adress-size {
       max-width: 205px;
@@ -337,6 +352,7 @@
        }
       &__text {
         font-size: 16px;
+        width: 365px;
       } 
       &__link {
         font-size: 14px;
@@ -351,6 +367,13 @@
         font-size: 13px;
       }
     }
+    .advertise {
+      height: 240px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
     .advertise .advertise {
       &__title {
          h3 {
@@ -361,7 +384,7 @@
       }
       &__link {
         a {
-          padding: 3px 12px;
+          padding: 6px 15px;
           line-height: 24px;
           font-size: 13px;        
         }
@@ -650,8 +673,12 @@
       background-repeat: no-repeat;
       background-size: 550px 100%;
     }
+    .container-size {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
 }
-
+/*==================== max-width: 281px ===================*/
 @media (max-width: 281px) {
   .margin-size .col:nth-child(2) {
     margin-right: 0;

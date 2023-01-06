@@ -58,7 +58,6 @@
 }
 
 .navbar .Logo {
-  padding: 3px 7px;
   border-radius: 20px;
   transition: 200ms all;
 }
@@ -75,7 +74,7 @@
 
 .slide-card2 .select {
   border-right: 1px solid #717171;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .slide-card2 .select__metro {

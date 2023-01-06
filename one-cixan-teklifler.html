@@ -7,13 +7,14 @@
     <title>Önə çıxan təkliflər</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>          
      <!-- nav start-->    
-     <div class="container-fluid">
+     <div class="container">
      <div class="row">
-      <div class="col d-flex">
-         <nav class=" navbar  navbar-expand-lg navbar-size" >         
+      <div class="col">
+         <nav class=" navbar  navbar-expand-lg" >         
             <a href="index.html" class="navbar-brand Logo logo-size"><img  src="assets/img/Logo1.png" alt="LOGO png"></a>
             <button class="navbar-toggler" type="button"  data-bs-toggle="collapse"  data-bs-target="#nContent"  aria-controls="#nContent"  aria-label="menu ac/bagla butonu" aria-expanded="false"> <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse ms-auto" id="nContent">
@@ -32,7 +33,7 @@
                   </ul>
                  </div>
                  <div class="elan-box">
-                  <a href="#" class="elan elan-size"> Elan ver</a>
+                  <a href="elan-page1.html" class="elan elan-size"> Elan ver</a>
                  </div>
               <!--<img src="assets/img/Frame 1321315304.png" alt="Elan ver button"> -->
               </div> 
@@ -45,326 +46,352 @@
 <!-- Content section start -->
 <div class="container p-0 justify-content-center d-flex flex-column">  
    
-    <!-- Önə çıxan təkliflər bölməsi, row 1 start -->
-    <div class="row ">
-      <div class="col p-0">
-        <div class="suggestion">
-          <div class="row">
-            <div class="suggestion__title-box ">
-              <h2 class="suggestion__title suggestion-title-size">Önə çıxan təkliflər</h2>  
-            </div>
-          </div>    
-          <div class="row suggestion__img">
-            <div class="col d-flex p-0">
-              <div class="col">  <!-- suggestion box 1 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon  position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
+      <!-- Önə çıxan təkliflər bölməsi start -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="suggestion__title-box title-margin">    
+        <div class="align-items-center">
+          <h2 class="suggestion__title text-center">Önə çıxan təkliflər</h2>
+        </div>  
+      </div>  
+        <div class="row">
+          <div class="col d-flex suggestion__col cols-margin-size">
+            <div class="col display-xs-style">  <!-- suggestion box 1 start -->
+              <figure>
+                <div  class="d-flex position-relative suggestion__img-box">
+                 <div class="suggestion__like-icon  position-absolute">
+                    <div class="position-relative"  onclick="chn();">
+                      <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                      <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                    </div> 
+                 </div>
+                 <img src="./assets/img/c3829351e8.png" alt="home picture" class="suggestion__img img-fluid">
+                </div> 
+                <a href="detail.html" class="suggestion__detail-link"></a>
+                   <figcaption>
+                    <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                    <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                    <div class="d-flex">
+                      <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                      <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                      <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                    </div>
+                   </figcaption>
+              </figure>
+            </div>  <!-- suggestion box 1 end -->        
+            <div class="col suggestion__col-middle display-xs-style">  <!-- suggestion box 2 start -->
+              <figure>
+                <div  class="d-flex position-relative suggestion__img-box">
+                 <div class="suggestion__like-icon position-absolute">
+                    <div class="position-relative"  onclick="chn();">
+                      <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                      <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                    </div> 
+                 </div>
+                 <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                </div> 
+                <a href="detail.html" class="suggestion__detail-link"></a>
+                  <figcaption>
+                   <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                   <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                   <div class="d-flex">
+                     <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                     <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                     <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                    </div>
-                   <img src="./assets/img/c3829351e8.png" alt="home picture" class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                     <figcaption>
-                      <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                      <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                      <div class="d-flex">
-                        <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                        <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                        <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
-                      </div>
-                     </figcaption>
-                </figure>
-              </div>  <!-- suggestion box 1 end -->        
-              <div class="col suggestion__col-middle">  <!-- suggestion box 2 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
+                  </figcaption>
+              </figure>
+            </div> <!-- suggestion box 2 end -->      
+            <div class="col">  <!-- suggestion box 3 start -->
+              <figure>
+                <div  class="d-flex position-relative suggestion__img-box">
+                 <div class="suggestion__like-icon position-absolute">
+                    <div class="position-relative"  onclick="chn();">
+                      <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                      <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                    </div> 
+                 </div>
+                 <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                </div> 
+                <a href="detail.html" class="suggestion__detail-link"></a>
+                  <figcaption>
+                   <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                   <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                   <div class="d-flex">
+                     <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                     <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                     <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
                    </div>
-                   <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                    <figcaption>
-                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                     <div class="d-flex">
-                       <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                       <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                       <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
-                     </div>
-                    </figcaption>
-                </figure>
-              </div> <!-- suggestion box 2 end -->      
-              <div class="col">  <!-- suggestion box 3 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                    <figcaption>
-                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                     <div class="d-flex">
-                       <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                       <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                       <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
-                     </div>
-                    </figcaption>
-                </figure>
-              </div>  <!-- suggestion box 3  end -->     
-            </div>  <!-- suggestion__img col end -->       
-          </div>  <!-- suggestion__img end -->    
-        </div> <!-- suggestion end -->
-      </div> <!-- col end -->
-    </div> <!-- row 1 end ( Önə çıxan təkliflər bölməsi end)-->
+                  </figcaption>
+              </figure>
+            </div>  <!-- suggestion box 3  end -->     
+          </div>  <!-- suggestion__img col end -->       
+        </div>  <!-- suggestion__img end -->    
+      </div> <!-- suggestion end -->
+    </div> <!-- col end -->
+  </div> <!-- row end ( Önə çıxan təkliflər bölməsi end)-->
+</div>  <!-- container end -->    
       
     <!-- row 2 start -->
-    <div class="row ">
-      <div class="col p-0">
-        <div class="suggestion"> 
-          <div class="row suggestion__img">
-            <div class="col d-flex p-0">
-              <div class="col">  <!-- suggestion box 1 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon  position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img src="./assets/img/c3829351e8.png" alt="home picture" class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                     <figcaption>
-                      <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                      <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                      <div class="d-flex">
-                        <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                        <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                        <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
-                      </div>
-                     </figcaption>
-                </figure>
-              </div>  <!-- suggestion box 1 end -->        
-              <div class="col suggestion__col-middle">  <!-- suggestion box 2 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                    <figcaption>
-                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                     <div class="d-flex">
-                       <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                       <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                       <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <div class="row">
+              <div class="col d-flex suggestion__col cols-margin-size">
+                <div class="col display-xs-style">  <!-- suggestion box 1 start -->
+                  <figure>
+                    <div  class="d-flex position-relative suggestion__img-box">
+                     <div class="suggestion__like-icon  position-absolute">
+                        <div class="position-relative"  onclick="chn();">
+                          <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                          <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                        </div> 
                      </div>
-                    </figcaption>
-                </figure>
-              </div> <!-- suggestion box 2 end -->      
-              <div class="col">  <!-- suggestion box 3 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                    <figcaption>
-                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                     <div class="d-flex">
-                       <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                       <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                       <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                     <img src="./assets/img/c3829351e8.png" alt="home picture" class="suggestion__img img-fluid">
+                    </div> 
+                    <a href="detail.html" class="suggestion__detail-link"></a>
+                       <figcaption>
+                        <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                        <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                        <div class="d-flex">
+                          <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                          <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                          <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                        </div>
+                       </figcaption>
+                  </figure>
+                </div>  <!-- suggestion box 1 end -->        
+                <div class="col suggestion__col-middle display-xs-style">  <!-- suggestion box 2 start -->
+                  <figure>
+                    <div  class="d-flex position-relative suggestion__img-box">
+                     <div class="suggestion__like-icon position-absolute">
+                        <div class="position-relative"  onclick="chn();">
+                          <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                          <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                        </div> 
                      </div>
-                    </figcaption>
-                </figure>
-              </div>  <!-- suggestion box 3  end -->     
-            </div>  <!-- suggestion__img col end -->       
-          </div>  <!-- suggestion__img end -->    
-        </div> <!-- suggestion end -->
-      </div> <!-- col end -->
-    </div> <!-- row 2 end ( Önə çıxan təkliflər bölməsi end)-->
+                     <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                    </div> 
+                    <a href="detail.html" class="suggestion__detail-link"></a>
+                      <figcaption>
+                       <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                       <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                       <div class="d-flex">
+                         <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                         <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                         <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                       </div>
+                      </figcaption>
+                  </figure>
+                </div> <!-- suggestion box 2 end -->      
+                <div class="col">  <!-- suggestion box 3 start -->
+                  <figure>
+                    <div  class="d-flex position-relative suggestion__img-box">
+                     <div class="suggestion__like-icon position-absolute">
+                        <div class="position-relative"  onclick="chn();">
+                          <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                          <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                        </div> 
+                     </div>
+                     <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                    </div> 
+                    <a href="detail.html" class="suggestion__detail-link"></a>
+                      <figcaption>
+                       <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                       <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                       <div class="d-flex">
+                         <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                         <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                         <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                       </div>
+                      </figcaption>
+                  </figure>
+                </div>  <!-- suggestion box 3  end -->     
+              </div>  <!-- suggestion__img col end -->       
+            </div>  <!-- suggestion__img end -->    
+          </div> <!-- suggestion end -->
+        </div> <!-- col end -->
+      </div> <!-- row end ( Önə çıxan təkliflər bölməsi end)-->
+    </div>  <!-- container end -->     <!-- row 2 end ( Önə çıxan təkliflər bölməsi end)-->
       
     <!-- row 3 start -->
-    <div class="row ">
-      <div class="col p-0">
-        <div class="suggestion">
-          <div class="row suggestion__img">
-            <div class="col d-flex p-0">
-              <div class="col">  <!-- suggestion box 1 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon  position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img src="./assets/img/c3829351e8.png" alt="home picture" class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                     <figcaption>
-                      <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                      <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                      <div class="d-flex">
-                        <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                        <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                        <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
-                      </div>
-                     </figcaption>
-                </figure>
-              </div>  <!-- suggestion box 1 end -->        
-              <div class="col suggestion__col-middle">  <!-- suggestion box 2 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                    <figcaption>
-                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                     <div class="d-flex">
-                       <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                       <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                       <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <div class="row">
+              <div class="col d-flex suggestion__col cols-margin-size">
+                <div class="col display-xs-style">  <!-- suggestion box 1 start -->
+                  <figure>
+                    <div  class="d-flex position-relative suggestion__img-box">
+                     <div class="suggestion__like-icon  position-absolute">
+                        <div class="position-relative"  onclick="chn();">
+                          <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                          <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                        </div> 
                      </div>
-                    </figcaption>
-                </figure>
-              </div> <!-- suggestion box 2 end -->      
-              <div class="col">  <!-- suggestion box 3 start -->
-                <figure>
-                  <div  class="d-inline-flex position-relative suggestion__img-box">
-                   <div class="suggestion__like-icon position-absolute">
-                      <div class="position-relative"  onclick="chn();">
-                        <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
-                        <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
-                      </div> 
-                   </div>
-                   <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
-                  </div> 
-                  <a href="detail.html" class="suggestion__detail-link"></a>
-                    <figcaption>
-                     <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
-                     <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
-                     <div class="d-flex">
-                       <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
-                       <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
-                       <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                     <img src="./assets/img/c3829351e8.png" alt="home picture" class="suggestion__img img-fluid">
+                    </div> 
+                    <a href="detail.html" class="suggestion__detail-link"></a>
+                       <figcaption>
+                        <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                        <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                        <div class="d-flex">
+                          <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                          <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                          <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                        </div>
+                       </figcaption>
+                  </figure>
+                </div>  <!-- suggestion box 1 end -->        
+                <div class="col suggestion__col-middle display-xs-style">  <!-- suggestion box 2 start -->
+                  <figure>
+                    <div  class="d-flex position-relative suggestion__img-box">
+                     <div class="suggestion__like-icon position-absolute">
+                        <div class="position-relative"  onclick="chn();">
+                          <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                          <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                        </div> 
                      </div>
-                    </figcaption>
-                </figure>
-              </div>  <!-- suggestion box 3  end -->     
-            </div>  <!-- suggestion__img col end -->       
-          </div>  <!-- suggestion__img end -->    
-        </div> <!-- suggestion end -->
- 
-      </div> <!-- col end -->
-    </div> <!-- row 3 end ( Önə çıxan təkliflər bölməsi end)-->
+                     <img  src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                    </div> 
+                    <a href="detail.html" class="suggestion__detail-link"></a>
+                      <figcaption>
+                       <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                       <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                       <div class="d-flex">
+                         <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                         <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                         <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                       </div>
+                      </figcaption>
+                  </figure>
+                </div> <!-- suggestion box 2 end -->      
+                <div class="col">  <!-- suggestion box 3 start -->
+                  <figure>
+                    <div  class="d-flex position-relative suggestion__img-box">
+                     <div class="suggestion__like-icon position-absolute">
+                        <div class="position-relative"  onclick="chn();">
+                          <img class="imgg" src="./assets/img/heartt.png" alt="heart icon empty">
+                          <img class="immg" src="./assets/img/heart2.png" alt="heart icon filled">
+                        </div> 
+                     </div>
+                     <img src="./assets/img/c3829351e8.png" alt="home picture"  class="img-fluid suggestion__img">
+                    </div> 
+                    <a href="detail.html" class="suggestion__detail-link"></a>
+                      <figcaption>
+                       <h3 class="suggestion__img-title"><img src="./assets/img/manat.png" alt="manat icon"> 270</h3>
+                       <span class="suggestion__img-adress img-adress-size">Mərdəkan rayonu, 15ci küçə </span>
+                       <div class="d-flex">
+                         <span class="suggestion__home suggestion__properties"><img src="./assets/img/Vector.png"   alt="otaq-qapı iconu"> 7 otaq</span>
+                         <span class="suggestion__bed  suggestion__properties"><img src="./assets/img/Group 457.png"   alt="Çarpayı ikonu"> 5 Yataq</span>
+                         <span class="suggestion__wide suggestion__properties "><img src="./assets/img/Subtract.png"   alt="ölçü ikonu"> 2000 kv.m2</span>
+                       </div>
+                      </figcaption>
+                  </figure>
+                </div>  <!-- suggestion box 3  end -->     
+              </div>  <!-- suggestion__img col end -->       
+            </div>  <!-- suggestion__img end -->    
+          </div> <!-- suggestion end -->
+        </div> <!-- col end -->
+      </div> <!-- row end ( Önə çıxan təkliflər bölməsi end)-->
+    </div>  <!-- container end -->    <!-- row 3 end ( Önə çıxan təkliflər bölməsi end)-->
       
 
 </div> <!-- col end (content section end) -->
 
-<!---------------------- Footer start ------------------------>
-<footer>
-  <!-- footer-top start -->
- <div class="container p-0">  
-  <div class="row"> <!--Top row start -->
-   <div class="col d-flex p-0 foot-top-box">
-    <div class="col-sm-6 d-flex justify-content-between">
-      <div class="foot__logo-box">
-          <a href="#" class="foot-logo d-inline-block">Logo</a>
-          <p class="foot-text">Subscribe to keep up with the
-            latest news</p>
-      </div>
-      <div class="foot-nav text-start">
-        <h3>Hqqımızda</h3>
-        <ul class="p-0">
-          <li><a href="#">Our Product</a></li>
-          <li><a href="#">Tutorials</a></li>
-          <li><a href="#">Our Service</a></li>
-        </ul>
-      </div>
-      <div class="foot-nav text-start">
-        <h3>Əlaqə</h3>
-        <ul class="p-0">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </div>
+
+<!-- Elan vermə bölməsi -->
+<div class="container">
+  <div class="row">
+   <div class="col">
+     <div  class="advertise position-relative d-flex align-items-center">
+      <div class="position-absolute advertise__box">
+         <div class="col advertise__title">
+           <h3 class="">Pulsuz elan dərc et və sənə uyğun <br> kirayəçini tap!</h3>
+          </div> 
+          <div class="col advertise__link">
+           <a href="elan-page1.html" class=" ">Elan ver</a>
+          </div>
+      </div>    
+       <img class="adverise-img img-fluid adverise-img-1" src="./assets/img/Defne-Bagevi-Bina-9-1 1.png" alt="ev şəkli">
+       <img class="adverise-img img-fluid adverise-img-2" src="./assets/img/bag-evi.png" alt="ev şəkli" style="display: none;">
+     </div>
     </div>
-    <div class="col-sm-6 position-relative">
-
-      <div class="foot-email position-absolute">
-
-          <form action="#" method="post">
-            <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
-              not simply random text. It has roots.</label>
-            <div class="col">
-              <div class="col d-inline-flex">
-                   <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
-              </div>
-              <div class="col d-inline-flex">
-                   <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
-              </div> 
-          </div> <!--form -> col end -->
-         </form> <!--form end --> 
-       
-      </div> <!-- foot-email end -->
-    </div>
-   </div> <!-- col end -->
-  </div> <!--Top row end -->
-
-  <div class="row"> <!--bottom row start -->
-    <div class="col position-relative foot-bottom-box">
-      <div class="col d-inline-flex">
-        <span class="foot-copyright">Copyright © 2022 All rights reserved.</span>
-      </div>
-      <div class="col d-inline-flex end-0 position-absolute">
-        <div class="foot-sosial">
-          <a href="#" class="foot-facebook"></a>
-          <a href="#" class="foot-twetter"></a>
-          <a href="#" class="foot-instagram"></a>
-        </div>
-      </div>
-    </div> <!--bottom col end -->
-  </div> <!--bottom row end -->
-
- </div> <!-- container end -->
-</footer>
+   </div>
+  </div> <!-- col end  -->
+ 
+ </div> <!--  container end (content section end) -->
+ 
+ <!---------------------- Footer start ------------------------>
+ <div>
+  <footer>
+   <!-- footer-top start -->
+   <div class="container-fluid">  
+   <div class="row"> <!--Top row start -->
+    <div class="col d-lg-flex foot-top-box">
+     <div class="col-lg-6 d-block d-sm-flex justify-content-between foot-top-box__inner">
+       <div class="foot__logo-box">
+           <a href="#" class="foot-logo d-inline-block">Logo</a>
+           <p class="foot-text">Subscribe to keep up with the
+             latest news</p>
+       </div>
+       <div class="foot-nav text-start">
+         <h3>Hqqımızda</h3>
+         <ul class="p-0">
+           <li><a href="#">Our Product</a></li>
+           <li><a href="#">Tutorials</a></li>
+           <li><a href="#">Our Service</a></li>
+         </ul>
+       </div>
+       <div class="foot-nav text-start">
+         <h3>Əlaqə</h3>
+         <ul class="p-0">
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Careers</a></li>
+           <li><a href="#">Contact us</a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="col-lg-6 position-relative foot-email-box">
+       <div class="foot-email">
+           <form action="#" method="post">
+             <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
+               not simply random text. It has roots.</label>
+             <div class="col">
+               <div class="col d-inline-flex">
+                    <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
+               </div>
+               <div class="col d-inline-flex">
+                    <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
+               </div> 
+           </div> <!--form -> col end -->
+          </form> <!--form end --> 
+        
+       </div> <!-- foot-email end -->
+     </div>
+    </div> <!-- col end -->
+   </div> <!--Top row end -->
+  <div class="container-fluid">
+   <div class="row"> <!--bottom row start -->
+     <div class="col position-relative foot-bottom-box">
+       <div class="col d-inline-flex">
+         <span class="foot-copyright">Copyright © 2022 All rights reserved.</span>
+       </div>
+       <div class="col d-inline-flex end-0 position-absolute">
+         <div class="foot-sosial">
+           <a href="#" class="foot-facebook"></a>
+           <a href="#" class="foot-twetter"></a>
+           <a href="#" class="foot-instagram"></a>
+         </div>
+       </div>
+     </div> <!--bottom col end -->
+   </div> <!--bottom row end -->
+  </div> <!-- container end -->
+   </div> <!-- container end -->
+  </footer>
+ </div> <!-- container end  -->
+ 
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
