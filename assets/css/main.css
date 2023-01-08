@@ -887,6 +887,7 @@ input[type=number] {
   .slide-box {
     max-width: 744px;
   }
+  /*----- detail page end -----*/
 }
 
 /*==================== min-width:  992px and max-width: max-width: 1199.98px ===================*/
@@ -950,6 +951,13 @@ input[type=number] {
   .carousel .carousel-item-detail {
     height: 416px !important;
   }
+  .slide-box {
+    max-width: 578.11px;
+  }
+  .detail > div {
+    max-width: 560px;
+  }
+  /*----- detail page end -----*/
 }
 
 /*==================== min-width: 768px and max-width:  991.98px ===================*/
@@ -1063,29 +1071,36 @@ input[type=number] {
   /*----- index1.html and index2.html pages end -----*/
   /*----- detail page start -----*/
   .carousel .carousel-item-detail {
-    height: 350px !important;
+    height: 340px !important;
   }
   .picture-box {
-    height: 167px;
+    height: 165px;
   }
-}
-
-.slide-box {
-  max-width: 427px;
-}
-
-.detail {
-  margin-top: 360px;
-}
-
-.detail__bron-box {
-  position: absolute;
-  top: -331px;
-  left: 0;
-}
-
-.slide-box {
-  max-width: 578.11px;
+  .slide-box {
+    max-width: 427px;
+    margin-right: 10px;
+  }
+  .picture-row div:nth-child(1) div {
+    margin-bottom: 10px;
+  }
+  .picture-row div:nth-child(1) div:nth-child(2) {
+    margin-left: 10px;
+  }
+  .picture-row div:nth-child(2) div:nth-child(2) {
+    margin-left: 10px;
+  }
+  .detail {
+    margin-top: 360px;
+  }
+  .detail__bron-box {
+    position: absolute;
+    top: -331px;
+    left: 0;
+  }
+  .slide-box {
+    max-width: 427.36px;
+  }
+  /*----- detail page end -----*/
 }
 
 /*==================== min-width: 576px and max-width: 767.98px ===================*/
@@ -1228,12 +1243,43 @@ input[type=number] {
   .foot-email {
     margin-bottom: 15px;
   }
+  /*----- index1.html and index2.html pages end -----*/
+  /*----- detail page start -----*/
+  .slide-picture-box {
+    display: block;
+  }
+  .slide-box {
+    margin-right: 0;
+  }
+  .carousel-inner-detail {
+    border-radius: 12px 12px 12px 12px;
+  }
+  .carousel-inner-detail img {
+    border-radius: 12px 12px 12px 12px;
+  }
+  .picture-row {
+    display: none;
+  }
+  .detail {
+    margin-top: 360px;
+  }
+  .detail__bron-box {
+    position: absolute;
+    top: -331px;
+    left: 0;
+  }
+  .detail__foot {
+    margin-top: 0;
+  }
+  .carousel .carousel-item-detail {
+    height: 340px;
+  }
+  /*----- detail page end -----*/
 }
 
-/*----- index1.html and index2.html pages end -----*/
-/*====================== max 576 px =====================*/
-/*----- index1.html and index2.html pages start -----*/
-@media (max-width: 576px) {
+/*==================== max-width: 575.98px ===================*/
+@media (max-width: 575.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .container-card {
     bottom: 18%;
   }
@@ -1310,12 +1356,6 @@ input[type=number] {
   .rent-boxs .sale {
     padding: 0;
   }
-}
-
-/*----- index1.html and index2.html pages end -----*/
-/*==================== max-width: 575.98px ===================*/
-@media (max-width: 575.98px) {
-  /*----- index1.html and index2.html pages start -----*/
   .slide-show-picture {
     display: none !important;
   }
@@ -1486,7 +1526,7 @@ input[type=number] {
   .suggestion__properties-hide {
     display: block !important;
   }
-  .carousel {
+  .carousel-small {
     height: 550px;
     background-image: url(../img/hose-pic.png);
     background-position: center;
@@ -1497,15 +1537,91 @@ input[type=number] {
     padding-left: 16px;
     padding-right: 16px;
   }
+  /*----- index1.html and index2.html pages end -----*/
+  /*----- detail page start -----*/
+  .slide-box {
+    margin-right: 0;
+  }
+  .slide-box .slide {
+    border-radius: 12px 12px 12px 12px;
+  }
+  .slide-box .slide .carousel-inner {
+    border-radius: 12px 12px 12px 12px;
+  }
+  .slide-box .slide img {
+    border-radius: 12px 12px 12px 12px;
+  }
+  .picture-row {
+    display: none;
+  }
+  .detail {
+    margin-top: 496px;
+  }
+  .detail__bron-box {
+    position: absolute;
+    top: -358px;
+    left: 0;
+  }
+  .detail__title-box {
+    position: absolute;
+    top: -480px;
+  }
+  .detail__foot {
+    margin-top: 0;
+  }
+  .detail__content {
+    display: block !important;
+  }
+  .detail .bron {
+    margin: auto;
+  }
+  .carousel-inner .carousel-item-detail {
+    max-height: 300px;
+  }
+  /*----- detail page end -----*/
+  /*----- log in pages start -----*/
+  .log-in__form-box {
+    width: 360px;
+  }
+  /*----- log in pages end -----*/
 }
 
-/*----- index1.html and index2.html pages end -----*/
-/*-----        log in pages start            -----*/
-.log-in__form-box {
-  width: 360px;
+/*==================== max-width: 375px ===================*/
+@media (max-width: 427px) {
+  .carousel-inner .carousel-item-detail {
+    max-height: 232px;
+  }
 }
 
-/*-----        log in pages end            -----*/
+/*==================== max-width: 320px ===================*/
+@media (max-width: 320px) {
+  .detail__bron-box {
+    top: -299px;
+  }
+  .detail__bron-box .bron {
+    max-width: 254px;
+  }
+  .detail__bron-box .bron__view {
+    display: flex;
+  }
+  .detail__bron-box .bron__view li {
+    font-size: 12px;
+  }
+  .detail__bron-box .bron__money {
+    font-size: 15px;
+  }
+  .detail__bron-box .bron__day {
+    font-size: 12px;
+  }
+  .detail__bron-box .detail__manat-img {
+    width: 10px;
+    height: 10px;
+  }
+  .detail__bron-box .detail__month {
+    margin-right: 0;
+  }
+}
+
 /*==================== max-width: 281px ===================*/
 /*----- index1.html and index2.html pages start -----*/
 @media (max-width: 281px) {
@@ -1538,9 +1654,9 @@ input[type=number] {
   .suggestion__like-icon {
     right: 32px;
   }
+  /*----- index1.html and index2.html pages end -----*/
 }
 
-/*----- index1.html and index2.html pages end -----*/
 /*===== carousel background =====*/
 .carousel-inner {
   border-radius: 12px 0px 0px 12px;
@@ -2163,6 +2279,10 @@ figcaption {
   margin-top: 60px;
   display: flex;
   position: relative;
+}
+
+.detail > div {
+  max-width: 743px;
 }
 
 .detail__bron-box {

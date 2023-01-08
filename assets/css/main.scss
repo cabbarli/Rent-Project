@@ -581,10 +581,13 @@ top: 0;
   margin-top: 60px;
   display: flex;
   position: relative;
+  &>div {
+    max-width: 743px;
+  }
   &__bron-box {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0 ;
+    right: 0 ;
   }
 &__title {
   color: #000000;
