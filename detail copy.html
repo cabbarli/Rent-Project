@@ -7,6 +7,7 @@
     <title>Detail-page</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> 
 </head>
 <body>  
@@ -50,11 +51,10 @@
   <!-- slide, picture box start -->
  <div class="container">
   <div class="row">
-    <div class="col d-flex"> 
-      <div class="slide-picture-box d-flex">
-        <div class="col p-0">
+    <div class="col"> 
+      <div class="slide-picture-box">
           <div class="slide-box">
-                 <div class="carousel slide position-relative d-flex     justify-content-center" id="mySlide" data-bs-ride="carousel"  data-bs-pause="false">                   
+                 <div class="carousel slide" id="mySlide"   data-bs-pause="false" data-bs-ride="carousel" >     
               <!-- slide bottom card start -->     
                        <!-- carousel-indicators end -->
                       <div class="carousel-inner carousel-inner-detail">
@@ -79,45 +79,38 @@
                           <span class="visually-hidden">sonra düyməsi</span>
                        </button> 
                  </div> <!--slide-carousel end-->   
-          </div>      
-        </div> <!-- col end (slayd carousel)-->
+          </div>        
         <!-- pictures box start -->
-        <div class="col p-0">
-            <div class="row row-cols-2 picture-row ">
-                <div class="col-5 p-0">
+            <div class=" picture-row ">
+                <div class="d-flex">
                   <div class="picture-box">
                     <a href="detail-picture.html"><img src="./assets/img/Image (1).png" alt="ev şəkli"></a>
-                  </div>    
-                </div>
-                <div class="col-5 p-0">
+                  </div>  
                   <div class="picture-box">
                     <a href="detail-picture.html"><img src="./assets/img/Image (2).png" alt="ev şəkli"></a>
-                  </div>  
+                  </div>   
                 </div>
-                <div class="col-5 p-0">
+                <div class="d-flex">
                   <div class="picture-box">
                     <a href="detail-picture.html"><img src="./assets/img/Image (3).png" alt="ev şəkli"></a>
                   </div>  
-                </div>
-                <div class="col-5 p-0">
                   <div class="picture-box">
                     <a href="detail-picture.html"><img src="./assets/img/Image (4).png" alt="ev şəkli"></a>
-                  </div>  
+                  </div> 
                 </div>
             </div>
-        </div> <!-- pictures box end -->
+     
       </div> <!--slide, picture box end -->    
     </div> <!--col end-->         
 </div> <!--row end (slide, picture box)-->
  </div>  <!-- container end (slide, picture box)-->
 
-
+<div class="container">
   <div class="row">
-    <div class="col">
-      <div class="detail">    
-        <div class="d-flex">
+    <div class="col">    
+        <div class="detail">
             <!-- detail box start -->
-            <div class="col-7">
+            <div>
               <div class="col">
                     <div class="col">
                       <h1 class="detail__title">Mərdəkan qəsəbəsi, 23cü keçid. Məhəllə 10</h1>
@@ -170,8 +163,8 @@
               </div>
              </div> <!-- detail box end -->
              <!-- brone box start -->
-             <div class="col-5 d-flex justify-content-end">
-                  <div class="col" style="display:contents;">
+             <div class="d-flex detail__bron-box">
+                  <div class="col">
                     <div class="bron">
                       <div class="col d-flex align-items-baseline justify-content-between">
                         <div class="d-flex align-items-baseline">
@@ -199,95 +192,99 @@
                     </div>     
                   </div>
              </div> <!-- brone box end -->
-             <!-- Map section start -->
-        </div> 
-            <div class="col">
+        </div>     
+             <!-- Map section start -->      
+             <div class="col">
               <!-- Location title -->
               <div class="col">
                <h3 class="detail__location">Location</h3>
               </div>
               <!-- location map -->
               <div class="col">
-                <div class="detail__map" id="map" style="width: 743px; height:400px;">
+                <div class="detail__map" id="map">
                 </div>
               </div>
             </div>     <!--col-> Map section end -->
-      </div>
+     
     </div> <!-- col end -->            
   </div> <!--row end (detail)-->
        
+</div>
+
 </div> <!--container content end -->
 
 
 
+
 <!---------------------- Footer start ------------------------>
-<footer>
-    <!-- footer-top start -->
-   <div class="container p-0">  
-    <div class="row"> <!--Top row start -->
-     <div class="col d-flex p-0 foot-top-box">
-      <div class="col-sm-6 d-flex justify-content-between">
-        <div class="foot__logo-box">
-            <a href="#" class="foot-logo d-inline-block">Logo</a>
-            <p class="foot-text">Subscribe to keep up with the
-              latest news</p>
-        </div>
-        <div class="foot-nav text-start">
-          <h3>Hqqımızda</h3>
-          <ul class="p-0">
-            <li><a href="#">Our Product</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Our Service</a></li>
-          </ul>
-        </div>
-        <div class="foot-nav text-start">
-          <h3>Əlaqə</h3>
-          <ul class="p-0">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-6 position-relative">
-  
-        <div class="foot-email position-absolute">
-  
-            <form action="#" method="post">
-              <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
-                not simply random text. It has roots.</label>
-              <div class="col">
-                <div class="col d-inline-flex">
-                     <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
-                </div>
-                <div class="col d-inline-flex">
-                     <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
-                </div> 
-            </div> <!--form -> col end -->
-           </form> <!--form end --> 
-         
-        </div> <!-- foot-email end -->
-      </div>
-     </div> <!-- col end -->
-    </div> <!--Top row end -->
-  
-    <div class="row"> <!--bottom row start -->
-      <div class="col position-relative foot-bottom-box">
-        <div class="col d-inline-flex">
-          <span class="foot-copyright">Copyright © 2022 All rights reserved.</span>
-        </div>
-        <div class="col d-inline-flex end-0 position-absolute">
-          <div class="foot-sosial">
-            <a href="#" class="foot-facebook"></a>
-            <a href="#" class="foot-twetter"></a>
-            <a href="#" class="foot-instagram"></a>
-          </div>
-        </div>
-      </div> <!--bottom col end -->
-    </div> <!--bottom row end -->
-  
+<div>
+  <footer>
+   <!-- footer-top start -->
+   <div class="container-fluid">  
+   <div class="row"> <!--Top row start -->
+    <div class="col d-lg-flex foot-top-box">
+     <div class="col-lg-6 d-block d-sm-flex justify-content-between foot-top-box__inner">
+       <div class="foot__logo-box">
+           <a href="#" class="foot-logo d-inline-block">Logo</a>
+           <p class="foot-text">Subscribe to keep up with the
+             latest news</p>
+       </div>
+       <div class="foot-nav text-start">
+         <h3>Hqqımızda</h3>
+         <ul class="p-0">
+           <li><a href="#">Our Product</a></li>
+           <li><a href="#">Tutorials</a></li>
+           <li><a href="#">Our Service</a></li>
+         </ul>
+       </div>
+       <div class="foot-nav text-start">
+         <h3>Əlaqə</h3>
+         <ul class="p-0">
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Careers</a></li>
+           <li><a href="#">Contact us</a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="col-lg-6 position-relative foot-email-box">
+       <div class="foot-email">
+           <form action="#" method="post">
+             <label for="label" class="form-label foot-label" >Contrary to popular belief, Lorem Ipsum is
+               not simply random text. It has roots.</label>
+             <div class="col">
+               <div class="col d-inline-flex">
+                    <input type="email" id="label" class="form-control foot-email" placeholder="email adress" aria-label="meyl adressi yazmaq üçün qutu">
+               </div>
+               <div class="col d-inline-flex">
+                    <button type="submit" class="btn right-arrow-icon foot-submit"  aria-label="meyl adressi göndərmək üçün düymə"></button> 
+               </div> 
+           </div> <!--form -> col end -->
+          </form> <!--form end --> 
+        
+       </div> <!-- foot-email end -->
+     </div>
+    </div> <!-- col end -->
+   </div> <!--Top row end -->
+  <div class="container-fluid">
+   <div class="row"> <!--bottom row start -->
+     <div class="col position-relative foot-bottom-box">
+       <div class="col d-inline-flex">
+         <span class="foot-copyright">Copyright © 2022 All rights reserved.</span>
+       </div>
+       <div class="col d-inline-flex end-0 position-absolute">
+         <div class="foot-sosial">
+           <a href="#" class="foot-facebook"></a>
+           <a href="#" class="foot-twetter"></a>
+           <a href="#" class="foot-instagram"></a>
+         </div>
+       </div>
+     </div> <!--bottom col end -->
+   </div> <!--bottom row end -->
+  </div> <!-- container end -->
    </div> <!-- container end -->
   </footer>
+ </div> <!-- container end  -->
+ 
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3d7qFq2s1g3lWOpoESctLpsYHv5DlqME&callback=initMap" type="text/javascript"></script>
 

@@ -73,7 +73,7 @@
 
 /*===== slide bottom card start =====*/
 .container-card {
-  bottom: 36%;
+  bottom: 33%;
 }
 
 .slide-card2 {
@@ -877,22 +877,21 @@ input[type=number] {
   }
 }
 
-@media (max-width: 575.98px) {
-  .log-in__form-box {
-    width: 360px;
-  }
-}
-
 /* ================= index.html responnsive min-width: 1200px=============== */
 @media (min-width: 1200px) {
   /* menu */
   .container {
     max-width: 1224px !important;
   }
+  /*----- detail pages start -----*/
+  .slide-box {
+    max-width: 744px;
+  }
 }
 
 /*==================== min-width:  992px and max-width: max-width: 1199.98px ===================*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   /* card section */
   .slide-card2 .select__metro {
     width: 230px;
@@ -938,17 +937,24 @@ input[type=number] {
     height: 610px;
   }
   .carousel .carousel-inner div img {
-    height: 610px;
+    height: 100%;
+    width: 100%;
   }
   /* content section */
   .suggestion__col-middle {
     margin-right: 15px;
     margin-left: 15px;
   }
+  /*----- index1.html and index2.html pages end -----*/
+  /*----- detail pages start -----*/
+  .carousel .carousel-item-detail {
+    height: 416px !important;
+  }
 }
 
 /*==================== min-width: 768px and max-width:  991.98px ===================*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .suggestion__like-icon {
     width: 35px;
     height: 35px;
@@ -1054,10 +1060,37 @@ input[type=number] {
   .foot-email-box {
     justify-content: left;
   }
+  /*----- index1.html and index2.html pages end -----*/
+  /*----- detail page start -----*/
+  .carousel .carousel-item-detail {
+    height: 350px !important;
+  }
+  .picture-box {
+    height: 167px;
+  }
+}
+
+.slide-box {
+  max-width: 427px;
+}
+
+.detail {
+  margin-top: 360px;
+}
+
+.detail__bron-box {
+  position: absolute;
+  top: -331px;
+  left: 0;
+}
+
+.slide-box {
+  max-width: 578.11px;
 }
 
 /*==================== min-width: 576px and max-width: 767.98px ===================*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .container-card {
     bottom: 18%;
   }
@@ -1197,7 +1230,9 @@ input[type=number] {
   }
 }
 
-/*==================== max 576 px ===================*/
+/*----- index1.html and index2.html pages end -----*/
+/*====================== max 576 px =====================*/
+/*----- index1.html and index2.html pages start -----*/
 @media (max-width: 576px) {
   .container-card {
     bottom: 18%;
@@ -1277,7 +1312,10 @@ input[type=number] {
   }
 }
 
+/*----- index1.html and index2.html pages end -----*/
+/*==================== max-width: 575.98px ===================*/
 @media (max-width: 575.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .slide-show-picture {
     display: none !important;
   }
@@ -1461,7 +1499,15 @@ input[type=number] {
   }
 }
 
+/*----- index1.html and index2.html pages end -----*/
+/*-----        log in pages start            -----*/
+.log-in__form-box {
+  width: 360px;
+}
+
+/*-----        log in pages end            -----*/
 /*==================== max-width: 281px ===================*/
+/*----- index1.html and index2.html pages start -----*/
 @media (max-width: 281px) {
   .margin-size .col:nth-child(2) {
     margin-right: 0;
@@ -1494,7 +1540,21 @@ input[type=number] {
   }
 }
 
+/*----- index1.html and index2.html pages end -----*/
 /*===== carousel background =====*/
+.carousel-inner {
+  border-radius: 12px 0px 0px 12px;
+}
+
+.carousel-inner div {
+  height: 730px;
+}
+
+.carousel-inner div img {
+  height: 100%;
+  width: 100%;
+}
+
 .carousel__background {
   position: absolute;
   width: 100%;
@@ -2020,25 +2080,13 @@ figcaption {
 }
 
 .carousel .carousel-item-detail {
-  width: 744px;
+  max-width: 744px;
   height: 416px;
 }
 
 .carousel .carousel-item-detail img {
-  width: 744px;
-  height: 416px;
-}
-
-.carousel .carousel-inner {
-  border-radius: 12px 0px 0px 12px;
-}
-
-.carousel .carousel-inner div {
-  height: 683px;
-}
-
-.carousel .carousel-inner div img {
-  height: 683px;
+  width: 100%;
+  height: 100%;
 }
 
 /* detail-page caeousel end */
@@ -2047,11 +2095,11 @@ figcaption {
 }
 
 .slide-picture-box {
-  width: 1200px;
+  display: flex;
 }
 
 .picture-box {
-  width: 212px;
+  max-width: 212px;
   height: 200px;
   padding: 0;
 }
@@ -2072,30 +2120,24 @@ figcaption {
   display: inline-block;
 }
 
-.picture-row {
-  margin-left: 0;
-}
-
-.picture-row div:nth-child(2) {
+.picture-row div:nth-child(1) div {
   margin-bottom: 16px;
 }
 
-.picture-row div:nth-child(2) img {
+.picture-row div:nth-child(1) div:nth-child(2) {
+  margin-left: 16px;
+}
+
+.picture-row div:nth-child(1) div:nth-child(2) img {
   border-radius: 0px 12px 0px 0px;
 }
 
-.picture-row div:nth-child(4) img {
+.picture-row div:nth-child(2) div:nth-child(2) {
+  margin-left: 16px;
+}
+
+.picture-row div:nth-child(2) div:nth-child(2) img {
   border-radius: 0px 0px 12px 0px;
-}
-
-.picture-row div:nth-child(1) {
-  width: 212px;
-  margin-right: 16px;
-}
-
-.picture-row div:nth-child(3) {
-  width: 212px;
-  margin-right: 16px;
 }
 
 .detail-nav-button {
@@ -2118,12 +2160,19 @@ figcaption {
 }
 
 .detail {
-  width: 1200px;
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+}
+
+.detail__bron-box {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .detail__title {
   color: #000000;
-  margin-top: 60px;
   margin-bottom: 8px;
   line-height: 32px;
   font-weight: 500;
@@ -2226,6 +2275,8 @@ figcaption {
 }
 
 .detail__map {
+  max-width: 743px;
+  height: 400px;
   margin-bottom: 71px;
   /* map button position*/
 }
@@ -2252,7 +2303,6 @@ figcaption {
   padding: 24px 22px 40px 22px;
   box-shadow: 0px 20px 25px rgba(31, 41, 55, 0.1), 0px 10px 10px rgba(31, 41, 55, 0.04);
   border-radius: 8px;
-  margin-top: 60px;
 }
 
 .bron__money {

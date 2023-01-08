@@ -46,22 +46,21 @@
   }
 }
 
-@media (max-width: 575.98px) {
-  .log-in__form-box {
-    width: 360px;
-  }
-}
-
 /* ================= index.html responnsive min-width: 1200px=============== */
 @media (min-width: 1200px) {
   /* menu */
   .container {
     max-width: 1224px !important;
   }
+  /*----- detail pages start -----*/
+  .slide-box {
+    max-width: 744px;
+  }
 }
 
 /*==================== min-width:  992px and max-width: max-width: 1199.98px ===================*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   /* card section */
   .slide-card2 .select__metro {
     width: 230px;
@@ -107,17 +106,27 @@
     height: 610px;
   }
   .carousel .carousel-inner div img {
-    height: 610px;
+    height: 100%;
+    width: 100%;
   }
   /* content section */
   .suggestion__col-middle {
     margin-right: 15px;
     margin-left: 15px;
   }
+  /*----- index1.html and index2.html pages end -----*/
+  /*----- detail pages start -----*/
+  .carousel .carousel-item-detail {
+    height: 416px !important;
+  }
+  .slide-box {
+    max-width: 578.11px;
+  }
 }
 
 /*==================== min-width: 768px and max-width:  991.98px ===================*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .suggestion__like-icon {
     width: 35px;
     height: 35px;
@@ -223,10 +232,43 @@
   .foot-email-box {
     justify-content: left;
   }
+  /*----- index1.html and index2.html pages end -----*/
+  /*----- detail page start -----*/
+  .carousel .carousel-item-detail {
+    height: 340px !important;
+  }
+  .picture-box {
+    height: 162px;
+  }
+  .slide-box {
+    max-width: 427px;
+    margin-right: 10px;
+  }
+  .picture-row div:nth-child(1) div {
+    margin-bottom: 10px;
+  }
+  .picture-row div:nth-child(1) div:nth-child(2) {
+    margin-left: 10px;
+  }
+  .picture-row div:nth-child(2) div:nth-child(2) {
+    margin-left: 10px;
+  }
+  .detail {
+    margin-top: 360px;
+  }
+  .detail__bron-box {
+    position: absolute;
+    top: -331px;
+    left: 0;
+  }
+  .slide-box {
+    max-width: 427.36px;
+  }
 }
 
 /*==================== min-width: 576px and max-width: 767.98px ===================*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .container-card {
     bottom: 18%;
   }
@@ -366,7 +408,9 @@
   }
 }
 
-/*==================== max 576 px ===================*/
+/*----- index1.html and index2.html pages end -----*/
+/*====================== max 576 px =====================*/
+/*----- index1.html and index2.html pages start -----*/
 @media (max-width: 576px) {
   .container-card {
     bottom: 18%;
@@ -446,7 +490,10 @@
   }
 }
 
+/*----- index1.html and index2.html pages end -----*/
+/*==================== max-width: 575.98px ===================*/
 @media (max-width: 575.98px) {
+  /*----- index1.html and index2.html pages start -----*/
   .slide-show-picture {
     display: none !important;
   }
@@ -630,7 +677,15 @@
   }
 }
 
+/*----- index1.html and index2.html pages end -----*/
+/*-----        log in pages start            -----*/
+.log-in__form-box {
+  width: 360px;
+}
+
+/*-----        log in pages end            -----*/
 /*==================== max-width: 281px ===================*/
+/*----- index1.html and index2.html pages start -----*/
 @media (max-width: 281px) {
   .margin-size .col:nth-child(2) {
     margin-right: 0;
@@ -662,3 +717,5 @@
     right: 32px;
   }
 }
+
+/*----- index1.html and index2.html pages end -----*/
