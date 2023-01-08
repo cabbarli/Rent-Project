@@ -756,7 +756,7 @@
 }
 
 /*==================== max-width: 375px ===================*/
-@media (max-width: 427px) {
+@media (max-width: 375px) {
   .carousel-inner .carousel-item-detail {
     max-height: 232px;
   }

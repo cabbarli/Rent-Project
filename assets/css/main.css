@@ -1587,7 +1587,7 @@ input[type=number] {
 }
 
 /*==================== max-width: 375px ===================*/
-@media (max-width: 427px) {
+@media (max-width: 375px) {
   .carousel-inner .carousel-item-detail {
     max-height: 232px;
   }
@@ -1599,26 +1599,29 @@ input[type=number] {
     top: -299px;
   }
   .detail__bron-box .bron {
-    max-width: 254px;
+    max-width: 295px;
   }
   .detail__bron-box .bron__view {
     display: flex;
   }
   .detail__bron-box .bron__view li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .detail__bron-box .bron__money {
-    font-size: 15px;
+    font-size: 16px;
   }
   .detail__bron-box .bron__day {
-    font-size: 12px;
+    font-size: 14px;
   }
   .detail__bron-box .detail__manat-img {
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
   }
-  .detail__bron-box .detail__month {
+  .detail__month {
     margin-right: 0;
+  }
+  .detail__map {
+    height: 350px;
   }
 }
 
@@ -1655,6 +1658,36 @@ input[type=number] {
     right: 32px;
   }
   /*----- index1.html and index2.html pages end -----*/
+  /*----- detail page start -----*/
+  .detail__bron-box {
+    top: -299px;
+  }
+  .detail__bron-box .bron {
+    max-width: 254px;
+  }
+  .detail__bron-box .bron__view {
+    display: flex;
+  }
+  .detail__bron-box .bron__view li {
+    font-size: 12px;
+  }
+  .detail__bron-box .bron__money {
+    font-size: 15px;
+  }
+  .detail__bron-box .bron__day {
+    font-size: 12px;
+  }
+  .detail__bron-box .detail__manat-img {
+    width: 10px;
+    height: 10px;
+  }
+  .detail__month {
+    margin-right: 0;
+  }
+  .detail__map {
+    height: 350px;
+  }
+  /*----- detail page end -----*/
 }
 
 /*===== carousel background =====*/
@@ -2418,7 +2451,7 @@ figcaption {
 .bron {
   border: 1px solid #E5E7EB;
   background-color: #FDFDFD;
-  width: 370px;
+  width: 371px;
   height: 298px;
   padding: 24px 22px 40px 22px;
   box-shadow: 0px 20px 25px rgba(31, 41, 55, 0.1), 0px 10px 10px rgba(31, 41, 55, 0.04);
