@@ -146,10 +146,39 @@
 }
 /*----- detail page end -----*/
 }
-
-/*==================== min-width: 768px and max-width:  991.98px ===================*/
+/*=============== max-width:  991.98px ===================*/
+/* index1 and index 2 pages */
+@media (max-width: 991.98px){
+  /* navbar */
+  .navbar-collapse>div {
+    display: block !important;
+    margin-top: 25px;
+    .elan-box {
+      margin-top: 5px;
+      display: inline-block;
+      .elan-size {
+        padding: 0px 50px;
+      }
+    }
+  }
+  .container-size {
+    z-index: 9;
+  }
+  .sing-up-button {
+    margin-top: 10px;
+  }
+  /* slide */
+  .navbar-collapse > div {
+    background: #c9c9c9;
+    display: block !important;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+/*===== min-width: 768px and max-width:  991.98px ========*/
 @media (min-width: 768px) and (max-width: 991.98px){
- /*----- index1.html and index2.html pages start -----*/ 
+ /* index1.html and index2.html pages start */ 
   .suggestion__like-icon {
     width: 35px;
     height: 35px;
@@ -257,7 +286,7 @@
     }
 
 /*----- index1.html and index2.html pages end -----*/
-/*----- detail page start -----*/
+/* detail page start */
 .carousel .carousel-item-detail {
   height: 340px !important;  
  }
@@ -280,6 +309,9 @@
 }
 .detail {
   margin-top: 360px;
+  &__title {
+    margin-top: 30px;
+  }
   &__bron-box {
     position: absolute;
     top: -331px;
@@ -289,14 +321,17 @@
 .slide-box {
    max-width: 427.36px; 
  }
- /*----- detail page end -----*/
+ /* detail page end */
 }
 
 
 
 /*==================== min-width: 576px and max-width: 767.98px ===================*/
 @media (min-width: 576px) and (max-width: 767.98px){
-  /*----- index1.html and index2.html pages start -----*/
+  /* index1.html and index2.html pages start */
+  .carousel-inner div {
+    height: 600px;
+  }
   .container-card {
     bottom: 18%;
   }
@@ -451,8 +486,8 @@
     .foot-email {
       margin-bottom: 15px;
     }
-/*----- index1.html and index2.html pages end -----*/
-/*----- detail page start -----*/
+/* index1.html and index2.html pages end */
+/* detail page start */
   .slide-picture-box {
     display: block; 
   }
@@ -475,6 +510,9 @@
       top: -331px;
       left: 0;
     }
+    &__title {
+      margin-top: 30px;
+    }
     &__foot {
       margin-top: 0;
     }
@@ -482,7 +520,12 @@
   .carousel .carousel-item-detail {
     height: 340px;
    }
-/*----- detail page end -----*/
+/* detail page end */
+/* elan-page 1 start */
+.advertised__category-button {
+     width: 150px; 
+}
+/* elan-page 1 start */
 }  
 
 /*==================== max-width: 575.98px ===================*/
@@ -785,7 +828,7 @@
   margin-top: 496px;
   &__bron-box {
     position: absolute;
-    top: -358px;
+    top: -337px;
     left: 0;
   }
   &__title-box {
@@ -800,6 +843,7 @@
   }
   .bron {
     margin: auto;
+    min-width: auto !important;
   }
  }
  .carousel-inner .carousel-item-detail {
@@ -813,20 +857,88 @@
    }
  }
  /*----- log in pages end -----*/
+ /*----- elan-page 1 start -----*/
+.advertised__category-button {
+  width: 150px; 
+}
+.advertised__category-box {
+  div:nth-child(2){
+    display: flex;
+    justify-content: center;
+  }
+}
+.advertised__check {
+padding: 0;
+}
+/*----- elan-page 1 end -----*/
 } 
+/*==================== min-width: 480px ===================*/
+@media (max-width: 480px){
+  /*----- elan-page 1 start -----*/
+.advertised__category-button {
+ width: 122px; 
+}
+.advertised__category-box {
+ div:nth-child(2){
+   display: flex;
+   justify-content: center;
+ }
+ div:nth-child(3){
+  display: flex;
+  justify-content: end;
+}
+}
+.advertised__check {
+padding: 0;
+}
+/*----- elan-page 1 end -----*/
+}
+/*==================== max-width: 400px ===================*/
+@media (max-width: 400px){
+   /*----- elan-page 1 start -----*/
+.advertised__category-button {
+  width: 164px; 
+}
+.advertised__category-box {
+  div:nth-child(2){
+    display: flex;
+    justify-content: end ;
+  }
+  div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+  }
+}
+.advertised__check {
+padding: 0;
+}
+.advertised__prew-next {
+  width: 160px;
+}
+/*----- elan-page 1 end -----*/
+}
 /*==================== max-width: 375px ===================*/
 @media (max-width: 375px){
   .carousel-inner .carousel-item-detail {
      max-height: 232px;
     }
-    .bron>div {
-      // max-width: 343px ;
+}
+/*==================== max-width: 352px ===================*/
+@media (max-width: 352px){ 
+  .advertised__category-box div {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center !important;
+  }
+  .advertised__prew-next {
+    width: 140px;
   }
 }
 /*==================== max-width: 320px ===================*/
 @media (max-width: 320px) {
   .detail__bron-box {
-    top: -299px;
+    top: -323px;
     .bron {
       max-width: 295px;
     }
@@ -853,8 +965,16 @@
    .detail__map {
    height: 350px;   
   }
+  .foot-email .foot-email {
+    margin-right: 1px;
+  }
+  .advertised__prew-next {
+    width: 125px;
+  }
+  .detail__availability {
+    margin-top: 65px;
+  }
 }
-
 
 /*==================== max-width: 281px ===================*/
 /*----- index1.html and index2.html pages start -----*/

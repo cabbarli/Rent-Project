@@ -960,9 +960,40 @@ input[type=number] {
   /*----- detail page end -----*/
 }
 
-/*==================== min-width: 768px and max-width:  991.98px ===================*/
+/*=============== max-width:  991.98px ===================*/
+/* index1 and index 2 pages */
+@media (max-width: 991.98px) {
+  /* navbar */
+  .navbar-collapse > div {
+    display: block !important;
+    margin-top: 25px;
+  }
+  .navbar-collapse > div .elan-box {
+    margin-top: 5px;
+    display: inline-block;
+  }
+  .navbar-collapse > div .elan-box .elan-size {
+    padding: 0px 50px;
+  }
+  .container-size {
+    z-index: 9;
+  }
+  .sing-up-button {
+    margin-top: 10px;
+  }
+  /* slide */
+  .navbar-collapse > div {
+    background: #c9c9c9;
+    display: block !important;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+/*===== min-width: 768px and max-width:  991.98px ========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /*----- index1.html and index2.html pages start -----*/
+  /* index1.html and index2.html pages start */
   .suggestion__like-icon {
     width: 35px;
     height: 35px;
@@ -1069,7 +1100,7 @@ input[type=number] {
     justify-content: left;
   }
   /*----- index1.html and index2.html pages end -----*/
-  /*----- detail page start -----*/
+  /* detail page start */
   .carousel .carousel-item-detail {
     height: 340px !important;
   }
@@ -1100,12 +1131,15 @@ input[type=number] {
   .slide-box {
     max-width: 427.36px;
   }
-  /*----- detail page end -----*/
+  /* detail page end */
 }
 
 /*==================== min-width: 576px and max-width: 767.98px ===================*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /*----- index1.html and index2.html pages start -----*/
+  /* index1.html and index2.html pages start */
+  .carousel-inner div {
+    height: 600px;
+  }
   .container-card {
     bottom: 18%;
   }
@@ -1243,8 +1277,8 @@ input[type=number] {
   .foot-email {
     margin-bottom: 15px;
   }
-  /*----- index1.html and index2.html pages end -----*/
-  /*----- detail page start -----*/
+  /* index1.html and index2.html pages end */
+  /* detail page start */
   .slide-picture-box {
     display: block;
   }
@@ -1274,7 +1308,12 @@ input[type=number] {
   .carousel .carousel-item-detail {
     height: 340px;
   }
-  /*----- detail page end -----*/
+  /* detail page end */
+  /* elan-page 1 start */
+  .advertised__category-button {
+    width: 150px;
+  }
+  /* elan-page 1 start */
 }
 
 /*==================== max-width: 575.98px ===================*/
@@ -1574,6 +1613,7 @@ input[type=number] {
   }
   .detail .bron {
     margin: auto;
+    min-width: auto !important;
   }
   .carousel-inner .carousel-item-detail {
     max-height: 300px;
@@ -1584,12 +1624,80 @@ input[type=number] {
     width: 360px;
   }
   /*----- log in pages end -----*/
+  /*----- elan-page 1 start -----*/
+  .advertised__category-button {
+    width: 150px;
+  }
+  .advertised__category-box div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  .advertised__check {
+    padding: 0;
+  }
+  /*----- elan-page 1 end -----*/
+}
+
+/*==================== min-width: 480px ===================*/
+@media (max-width: 480px) {
+  /*----- elan-page 1 start -----*/
+  .advertised__category-button {
+    width: 122px;
+  }
+  .advertised__category-box div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+  }
+  .advertised__category-box div:nth-child(3) {
+    display: flex;
+    justify-content: end;
+  }
+  .advertised__check {
+    padding: 0;
+  }
+  /*----- elan-page 1 end -----*/
+}
+
+/*==================== max-width: 400px ===================*/
+@media (max-width: 400px) {
+  /*----- elan-page 1 start -----*/
+  .advertised__category-button {
+    width: 164px;
+  }
+  .advertised__category-box div:nth-child(2) {
+    display: flex;
+    justify-content: end;
+  }
+  .advertised__category-box div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+  }
+  .advertised__check {
+    padding: 0;
+  }
+  .advertised__prew-next {
+    width: 160px;
+  }
+  /*----- elan-page 1 end -----*/
 }
 
 /*==================== max-width: 375px ===================*/
 @media (max-width: 375px) {
   .carousel-inner .carousel-item-detail {
     max-height: 232px;
+  }
+}
+
+/*==================== max-width: 352px ===================*/
+@media (max-width: 352px) {
+  .advertised__category-box div {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: center !important;
+  }
+  .advertised__prew-next {
+    width: 140px;
   }
 }
 
@@ -1622,6 +1730,12 @@ input[type=number] {
   }
   .detail__map {
     height: 350px;
+  }
+  .foot-email .foot-email {
+    margin-right: 1px;
+  }
+  .advertised__prew-next {
+    width: 125px;
   }
 }
 
@@ -2451,7 +2565,8 @@ figcaption {
 .bron {
   border: 1px solid #E5E7EB;
   background-color: #FDFDFD;
-  width: 371px;
+  max-width: 371px;
+  min-width: 370px;
   height: 298px;
   padding: 24px 22px 40px 22px;
   box-shadow: 0px 20px 25px rgba(31, 41, 55, 0.1), 0px 10px 10px rgba(31, 41, 55, 0.04);
@@ -2464,6 +2579,23 @@ figcaption {
   line-height: 21px;
   font-weight: 600;
   font-size: 24px;
+}
+
+.bron__link {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+  color: #6B7280;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline !important;
+  line-height: 20px;
+}
+
+.bron__link:hover {
+  color: #6B7280;
 }
 
 .bron__day {
@@ -2548,8 +2680,9 @@ figcaption {
 /* ================== Elan ver pages start ===============*/
 /* ------------- Elan ver page-1 ------------*/
 .advertised {
-  margin-top: 3px;
-  width: 592px;
+  margin: auto;
+  padding-top: 3px;
+  max-width: 592px;
   /* kirayə kateqoriya buttonları */
   /* Hansı tarixdə köçmək olar buttonu */
   /* şəhər seçmə buttonu */
@@ -2561,6 +2694,11 @@ figcaption {
 
 .advertised__check {
   padding: 0 20px;
+}
+
+.advertised__category-box div:nth-child(3) {
+  display: flex;
+  justify-content: end;
 }
 
 .advertised__title {
@@ -2690,8 +2828,9 @@ figcaption {
 }
 
 .advertised__about-home {
+  resize: none;
   padding: 19px 17px;
-  width: 590px;
+  max-width: 590px;
   height: 97px;
   max-height: 98px;
   color: #C0C0C0;
@@ -2788,7 +2927,6 @@ input.advertised__home-picture::file-selector-button {
 
 /* ----- Elan ver page-2 detallar -- --*/
 .advertised {
-  width: 590px;
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
   /* Təchizatlar */
   /* icazə verilir section */
@@ -3430,7 +3568,7 @@ footer {
 }
 
 .foot-email .foot-label {
-  width: 292px;
+  max-width: 292px;
   margin-bottom: 27px;
   line-height: 20px;
   font-size: 14px;
