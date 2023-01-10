@@ -1123,6 +1123,9 @@ input[type=number] {
   .detail {
     margin-top: 360px;
   }
+  .detail__title {
+    margin-top: 30px;
+  }
   .detail__bron-box {
     position: absolute;
     top: -331px;
@@ -1302,6 +1305,9 @@ input[type=number] {
     top: -331px;
     left: 0;
   }
+  .detail__title {
+    margin-top: 30px;
+  }
   .detail__foot {
     margin-top: 0;
   }
@@ -1313,7 +1319,12 @@ input[type=number] {
   .advertised__category-button {
     width: 150px;
   }
-  /* elan-page 1 start */
+  /* elan-page 1 end */
+  /* elan-page 2 start */
+  .advertised__equipment-size {
+    width: 250px;
+  }
+  /* elan-page 2 end */
 }
 
 /*==================== max-width: 575.98px ===================*/
@@ -1598,7 +1609,7 @@ input[type=number] {
   }
   .detail__bron-box {
     position: absolute;
-    top: -358px;
+    top: -337px;
     left: 0;
   }
   .detail__title-box {
@@ -1680,6 +1691,11 @@ input[type=number] {
     width: 160px;
   }
   /*----- elan-page 1 end -----*/
+  /* elan-page 2 start */
+  .advertised__choose-button {
+    padding: 10px 12px;
+  }
+  /* elan-page 2 end */
 }
 
 /*==================== max-width: 375px ===================*/
@@ -1704,7 +1720,7 @@ input[type=number] {
 /*==================== max-width: 320px ===================*/
 @media (max-width: 320px) {
   .detail__bron-box {
-    top: -299px;
+    top: -323px;
   }
   .detail__bron-box .bron {
     max-width: 295px;
@@ -1736,6 +1752,9 @@ input[type=number] {
   }
   .advertised__prew-next {
     width: 125px;
+  }
+  .detail__availability {
+    margin-top: 65px;
   }
 }
 
@@ -2925,11 +2944,15 @@ input.advertised__home-picture::file-selector-button {
   display: none;
 }
 
-/* ----- Elan ver page-2 detallar -- --*/
+/* ----- Elan ver page-2 detallar -----*/
 .advertised {
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
   /* Təchizatlar */
   /* icazə verilir section */
+}
+
+.advertised input, .advertised textarea, .advertised select {
+  background-color: #fdfdfd;
 }
 
 .advertised__details-title {
@@ -2942,6 +2965,7 @@ input.advertised__home-picture::file-selector-button {
 
 .advertised__details {
   height: 48px;
+  background-color: #fdfdfd;
 }
 
 .advertised__equipment {
@@ -2949,7 +2973,7 @@ input.advertised__home-picture::file-selector-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 190px;
+  max-width: 190px;
   height: 62px;
   border-radius: 6px;
 }
@@ -3078,9 +3102,25 @@ input.advertised__home-picture::file-selector-button {
   margin-top: 10px;
 }
 
+.advertised__couple {
+  margin-left: 30px;
+}
+
 .advertised__equipment-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  border-radius: 6px;
   width: 285px;
   margin-bottom: 30px;
+}
+
+.advertised__equipment-size span {
+  color: #272727;
+  line-height: 27px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .advertised__choose-button {

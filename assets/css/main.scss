@@ -1060,8 +1060,11 @@ top: 0;
 input.advertised__home-picture::file-selector-button {
   display: none;
 }
-/* ----- Elan ver page-2 detallar -- --*/
+/* ----- Elan ver page-2 detallar -----*/
 .advertised {
+  input,textarea, select {
+    background-color: #fdfdfd;
+  }
   /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
   &__details-title {
     margin-top: 14px;
@@ -1074,6 +1077,7 @@ input.advertised__home-picture::file-selector-button {
   }
   &__details {
     height: 48px;
+    background-color: #fdfdfd;
   }
   /* Təchizatlar */
   &__equipment {
@@ -1081,8 +1085,8 @@ input.advertised__home-picture::file-selector-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 190px;
-    height: 62px;
+    max-width: 190px;
+    height: 62px; 
     // border: 1px solid $color-gray7;
     border-radius: 6px;
   span{
@@ -1196,7 +1200,24 @@ input.advertised__home-picture::file-selector-button {
  &__techizat {
   margin-top: 10px;
  }
+ &__couple {
+  margin-left: 30px;
+}
  &__equipment-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px; 
+  // border: 1px solid $color-gray7;
+  border-radius: 6px;
+span{
+  color: $color-black;
+  line-height: $line-27;
+  font: {
+    weight: $font-400;
+    size: $font-16;
+  }
+ }
   width: 285px;
   margin-bottom: 30px;
  }

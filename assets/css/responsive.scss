@@ -525,7 +525,12 @@
 .advertised__category-button {
      width: 150px; 
 }
-/* elan-page 1 start */
+/* elan-page 1 end */
+/* elan-page 2 start */
+.advertised__equipment-size {
+  width: 250px;
+}
+/* elan-page 2 end */
 }  
 
 /*==================== max-width: 575.98px ===================*/
@@ -917,12 +922,22 @@ padding: 0;
   width: 160px;
 }
 /*----- elan-page 1 end -----*/
+/* elan-page 2 start */
+.advertised__choose-button {
+  padding: 10px 12px;
 }
-/*==================== max-width: 375px ===================*/
-@media (max-width: 375px){
+/* elan-page 2 end */
+}
+/*==================== max-width: 376px ===================*/
+@media (max-width: 376px){
   .carousel-inner .carousel-item-detail {
      max-height: 232px;
     }
+    /* elan-page 2 start */
+    .advertised__səs::before {
+     margin-right: 10px;
+    }
+/* elan-page 2 end */
 }
 /*==================== max-width: 352px ===================*/
 @media (max-width: 352px){ 
@@ -933,6 +948,13 @@ padding: 0;
   }
   .advertised__prew-next {
     width: 140px;
+  }
+  .advertised__content-boxs {
+      display: flex;
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
   }
 }
 /*==================== max-width: 320px ===================*/
@@ -1040,4 +1062,9 @@ padding: 0;
  height: 350px;   
 }
 /*----- detail page end -----*/
+/*----- elan ver page 2 start -----*/
+.advertised__equipment-size {
+  width: 257px;
+}
+/*----- elan ver page 2 end -----*/
 }
