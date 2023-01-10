@@ -531,6 +531,14 @@
   width: 250px;
 }
 /* elan-page 2 end */
+/* elan-page 3 map start */
+.advertised__map {
+  .detail__map {
+    height: 400px;
+    margin-bottom: 51px;
+  } 
+}
+/* elan-page 3 map end */
 }  
 
 /*==================== max-width: 575.98px ===================*/
@@ -876,6 +884,20 @@
 padding: 0;
 }
 /*----- elan-page 1 end -----*/
+/* elan-page 3 map start */
+.advertised__map {
+  .detail__map {
+    height: 380px;
+    margin-bottom: 51px;
+  } 
+}
+/* elan-page 3 map end */
+/* detail page start */
+.detail__map-size {
+  height: 400px;
+  margin-bottom: 51px;
+} 
+/* detail page end */
 } 
 /*==================== min-width: 480px ===================*/
 @media (max-width: 480px){
@@ -896,11 +918,23 @@ padding: 0;
 .advertised__check {
 padding: 0;
 }
-/*----- elan-page 1 end -----*/
+/* elan-page 1 end */
+/* map google button start*/
+.detail__map{
+  .gm-style {
+    div:nth-of-type(14) {
+      div:nth-child(1) {
+        bottom: 15px !important;
+      }
+    }
+  }
+}
+/* map google button end*/
+
 }
 /*==================== max-width: 400px ===================*/
 @media (max-width: 400px){
-   /*----- elan-page 1 start -----*/
+   /* elan-page 1 start */
 .advertised__category-button {
   width: 164px; 
 }
@@ -927,6 +961,15 @@ padding: 0;
   padding: 10px 12px;
 }
 /* elan-page 2 end */
+/* elan-page 3 map start */
+.advertised__map {
+  .detail__map {
+    height: 319px;
+    margin-bottom: 51px;
+  } 
+}
+/* elan-page 3 map end */
+
 }
 /*==================== max-width: 376px ===================*/
 @media (max-width: 376px){
@@ -1061,10 +1104,16 @@ padding: 0;
  .detail__map {
  height: 350px;   
 }
-/*----- detail page end -----*/
-/*----- elan ver page 2 start -----*/
+/* detail page end */
+/* elan ver page 2 start */
 .advertised__equipment-size {
   width: 257px;
 }
-/*----- elan ver page 2 end -----*/
+/* elan ver page 2 end */
+/* detail map start*/
+.detail__map .gmnoprint {
+  margin-right: -12px !important;
+  margin-left: 15px !important;
+}
+/* detail map end */
 }

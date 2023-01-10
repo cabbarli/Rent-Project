@@ -695,9 +695,14 @@ top: 0;
   }
 }
 .detail__map {
+  margin: auto;
   max-width: 743px;
-  height: 400px;
+  height: 500px;
   margin-bottom: 71px;
+  &-buttonbox {
+    max-width: 743px;
+    margin: auto;
+  }
   /* map button position*/
   .gmnoprint {
     top: 25px !important;
