@@ -1331,6 +1331,11 @@ input[type=number] {
     margin-bottom: 51px;
   }
   /* elan-page 3 map end */
+  /* elan ver page 4 contact start */
+  .advertised__contact-box {
+    width: 253px;
+  }
+  /* elan ver page 4 contact end */
 }
 
 /*==================== max-width: 575.98px ===================*/
@@ -1665,6 +1670,19 @@ input[type=number] {
     margin-bottom: 51px;
   }
   /* detail page end */
+  /* elan-page 4 contact start */
+  .advertised__contact-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .advertised__next-prew-button {
+    margin-bottom: 0;
+    margin-top: 56px;
+  }
+  .advertised__footer-marg {
+    margin-top: 66px;
+  }
+  /* elan-page 4 contact end */
 }
 
 /*==================== min-width: 480px ===================*/
@@ -1725,6 +1743,12 @@ input[type=number] {
     margin-bottom: 51px;
   }
   /* elan-page 3 map end */
+  /* index1, index2, favory page -> otaq sahəsi hissəsi */
+  .suggestion__wide span {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+  }
 }
 
 /*==================== max-width: 376px ===================*/
@@ -2034,6 +2058,15 @@ figcaption {
 
 .suggestion__properties-hide {
   display: none !important;
+}
+
+.suggestion__wide {
+  padding-top: 2px;
+}
+
+.suggestion__wide span {
+  display: flex;
+  align-items: center;
 }
 
 .suggestion__title-box {

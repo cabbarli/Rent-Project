@@ -159,6 +159,13 @@
       display: none !important;
     }
     .suggestion {
+      &__wide {
+        padding-top: 2px;
+        span {
+          display: flex;
+          align-items: center;
+        }
+      }
       &__title-box {
         padding: 0;
       }
