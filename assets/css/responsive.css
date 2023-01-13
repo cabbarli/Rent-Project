@@ -240,13 +240,13 @@
     margin-right: 7px;
   }
   .margin-size .col:nth-child(1) {
-    margin-right: 11px;
+    margin-right: 8px;
   }
   .margin-size .col:nth-child(2) {
-    margin-right: 11px;
+    margin-right: 8px;
   }
   .margin-size .col:nth-last-child(1) {
-    margin-left: 11px;
+    margin-left: 8px;
   }
   .suggestion__img-adress {
     max-width: 157px;
@@ -509,6 +509,11 @@
   .suggestion__img-adress {
     max-width: 222px;
   }
+  /* detail picture start */
+  .new_gal {
+    width: 60% !important;
+  }
+  /* detail picture end */
 }
 
 /*==================== max-width: 575.98px ===================*/
@@ -872,6 +877,11 @@
   .suggestion__img-adress {
     max-width: 350px;
   }
+  /* detail picture start */
+  .new_gal {
+    width: 83% !important;
+  }
+  /* detail picture end */
 }
 
 /*==================== min-width: 480px ===================*/
