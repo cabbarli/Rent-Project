@@ -134,7 +134,7 @@
   letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
+  font-line-height: 28px;
   font-style: normal;
 }
 
@@ -750,6 +750,7 @@
   font-family: "detail";
   font-style: normal;
   font-weight: normal;
+  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -1663,11 +1664,6 @@ input[type=number] {
     max-height: 300px;
   }
   /*----- detail page end -----*/
-  /*----- log in pages start -----*/
-  .log-in__form-box {
-    width: 360px;
-  }
-  /*----- log in pages end -----*/
   /*----- elan-page 1 start -----*/
   .advertised__category-button {
     width: 150px;
@@ -1715,7 +1711,7 @@ input[type=number] {
   /* detail picture end */
 }
 
-/*==================== min-width: 480px ===================*/
+/*==================== max-width: 480px ===================*/
 @media (max-width: 480px) {
   /*----- elan-page 1 start -----*/
   .advertised__category-button {
@@ -1738,6 +1734,10 @@ input[type=number] {
     bottom: 15px !important;
   }
   /* map google button end*/
+  .sing-up__form-box {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
 
 /*==================== max-width: 400px ===================*/

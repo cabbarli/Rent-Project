@@ -882,13 +882,6 @@
   max-height: 300px;
   }
 /*----- detail page end -----*/
-/*----- log in pages start -----*/
-.log-in {
-  &__form-box {
-    width: 360px;
-   }
- }
- /*----- log in pages end -----*/
  /*----- elan-page 1 start -----*/
 .advertised__category-button {
   width: 150px; 
@@ -939,7 +932,7 @@ padding: 0;
 }
 /* detail picture end */
 } 
-/*==================== min-width: 480px ===================*/
+/*==================== max-width: 480px ===================*/
 @media (max-width: 480px){
   /*----- elan-page 1 start -----*/
 .advertised__category-button {
@@ -970,10 +963,13 @@ padding: 0;
   }
 }
 /* map google button end*/
-.sing-up__form-col {
-padding-left: 10px;
-padding-right: 10px;
+.sing-up__form-box {
+padding-left: 10px !important;
 }
+.log-in__form-box {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  }
 }
 /*==================== max-width: 400px ===================*/
 @media (max-width: 400px){
