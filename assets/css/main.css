@@ -34,14 +34,14 @@
   line-height: 40px;
   margin-right: 37px;
   transition: 200ms all;
+  display: flex;
+  align-items: center;
 }
 
-.navbar .slide-favori::before {
-  transition: 200ms all;
+.navbar .slide-favori img {
   margin-right: 10px;
-  content: '\e840';
-  font-size: 25px;
-  font-family: "card-top-icon";
+  width: 26px;
+  height: 24px;
 }
 
 .navbar .slide-dropdown {
@@ -134,7 +134,7 @@
   letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 14px;
-  font-line-height: 28px;
+  line-height: 28px;
   font-style: normal;
 }
 
@@ -183,6 +183,7 @@
   color: #3E86F5 !important;
   line-height: 39px;
   background-color: #FDFDFD;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 14px;
 }
@@ -749,7 +750,6 @@
   font-family: "detail";
   font-style: normal;
   font-weight: normal;
-  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -850,12 +850,6 @@ input[type=number] {
   }
 }
 
-@media only screen and (max-width: 575.98px) {
-  .sing-up__form-box {
-    width: 360px;
-  }
-}
-
 /* ========== login-page.html responsive ========== */
 @media only screen and (max-width: 1199px) {
   .log-in__title {
@@ -890,9 +884,16 @@ input[type=number] {
   /*----- detail page end -----*/
 }
 
-/*==================== min-width:  992px and max-width: max-width: 1199.98px ===================*/
+/*=== min-width:  992px and max-width =======*/
+@media (max-width: 992px) {
+  .navbar__elan-button {
+    margin-top: 10px;
+  }
+}
+
+/*=== min-width:  992px and max-width: max-width: 1199.98px =======*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /*----- index1.html and index2.html pages start -----*/
+  /* index1.html and index2.html pages start */
   /* card section */
   .slide-card2 .select__metro {
     width: 230px;
@@ -969,11 +970,8 @@ input[type=number] {
     margin-top: 25px;
   }
   .navbar-collapse > div .elan-box {
-    margin-top: 5px;
+    margin-top: 10px;
     display: inline-block;
-  }
-  .navbar-collapse > div .elan-box .elan-size {
-    padding: 0px 50px;
   }
   .container-size {
     z-index: 9;
@@ -993,6 +991,9 @@ input[type=number] {
 
 /*===== min-width: 768px and max-width:  991.98px ========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-inner div {
+    height: 610px;
+  }
   /* index1.html and index2.html pages start */
   .suggestion__like-icon {
     width: 35px;
@@ -1137,7 +1138,7 @@ input[type=number] {
   /* detail page end */
 }
 
-/*==================== min-width: 576px and max-width: 767.98px ===================*/
+/*==== min-width: 576px and max-width: 767.98px ====*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* index1.html and index2.html pages start */
   .carousel-inner div {
@@ -1954,6 +1955,17 @@ input[type=number] {
   --bs-navbar-color: transparent;
   --bs-navbar-hover-color: transparent;
   --bs-navbar-toggler-border-color: none;
+}
+
+.navbar__elan-button {
+  display: flex;
+  width: 98px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: #3E86F5;
 }
 
 /*===== carousel background =====*/

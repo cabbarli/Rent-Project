@@ -7,6 +7,8 @@
     }
 }
 /*===== slide top card start =====*/
+
+
 .navbar {
     top: 38px;
     margin: auto;
@@ -21,13 +23,20 @@
         line-height: $line-h40;
         margin-right: $margin-33;
         transition: 200ms all;
-        &::before {
-            transition: 200ms all;
+        display: flex;
+        align-items: center;
+        img {
             margin-right: $margin-10;
-            content: '\e840';
-            font-size: 25px;
-            font-family: "card-top-icon";
+            width: 26px;
+            height: 24px;
         }
+        // &::before {
+        //     transition: 200ms all;
+        //     margin-right: $margin-10;
+        //     content: '\e840';
+        //     font-size: 25px;
+        //     font-family: "card-top-icon";
+        // }
     }
     .slide-dropdown {
         margin-right: $margin-33;
@@ -161,6 +170,7 @@
     color:$color-blue !important;
     line-height: 39px;
     background-color: $color-white1;
+    border-radius: 4px;
     font: {
         weight: $font-500;
         size: $font-14;
