@@ -19,7 +19,6 @@
     filter: opacity(0.8);
   }
 }
-
 /* ========== login-page.html responsive ========== */
 @media only screen and (max-width: 1199px) {
   .log-in__title {
@@ -40,7 +39,6 @@
     filter: opacity(0.8);
   }
 }
-
 /* ================= index.html responnsive min-width: 1200px=============== */
 @media (min-width: 1200px) {
   /* menu */
@@ -53,14 +51,12 @@
   }
   /*----- detail page end -----*/
 }
-
 /*=== min-width:  992px and max-width =======*/
 @media (max-width: 992px) {
   .navbar__elan-button {
     margin-top: 10px;
   }
 }
-
 /*=== min-width:  992px and max-width: max-width: 1199.98px =======*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* index1.html and index2.html pages start */
@@ -130,7 +126,6 @@
   }
   /*----- detail page end -----*/
 }
-
 /*=============== max-width:  991.98px ===================*/
 /* index1 and index 2 pages */
 @media (max-width: 991.98px) {
@@ -158,7 +153,6 @@
     border-radius: 10px;
   }
 }
-
 /*===== min-width: 768px and max-width:  991.98px ========*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .carousel-inner div {
@@ -187,7 +181,7 @@
   .card-body__select-col {
     display: block;
   }
-  .card-body__select-col div:nth-child(n + 2) {
+  .card-body__select-col div:nth-child(n+2) {
     margin-top: 20px;
   }
   .card-body__select-col .select {
@@ -250,7 +244,7 @@
     margin-left: 8px;
   }
   .suggestion__img-adress {
-    max-width: 157px;
+    max-width: 138px;
   }
   .suggestion__text {
     width: 518px;
@@ -307,7 +301,6 @@
   }
   /* detail page end */
 }
-
 /*==== min-width: 576px and max-width: 767.98px ====*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* index1.html and index2.html pages start */
@@ -323,7 +316,7 @@
   .card-body__select-col {
     display: block;
   }
-  .card-body__select-col div:nth-child(n + 2) {
+  .card-body__select-col div:nth-child(n+2) {
     margin-top: 20px;
   }
   .card-body__select-col .select {
@@ -516,9 +509,12 @@
   }
   /* detail picture end */
 }
-
 /*==================== max-width: 575.98px ===================*/
 @media (max-width: 575.98px) {
+  .houses-box .col {
+    display: flex;
+    justify-content: center;
+  }
   /*----- index1.html and index2.html pages start -----*/
   .container-card {
     bottom: 18%;
@@ -529,7 +525,7 @@
   .card-body__select-col {
     display: block;
   }
-  .card-body__select-col div:nth-child(n + 2) {
+  .card-body__select-col div:nth-child(n+2) {
     margin-top: 20px;
   }
   .card-body__select-col .select {
@@ -575,7 +571,7 @@
   .carousel-indicators {
     display: none;
   }
-  .carousel-item img:nth-child(n +2) {
+  .carousel-item img:nth-child(n+2) {
     display: none;
   }
   .category-box__about {
@@ -648,7 +644,7 @@
   .suggestion__col {
     display: block !important;
   }
-  .suggestion__col div:nth-child(n +3) {
+  .suggestion__col div:nth-child(n+3) {
     display: none;
   }
   .suggestion__col div:nth-child(2) figure {
@@ -660,7 +656,7 @@
   .suggestion__cols {
     display: block !important;
   }
-  .suggestion__cols div:nth-child(n +3) {
+  .suggestion__cols div:nth-child(n+3) {
     display: none;
   }
   figure {
@@ -748,7 +744,7 @@
     max-width: 400px;
     margin: auto;
   }
-  .foot-top-box__inner div:nth-child(n +2) {
+  .foot-top-box__inner div:nth-child(n+2) {
     display: inline-block;
   }
   .foot-top-box__inner div:nth-child(3) {
@@ -879,7 +875,6 @@
   }
   /* detail picture end */
 }
-
 /*==================== max-width: 480px ===================*/
 @media (max-width: 480px) {
   /*----- elan-page 1 start -----*/
@@ -911,7 +906,6 @@
     padding-right: 10px !important;
   }
 }
-
 /*==================== max-width: 400px ===================*/
 @media (max-width: 400px) {
   /* elan-page 1 start */
@@ -949,7 +943,6 @@
     max-width: 320px;
   }
 }
-
 /*==================== max-width: 376px ===================*/
 @media (max-width: 376px) {
   .carousel-inner .carousel-item-detail {
@@ -970,7 +963,6 @@
     height: 220px;
   }
 }
-
 /*==================== max-width: 352px ===================*/
 @media (max-width: 352px) {
   .advertised__category-box div {
@@ -992,7 +984,6 @@
     max-width: 280px;
   }
 }
-
 /*==================== max-width: 320px ===================*/
 @media (max-width: 320px) {
   .detail__bron-box {
@@ -1036,7 +1027,6 @@
     max-width: 245px;
   }
 }
-
 /*==================== max-width: 281px ===================*/
 /*----- index1.html and index2.html pages start -----*/
 @media (max-width: 281px) {
@@ -1112,4 +1102,4 @@
     margin-left: 15px !important;
   }
   /* detail map end */
-}
+}/*# sourceMappingURL=responsive.css.map */

@@ -1,30 +1,29 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'card-top-icon';
+  font-family: "card-top-icon";
   src: url("../font/card-top-icon.eot?35658113");
   src: url("../font/card-top-icon.eot?35658113#iefix") format("embedded-opentype"), url("../font/card-top-icon.woff2?35658113") format("woff2"), url("../font/card-top-icon.woff?35658113") format("woff"), url("../font/card-top-icon.ttf?35658113") format("truetype"), url("../font/card-top-icon.svg?35658113#card-top-icon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'card-top-icon';
-      src: url('../font/card-top-icon.svg?35658113#card-top-icon') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'card-top-icon';
+    src: url('../font/card-top-icon.svg?35658113#card-top-icon') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "card-top-icon";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -34,7 +33,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -45,41 +44,36 @@
 }
 
 .icon-user:before {
-  content: '\e83e';
-}
-
-/* '' */
+  content: "\e83e";
+} /* '' */
 .icon-vector:before {
-  content: '\e840';
-}
-
-/* '' */
+  content: "\e840";
+} /* '' */
 @font-face {
-  font-family: 'icon-vector';
+  font-family: "icon-vector";
   src: url("../font/icon-vector.eot?40844373");
   src: url("../font/icon-vector.eot?40844373#iefix") format("embedded-opentype"), url("../font/icon-vector.woff2?40844373") format("woff2"), url("../font/icon-vector.woff?40844373") format("woff"), url("../font/icon-vector.ttf?40844373") format("truetype"), url("../font/icon-vector.svg?40844373#icon-vector") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'icon-vector';
-      src: url('../font/icon-vector.svg?40844373#icon-vector') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icon-vector';
+    src: url('../font/icon-vector.svg?40844373#icon-vector') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "icon-vector";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -89,7 +83,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -100,37 +94,34 @@
 }
 
 .icon-vector-2:before {
-  content: '\e841';
-}
-
-/* '' */
+  content: "\e841";
+} /* '' */
 /*===== kateqoriya iconlar =====*/
 @font-face {
-  font-family: 'category';
+  font-family: "category";
   src: url("../font/category.eot?94116840");
   src: url("../font/category.eot?94116840#iefix") format("embedded-opentype"), url("../font/category.woff2?94116840") format("woff2"), url("../font/category.woff?94116840") format("woff"), url("../font/category.ttf?94116840") format("truetype"), url("../font/category.svg?94116840#category") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'category';
-      src: url('../font/category.svg?94116840#category') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'category';
+    src: url('../font/category.svg?94116840#category') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "category";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -140,7 +131,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -151,46 +142,39 @@
 }
 
 .icon-category1:before {
-  content: '\e847';
-}
-
-/* '' */
+  content: "\e847";
+} /* '' */
 .icon-category3:before {
-  content: '\e84a';
-}
-
-/* '' */
+  content: "\e84a";
+} /* '' */
 .icon-category2:before {
-  content: '\e84b';
-}
-
-/* '' */
+  content: "\e84b";
+} /* '' */
 @font-face {
-  font-family: 'user-icons';
+  font-family: "user-icons";
   src: url("../font/user-icons.eot?62041079");
   src: url("../font/user-icons.eot?62041079#iefix") format("embedded-opentype"), url("../font/user-icons.woff2?62041079") format("woff2"), url("../font/user-icons.woff?62041079") format("woff"), url("../font/user-icons.ttf?62041079") format("truetype"), url("../font/user-icons.svg?62041079#user-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'user-icons';
-      src: url('../font/user-icons.svg?62041079#user-icons') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'user-icons';
+    src: url('../font/user-icons.svg?62041079#user-icons') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "user-icons";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -200,7 +184,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -211,44 +195,39 @@
 }
 
 .icon-7148755_user_avatar_profile_person_people_icon:before {
-  content: '\e844';
-}
-
-/* '' */
+  content: "\e844";
+} /* '' */
 .icon-4473009_personal-icon_user_user-icon_user-outline-icon_users-icon_icon:before {
-  content: '\e84d';
-}
-
-/* '' */
+  content: "\e84d";
+} /* '' */
 /* fotter right-arrow */
 @font-face {
-  font-family: 'right-arrow';
+  font-family: "right-arrow";
   src: url("../font/right-arrow.eot?32225618");
   src: url("../font/right-arrow.eot?32225618#iefix") format("embedded-opentype"), url("../font/right-arrow.woff2?32225618") format("woff2"), url("../font/right-arrow.woff?32225618") format("woff"), url("../font/right-arrow.ttf?32225618") format("truetype"), url("../font/right-arrow.svg?32225618#right-arrow") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
 
-      font-family: 'right-arrow';
-      src: url('../font/right-arrow.svg?32225618#right-arrow') format('svg');
+    font-family: 'right-arrow';
+    src: url('../font/right-arrow.svg?32225618#right-arrow') format('svg');
 
-    }
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "right-arrow";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -258,7 +237,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -269,36 +248,33 @@
 }
 
 .icon-arrow-right-solid:before {
-  content: '\e863';
-}
-
-/* '' */
+  content: "\e863";
+} /* '' */
 @font-face {
-  font-family: 'sosial-icon';
+  font-family: "sosial-icon";
   src: url("../font/sosial-icon.eot?65914616");
   src: url("../font/sosial-icon.eot?65914616#iefix") format("embedded-opentype"), url("../font/sosial-icon.woff2?65914616") format("woff2"), url("../font/sosial-icon.woff?65914616") format("woff"), url("../font/sosial-icon.ttf?65914616") format("truetype"), url("../font/sosial-icon.svg?65914616#sosial-icon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'sosial-icon';
-      src: url('../font/sosial-icon.svg?65914616#sosial-icon') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'sosial-icon';
+    src: url('../font/sosial-icon.svg?65914616#sosial-icon') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "sosial-icon";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -308,7 +284,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -319,46 +295,39 @@
 }
 
 .icon-path:before {
-  content: '\e866';
-}
-
-/* '' */
+  content: "\e866";
+} /* '' */
 .icon-004-instagram:before {
-  content: '\e867';
-}
-
-/* '' */
+  content: "\e867";
+} /* '' */
 .icon-path:before {
-  content: '\e868';
-}
-
-/* '' */
+  content: "\e868";
+} /* '' */
 @font-face {
-  font-family: 'heart-like';
+  font-family: "heart-like";
   src: url("../font/heart-like.eot?19484137");
   src: url("../font/heart-like.eot?19484137#iefix") format("embedded-opentype"), url("../font/heart-like.woff2?19484137") format("woff2"), url("../font/heart-like.woff?19484137") format("woff"), url("../font/heart-like.ttf?19484137") format("truetype"), url("../font/heart-like.svg?19484137#heart-like") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'heart-like';
-      src: url('../font/heart-like.svg?19484137#heart-like') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'heart-like';
+    src: url('../font/heart-like.svg?19484137#heart-like') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "heart-like";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -368,7 +337,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -379,52 +348,43 @@
 }
 
 .icon-heart-empty:before {
-  content: '\e800';
-}
-
-/* '' */
+  content: "\e800";
+} /* '' */
 .icon-heart-1:before {
-  content: '\e803';
-}
-
-/* '' */
+  content: "\e803";
+} /* '' */
 .icon-vector:before {
-  content: '\e86a';
-}
-
-/* '' */
+  content: "\e86a";
+} /* '' */
 .icon-bi_heart:before {
-  content: '\e86b';
-}
-
-/* '' */
+  content: "\e86b";
+} /* '' */
 /* elan ver page 2 icons */
 @font-face {
-  font-family: 'techizat-icon';
+  font-family: "techizat-icon";
   src: url("../font/techizat-icon.eot?67353351");
   src: url("../font/techizat-icon.eot?67353351#iefix") format("embedded-opentype"), url("../font/techizat-icon.woff2?67353351") format("woff2"), url("../font/techizat-icon.woff?67353351") format("woff"), url("../font/techizat-icon.ttf?67353351") format("truetype"), url("../font/techizat-icon.svg?67353351#techizat-icon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'techizat-icon';
-      src: url('../font/techizat-icon.svg?67353351#techizat-icon') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'techizat-icon';
+    src: url('../font/techizat-icon.svg?67353351#techizat-icon') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "techizat-icon";
   font-style: normal;
   font-weight: normal;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -434,7 +394,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -445,89 +405,62 @@
 }
 
 .icon-frame-1:before {
-  content: '\e86f';
-}
-
-/* '' */
+  content: "\e86f";
+} /* '' */
 .icon-1611-heating-radiator-outline:before {
-  content: '\e876';
-}
-
-/* '' */
+  content: "\e876";
+} /* '' */
 .icon-821-airconditioner-outline:before {
-  content: '\e877';
-}
-
-/* '' */
+  content: "\e877";
+} /* '' */
 .icon-514-pool-outline:before {
-  content: '\e878';
-}
-
-/* '' */
+  content: "\e878";
+} /* '' */
 .icon-513-laundry-outline:before {
-  content: '\e87a';
-}
-
-/* '' */
+  content: "\e87a";
+} /* '' */
 .icon-64-wifi-outline:before {
-  content: '\e87b';
-}
-
-/* '' */
+  content: "\e87b";
+} /* '' */
 .icon-car-parking-1:before {
-  content: '\e87c';
-}
-
-/* '' */
+  content: "\e87c";
+} /* '' */
 .icon-cil_shower:before {
-  content: '\e87d';
-}
-
-/* '' */
+  content: "\e87d";
+} /* '' */
 .icon-icons8_football2:before {
-  content: '\e87e';
-}
-
-/* '' */
+  content: "\e87e";
+} /* '' */
 .icon-frame-1815:before {
-  content: '\e881';
-}
-
-/* '' */
+  content: "\e881";
+} /* '' */
 .icon-frame-1815:before {
-  content: '\e882';
-}
-
-/* '' */
+  content: "\e882";
+} /* '' */
 .icon-microphone-svgrepo-com:before {
-  content: '\e885';
-}
-
-/* '' */
+  content: "\e885";
+} /* '' */
 .icon-frame-1321315451:before {
-  content: '\e886';
-}
-
-/* '' */
+  content: "\e886";
+} /* '' */
 @font-face {
-  font-family: 'detail';
+  font-family: "detail";
   src: url("../font/detail.eot?67926740");
   src: url("../font/detail.eot?67926740#iefix") format("embedded-opentype"), url("../font/detail.woff2?67926740") format("woff2"), url("../font/detail.woff?67926740") format("woff"), url("../font/detail.ttf?67926740") format("truetype"), url("../font/detail.svg?67926740#detail") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-      font-family: 'detail';
-      src: url('../font/detail.svg?67926740#detail') format('svg');
-    }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'detail';
+    src: url('../font/detail.svg?67926740#detail') format('svg');
   }
-  */
-[class^="icon-"]:before, [class*=" icon-"]:before {
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
   font-family: "detail";
   font-style: normal;
   font-weight: normal;
@@ -535,7 +468,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -545,7 +478,7 @@
   line-height: 1em;
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
   /* Font smoothing. That was taken from TWBS */
@@ -556,17 +489,11 @@
 }
 
 .icon-cigarette-1:before {
-  content: '\e86d';
-}
-
-/* '' */
+  content: "\e86d";
+} /* '' */
 .icon-d67b9cb2-d99c-4cd8-a3b4-61452ad3be93:before {
-  content: '\e893';
-}
-
-/* '' */
+  content: "\e893";
+} /* '' */
 .icon-couple-svgrepo-com:before {
-  content: '\e899';
-}
-
-/* '' */
+  content: "\e899";
+} /* '' *//*# sourceMappingURL=icon.css.map */

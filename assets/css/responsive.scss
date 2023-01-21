@@ -262,7 +262,7 @@
       margin-left: 8px;
     }
     .suggestion__img-adress {
-      max-width: 157px;
+      max-width: 138px;
     }
     .suggestion__text {
        width: 518px;
@@ -550,6 +550,14 @@
 }  
 /*==================== max-width: 575.98px ===================*/
 @media (max-width: 575.98px) {
+  .houses-box {
+   .col {
+
+      display: flex;
+      justify-content: center;
+
+   } 
+  }
   /*----- index1.html and index2.html pages start -----*/
   .container-card {
     bottom: 18%;
