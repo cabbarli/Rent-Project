@@ -163,11 +163,7 @@
     width: 35px;
     height: 35px;
   }
-  .suggestion__like-icon .imgg {
-    width: 35px;
-    height: 35px;
-  }
-  .suggestion__like-icon .immg {
+  .suggestion__like-icon img {
     width: 35px;
     height: 35px;
   }
@@ -304,6 +300,14 @@
 /*==== min-width: 576px and max-width: 767.98px ====*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* index1.html and index2.html pages start */
+  .suggestion__like-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .suggestion__like-icon img {
+    width: 35px;
+    height: 35px;
+  }
   .carousel-inner div {
     height: 600px;
   }
@@ -361,7 +365,7 @@
   .rent-boxs .sale {
     padding: 15px 10px;
   }
-  .suggestion__col div:nth-child(3) {
+  .suggestion__col div:nth-child(n+3) {
     display: none;
   }
   .suggestion__cols div:nth-child(n+3) {
@@ -644,7 +648,7 @@
   .suggestion__col {
     display: block !important;
   }
-  .suggestion__col div:nth-child(n+3) {
+  .suggestion__col div:nth-child(n+2) {
     display: none;
   }
   .suggestion__col div:nth-child(2) figure {
@@ -656,7 +660,7 @@
   .suggestion__cols {
     display: block !important;
   }
-  .suggestion__cols div:nth-child(n+3) {
+  .suggestion__cols div:nth-child(n+2) {
     display: none;
   }
   figure {

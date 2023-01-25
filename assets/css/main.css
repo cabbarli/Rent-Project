@@ -116,7 +116,7 @@
   letter-spacing: 0.2px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 28px;
+  font-line-height: 28px;
   font-style: normal;
 }
 .slide-card2 .search__submit {
@@ -660,6 +660,7 @@
   font-family: "detail";
   font-style: normal;
   font-weight: normal;
+  speak: never;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -716,7 +717,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox -> input number arrow hide*/
 input[type=number] {
-  --moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .advertised ::-moz-placeholder, .sing-up ::-moz-placeholder, .log-in ::-moz-placeholder, .card-body ::-moz-placeholder {
@@ -904,11 +905,7 @@ input[type=number] {
     width: 35px;
     height: 35px;
   }
-  .suggestion__like-icon .imgg {
-    width: 35px;
-    height: 35px;
-  }
-  .suggestion__like-icon .immg {
+  .suggestion__like-icon img {
     width: 35px;
     height: 35px;
   }
@@ -1045,6 +1042,14 @@ input[type=number] {
 /*==== min-width: 576px and max-width: 767.98px ====*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* index1.html and index2.html pages start */
+  .suggestion__like-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .suggestion__like-icon img {
+    width: 35px;
+    height: 35px;
+  }
   .carousel-inner div {
     height: 600px;
   }
@@ -1102,7 +1107,7 @@ input[type=number] {
   .rent-boxs .sale {
     padding: 15px 10px;
   }
-  .suggestion__col div:nth-child(3) {
+  .suggestion__col div:nth-child(n+3) {
     display: none;
   }
   .suggestion__cols div:nth-child(n+3) {
@@ -1385,7 +1390,7 @@ input[type=number] {
   .suggestion__col {
     display: block !important;
   }
-  .suggestion__col div:nth-child(n+3) {
+  .suggestion__col div:nth-child(n+2) {
     display: none;
   }
   .suggestion__col div:nth-child(2) figure {
@@ -1397,7 +1402,7 @@ input[type=number] {
   .suggestion__cols {
     display: block !important;
   }
-  .suggestion__cols div:nth-child(n+3) {
+  .suggestion__cols div:nth-child(n+2) {
     display: none;
   }
   figure {
@@ -2761,7 +2766,7 @@ figcaption {
   border-radius: 6px;
 }
 .advertised__city-select {
-  --webkit-appearance: none !important;
+  -webkit-appearance: none !important;
   border-radius: 4px;
   padding: 19px 17px;
   color: #161616;
@@ -2896,7 +2901,11 @@ input.advertised__home-picture::file-selector-button {
 }
 
 /* ----- Elan ver page-2 detallar -----*/
-
+.advertised {
+  /* detallaı seçmə. adam, otaq, hamam, yataq sayı seçmə butonları */
+  /* Təchizatlar */
+  /* icazə verilir section */
+}
 .advertised input, .advertised textarea, .advertised select {
   background-color: #fdfdfd;
 }
